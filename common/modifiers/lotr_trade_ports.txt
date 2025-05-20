@@ -1,0 +1,122 @@
+﻿# Trade Ports
+# Numenorean Ports
+osgiliath_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 1.0
+	development_growth = 0.5
+}
+pelargir_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 1.0
+	development_growth = 0.5
+}
+umbar_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 1.0
+	development_growth = 0.5
+}
+lond_daer_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 1.0
+	development_growth = 0.5
+}
+urezayaneth_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 1.0
+	development_growth = 0.5
+}
+kadar_an_kharadun_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 1.0
+	development_growth = 0.5
+}
+dol_amroth_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 1.0
+	development_growth = 0.5
+}
+suthure_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 1.0
+	development_growth = 0.5
+}
+inzilloni_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 1.0
+	development_growth = 0.5
+}
+mispir_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 1.0
+	development_growth = 0.5
+}
+korlea_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 0.8
+	development_growth = 0.4
+}
+ciryandur_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 0.8
+	development_growth = 0.4
+}
+sornomar_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 0.8
+	development_growth = 0.4
+}
+ethir_harnen_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 0.8
+	development_growth = 0.4
+}
+hyarmendacil_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 0.8
+	development_growth = 0.4
+}
+serelond_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 0.8
+	development_growth = 0.4
+}
+linhir_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 0.8
+	development_growth = 0.4
+}
+ramlond_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 0.8
+	development_growth = 0.4
+}
+urulomik_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 0.8
+	development_growth = 0.4
+}
+arpel_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 0.8
+	development_growth = 0.4
+}
+sarul_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 0.8
+	development_growth = 0.4
+}
+annon_druin_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 0.5
+	development_growth = 0.25
+}
+ishtra_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 0.5
+	development_growth = 0.25
+}
+gilmileth_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 0.5
+	development_growth = 0.25
+}

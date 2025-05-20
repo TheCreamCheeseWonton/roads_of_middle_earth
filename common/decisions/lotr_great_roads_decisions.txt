@@ -1,0 +1,1865 @@
+﻿  ### Great Roads ###
+decision_connect_capital_road = {
+	title = decision_connect_capital_road
+	desc = decision_connect_capital_road_desc
+	confirm_text = decision_connect_capital_road_confirm
+	selection_tooltip = decision_connect_capital_road_tooltip
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_human_road.dds"
+	}
+	sort_order = 5
+	decision_group_type = realms_in_exile_major
+
+	# Shown
+	is_shown = {
+		is_landed = yes
+		OR = { 
+			has_title = title:e_numenor_in_exile
+			has_title = title:e_reunitedkingdom
+			has_title = title:e_arnor
+			has_title = title:k_arthedain
+		}
+		OR = {
+			has_title = title:d_tarmea
+			has_title = title:c_fornost
+			has_title = title:c_annuminas
+		}
+		any_realm_province = {
+			OR = {
+				has_province_modifier = west_road_province_modifier
+				has_province_modifier = old_south_road_province_modifier
+				has_province_modifier = greenway_road_province_modifier
+			}
+		}
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:decision_connect_capital_road
+			}
+		}
+	}
+
+	# Effect
+	effect = {
+		custom_tooltip = decision_connect_capital_road.send_message
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:decision_connect_capital_road
+		}
+		province:4720 = {
+			add_province_modifier = greenway_road_province_modifier
+		}
+		province:4718 = {
+			add_province_modifier = greenway_road_province_modifier
+		}
+		province:4710 = {
+			add_province_modifier = greenway_road_province_modifier
+		}
+		province:4708 = {
+			add_province_modifier = greenway_road_province_modifier
+		}
+		province:4709 = {
+			add_province_modifier = greenway_road_province_modifier
+		}
+	}
+
+	# Requirements
+	is_valid = {
+		is_ruler = yes
+		custom_tooltip = {
+			text = "decision_has_15_greenway_prov"
+			any_realm_province = {
+				count >= 15
+				has_province_modifier = greenway_road_province_modifier
+			}
+		}
+		AND = { 
+			has_title = title:d_tarmea
+			has_title = title:c_annuminas
+			OR = {
+					has_title = title:c_fornost
+					any_vassal = {
+						has_title = title:c_fornost
+					}
+			}
+			OR = {
+					has_title = title:c_rhovanduin
+					any_vassal = {
+						has_title = title:c_rhovanduin
+					}
+			}
+		}
+	}
+
+	# Cost
+	cost = {
+		gold = {
+			value = 150
+		}
+	}
+
+	# AI
+	ai_check_interval = 12
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+decision_reform_north_south_road = {
+	title = decision_reform_north_south_road
+	desc = decision_reform_north_south_road_desc
+	confirm_text = decision_reform_north_south_road_confirm
+	selection_tooltip = decision_reform_north_south_road_tooltip
+	picture = { 
+		reference = "gfx/interface/illustrations/decisions/decision_human_road.dds"
+	}
+	sort_order = 5
+	decision_group_type = realms_in_exile_major
+
+	# Shown
+	is_shown = {
+		is_landed = yes
+		any_realm_province = {
+			OR = {
+				has_province_modifier = west_road_province_modifier
+				has_province_modifier = old_south_road_province_modifier
+				has_province_modifier = greenway_road_province_modifier
+			}
+		}
+		OR = { 
+			has_title = title:e_numenor_in_exile
+			has_title = title:e_reunitedkingdom
+		}
+		is_target_in_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:decision_connect_capital_road
+		}
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:decision_reform_north_south_road
+			}
+		}
+	}
+
+	# Effect
+	effect = {
+		custom_tooltip = decision_reform_north_south_road.send_message
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:decision_reform_north_south_road
+		}
+		every_province = {
+			limit = { 
+				OR = { 
+					has_province_modifier = west_road_province_modifier
+					has_province_modifier = old_south_road_province_modifier
+					has_province_modifier = greenway_road_province_modifier
+				}
+			}
+			remove_province_modifier = west_road_province_modifier
+			remove_province_modifier = old_south_road_province_modifier
+			remove_province_modifier = greenway_road_province_modifier
+			add_province_modifier = north_south_road_province_modifier
+		}
+	}
+
+	# Requirements
+	is_valid = {
+		is_ruler = yes
+		custom_tooltip = {
+			text = "decision_has_70_north_south_prov"
+			any_realm_province = {
+				count >= 70
+				OR = {
+					has_province_modifier = west_road_province_modifier
+					has_province_modifier = old_south_road_province_modifier
+					has_province_modifier = greenway_road_province_modifier
+				}
+			}
+		}
+	}
+
+	# Cost
+	cost = {
+		gold = {
+			value = 800
+		}
+	}
+
+	# AI
+	ai_check_interval = 12
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+decision_west_kazad_road = {
+	title = decision_west_kazad_road
+	desc = decision_west_kazad_road_desc
+	confirm_text = decision_west_kazad_road_confirm
+	selection_tooltip = decision_west_kazad_road_tooltip
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_dwarven_road.dds"
+	}
+	sort_order = 5
+	decision_group_type = realms_in_exile_major
+
+	# Shown
+	is_shown = {
+		is_landed = yes
+		OR = { 
+			has_title = title:e_durins_folk
+			has_title = title:e_misty_mountains
+			has_title = title:k_khazad_dum
+			has_title = title:d_zirakzigil
+		}
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:decision_west_kazad_road
+			}
+		}
+	}
+
+	# Effect
+	effect = {
+		custom_tooltip = decision_west_kazad_road.send_message
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:decision_west_kazad_road
+		}
+		province:4537 = {
+			add_province_modifier = khazad_road_province_modifier
+		}
+		province:4680 = {
+			add_province_modifier = khazad_road_province_modifier
+		}
+		province:4363 = {
+			add_province_modifier = khazad_road_province_modifier
+		}
+		province:4362 = {
+			add_province_modifier = khazad_road_province_modifier
+		}
+		province:4353 = {
+			add_province_modifier = khazad_road_province_modifier
+		}
+		province:4358 = {
+			add_province_modifier = khazad_road_province_modifier
+		}
+		province:4351 = {
+			add_province_modifier = khazad_road_province_modifier
+		}
+		province:4352 = {
+			add_province_modifier = khazad_road_province_modifier
+		}
+		province:4355 = {
+			add_province_modifier = khazad_road_province_modifier
+		}
+		province:4356 = {
+			add_province_modifier = khazad_road_province_modifier
+		}
+		province:4361 = {
+			add_province_modifier = khazad_road_province_modifier
+		}
+		province:4914 = {
+			add_province_modifier = khazad_road_province_modifier
+		}
+		province:4915 = {
+			add_province_modifier = khazad_road_province_modifier
+		}
+		province:4909 = {
+			add_province_modifier = khazad_road_province_modifier
+		}
+	}
+
+	# Requirements
+	is_valid = {
+		is_ruler = yes
+		has_title = title:k_khazad_dum
+		character:linefinwe27 = {
+			opinion = {
+				target = root
+				value > 90
+			}
+		}
+	}
+
+	# Cost
+	cost = {
+		gold = {
+			value = 250
+		}
+	}
+
+	# AI
+	ai_check_interval = 12
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+decision_east_kazad_road = {
+	title = decision_east_kazad_road
+	desc = decision_east_kazad_road_desc
+	confirm_text = decision_east_kazad_road_confirm
+	selection_tooltip = decision_east_kazad_road_tooltip
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_dwarven_road.dds"
+	}
+	sort_order = 5
+	decision_group_type = realms_in_exile_major
+
+	# Shown
+	is_shown = {
+		is_landed = yes
+		OR = { 
+			has_title = title:e_durins_folk
+			has_title = title:e_misty_mountains
+			has_title = title:k_khazad_dum
+			has_title = title:d_zirakzigil
+		}
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:decision_east_kazad_road
+			}
+		}
+	}
+
+	# Effect
+	effect = {
+		custom_tooltip = decision_east_kazad_road.send_message
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:decision_east_kazad_road
+		}
+		province:4912 = {
+			add_province_modifier = khazad_road_province_modifier
+		}
+		province:4913 = {
+			add_province_modifier = khazad_road_province_modifier
+		}
+		province:4910 = {
+			add_province_modifier = khazad_road_province_modifier
+		}
+		province:4919 = {
+			add_province_modifier = khazad_road_province_modifier
+		}
+		province:4918 = {
+			add_province_modifier = khazad_road_province_modifier
+		}
+		province:3117 = {
+			add_province_modifier = khazad_road_province_modifier
+		}
+		province:3122 = {
+			add_province_modifier = khazad_road_province_modifier
+		}
+		province:3123 = {
+			add_province_modifier = khazad_road_province_modifier
+		}
+		province:3108 = {
+			add_province_modifier = khazad_road_province_modifier
+		}
+		province:3109 = {
+			add_province_modifier = khazad_road_province_modifier
+		}
+		province:768 = {
+			add_province_modifier = khazad_road_province_modifier
+		}
+		province:769 = {
+			add_province_modifier = khazad_road_province_modifier
+		}
+		province:776 = {
+			add_province_modifier = khazad_road_province_modifier
+		}
+		province:775 = {
+			add_province_modifier = khazad_road_province_modifier
+		}
+		province:3140 = {
+			add_province_modifier = khazad_road_province_modifier
+		}
+		province:3144 = {
+			add_province_modifier = khazad_road_province_modifier
+		}
+		province:3150 = {
+			add_province_modifier = khazad_road_province_modifier
+		}
+	}
+
+	# Requirements
+	is_valid = {
+		is_ruler = yes
+		has_title = title:k_khazad_dum
+		character:linefinwe36 = {
+			opinion = {
+				target = root
+				value > 90
+			}
+		}
+	}
+
+	# Cost
+	cost = {
+		gold = {
+			value = 250
+		}
+	}
+
+	# AI
+	ai_check_interval = 12
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+decision_connect_firebeard_road = {
+	title = decision_connect_firebeard_road
+	desc = decision_connect_firebeard_road_desc
+	confirm_text = decision_connect_firebeard_road_confirm
+	selection_tooltip = decision_connect_firebeard_road_tooltip
+	picture = {	
+		reference = "gfx/interface/illustrations/decisions/decision_dwarven_road.dds"
+	}
+	sort_order = 5
+	decision_group_type = realms_in_exile_major
+
+	# Shown
+	is_shown = {
+		is_landed = yes
+		trigger_if = {
+			limit = {
+				OR = {
+					has_title = title:e_durins_folk
+					has_primary_title = title:e_misty_mountains
+					has_primary_title = title:k_khazad_dum
+				}
+			}
+			OR = { 
+				has_title = title:e_durins_folk
+				has_title = title:e_misty_mountains
+				has_title = title:k_khazad_dum
+				has_title = title:d_zirakzigil
+			}
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:decision_west_kazad_road
+			}
+		}
+		trigger_else = {
+			OR = { 
+				has_title = title:e_blue_mountains
+				has_title = title:k_buzra_dum
+				has_title = title:d_ursel_zabad
+			}
+		}
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:decision_connect_firebeard_road
+			}
+		}
+	}
+
+	# Effect
+	effect = {
+		custom_tooltip = decision_connect_firebeard_road.send_message
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:decision_connect_firebeard_road
+		}
+		province:4891 = {
+			add_province_modifier = east_road_province_modifier
+		}
+		province:4892 = {
+			add_province_modifier = east_road_province_modifier
+		}
+		province:4899 = {
+			add_province_modifier = east_road_province_modifier
+		}
+		province:4812 = {
+			add_province_modifier = east_road_province_modifier
+		}
+		province:4811 = {
+			add_province_modifier = east_road_province_modifier
+		}
+		province:4806 = {
+			add_province_modifier = east_road_province_modifier
+		}
+		province:4804 = {
+			add_province_modifier = east_road_province_modifier
+		}
+		province:4267 = {
+			add_province_modifier = east_road_province_modifier
+		}
+		province:4266 = {
+			add_province_modifier = east_road_province_modifier
+		}
+		province:4269 = {
+			add_province_modifier = east_road_province_modifier
+		}
+	}
+
+	# Requirements
+	is_valid = {
+		is_ruler = yes
+		OR = {
+			has_title = title:k_buzra_dum
+			any_vassal = {
+				has_title = title:k_buzra_dum
+			}
+			OR = {
+				trigger_if = { 
+					limit = { exists = title:k_buzra_dum.holder } 
+					title:k_buzra_dum.holder = {
+						opinion = {
+							target = root
+							value > 90
+						}
+					}
+				}
+				trigger_if = { 
+					limit = { exists = title:e_blue_mountains.holder }
+					title:e_blue_mountains.holder = {
+						opinion = {
+							target = root
+							value > 90
+						}
+					}
+				}
+			}
+		}
+		character:lineofcirdan = {
+			opinion = {
+				target = root
+				value > 90
+			}
+		}
+	}
+
+	# Cost
+	cost = {
+		gold = {
+			value = 200
+		}
+	}
+
+	# AI
+	ai_check_interval = 12
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+decision_connect_broadbeam_road = {
+	title = decision_connect_broadbeam_road
+	desc = decision_connect_broadbeam_road_desc
+	confirm_text = decision_connect_broadbeam_road_confirm
+	selection_tooltip = decision_connect_broadbeam_road_tooltip
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_dwarven_road.dds"
+	}
+	sort_order = 5
+	decision_group_type = realms_in_exile_major
+
+	# Shown
+	is_shown = {
+		is_landed = yes
+		trigger_if = {
+			limit = {
+				OR = {
+					has_title = title:e_durins_folk
+					has_primary_title = title:e_misty_mountains
+					has_primary_title = title:k_khazad_dum
+				}
+			}
+			OR = { 
+				has_title = title:e_durins_folk
+				has_title = title:e_misty_mountains
+				has_title = title:k_khazad_dum
+				has_title = title:d_zirakzigil
+			}
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:decision_west_kazad_road
+			}
+		}
+		trigger_else = {
+			OR = { 
+				has_title = title:e_blue_mountains
+				has_title = title:k_belegost
+				has_title = title:k_nogrod
+				has_title = title:d_mount_dolmed
+				has_title = title:d_belegost
+				has_title = title:d_nogrod
+			}
+		}
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:decision_connect_broadbeam_road
+			}
+		}
+	}
+
+	# Effect
+	effect = {
+		custom_tooltip = decision_connect_broadbeam_road.send_message
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:decision_connect_broadbeam_road
+		}
+		province:4869 = {
+			add_province_modifier = east_road_province_modifier
+		}
+		province:4870 = {
+			add_province_modifier = east_road_province_modifier
+		}
+		province:4886 = {
+			add_province_modifier = east_road_province_modifier
+		}
+		province:4887 = {
+			add_province_modifier = east_road_province_modifier
+		}
+		province:4888 = {
+			add_province_modifier = east_road_province_modifier
+		}
+		province:4881 = {
+			add_province_modifier = east_road_province_modifier
+		}
+		province:4880 = {
+			add_province_modifier = east_road_province_modifier
+		}
+		province:4889 = {
+			add_province_modifier = east_road_province_modifier
+		}
+		province:4842 = {
+			add_province_modifier = east_road_province_modifier
+		}
+		province:4890 = {
+			add_province_modifier = east_road_province_modifier
+		}
+		province:4841 = {
+			add_province_modifier = east_road_province_modifier
+		}
+		province:4304 = {
+			add_province_modifier = east_road_province_modifier
+		}
+		province:4306 = {
+			add_province_modifier = east_road_province_modifier
+		}
+		province:4322 = {
+			add_province_modifier = east_road_province_modifier
+		}
+		province:4317 = {
+			add_province_modifier = east_road_province_modifier
+		}
+		province:4316 = {
+			add_province_modifier = east_road_province_modifier
+		}
+		province:4286 = {
+			add_province_modifier = east_road_province_modifier
+		}
+		province:4293 = {
+			add_province_modifier = east_road_province_modifier
+		}
+	}
+
+	# Requirements
+	is_valid = {
+		is_ruler = yes
+		OR = {
+			has_title = title:k_belegost
+			any_vassal = {
+				has_title = title:k_belegost
+			}
+			OR = {
+				trigger_if = { 
+					limit = { exists = title:e_blue_mountains.holder }
+					title:e_blue_mountains.holder = {
+						opinion = {
+							target = root
+							value > 90
+						}
+					}
+				}
+				trigger_if = { 
+					limit = { AND = { exists = title:k_nogrod.holder exists = title:k_belegost.holder NOT = { exists = title:e_blue_mountains.holder } } }
+					AND = { 
+						title:k_nogrod.holder = {
+							opinion = {
+								target = root
+								value > 90
+							}
+						}
+						title:k_belegost.holder = {
+							opinion = {
+								target = root
+								value > 90
+							}
+						}
+					}
+				}
+				trigger_if = { 
+					limit = { AND = { exists = title:k_nogrod.holder NOT = { exists = title:k_belegost.holder } NOT = { exists = title:e_blue_mountains.holder } } }
+					title:k_nogrod.holder = {
+						opinion = {
+							target = root
+							value > 90
+						}
+					}
+				}
+				trigger_if = { 
+					limit = { AND = { exists = title:k_belegost.holder NOT = { exists = title:k_nogrod.holder } NOT = { exists = title:e_blue_mountains.holder } } } 
+					title:k_belegost.holder = {
+						opinion = {
+							target = root
+							value > 90
+						}
+					}
+				}
+			}
+		}
+		OR = { 
+			OR = {
+				has_title = title:k_nogrod
+					any_vassal = {
+						has_title = title:k_nogrod
+					}
+			}
+			OR = {
+				trigger_if = { 
+					limit = { exists = title:e_blue_mountains.holder }
+					title:e_blue_mountains.holder = {
+						opinion = {
+							target = root
+							value > 90
+						}
+					}
+				}
+				trigger_if = { 
+					limit = { AND = { exists = title:k_nogrod.holder exists = title:k_belegost.holder NOT = { exists = title:e_blue_mountains.holder } } }
+					AND = { 
+						title:k_nogrod.holder = {
+							opinion = {
+								target = root
+								value > 90
+							}
+						}
+						title:k_belegost.holder = {
+							opinion = {
+								target = root
+								value > 90
+							}
+						}
+					}
+				}
+				trigger_if = { 
+					limit = { AND = { exists = title:k_nogrod.holder NOT = { exists = title:k_belegost.holder } NOT = { exists = title:e_blue_mountains.holder } } }
+					title:k_nogrod.holder = {
+						opinion = {
+							target = root
+							value > 90
+						}
+					}
+				}
+				trigger_if = { 
+					limit = { AND = { exists = title:k_belegost.holder NOT = { exists = title:k_nogrod.holder } NOT = { exists = title:e_blue_mountains.holder } } } 
+					title:k_belegost.holder = {
+						opinion = {
+							target = root
+							value > 90
+						}
+					}
+				}
+			}
+		}
+		character:lineofcirdan = {
+			opinion = {
+				target = root
+				value > 90
+			}
+		}
+	}
+	# Cost
+	cost = {
+		gold = {
+			value = 200
+		}
+	}
+
+	# AI
+	ai_check_interval = 12
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+decision_connect_west_east_with_forest_road = {
+	title = decision_west_east_with_forest_road
+	desc = decision_west_east_with_forest_road_desc
+	confirm_text = decision_west_east_with_forest_road_confirm
+	selection_tooltip = decision_west_east_with_forest_road_tooltip
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_dwarven_road.dds"
+	}
+	sort_order = 5
+	decision_group_type = realms_in_exile_major
+
+	# Shown
+	is_shown = {
+		is_landed = yes
+		OR = { 
+			has_title = title:e_durins_folk
+			has_title = title:e_misty_mountains
+			has_title = title:k_khazad_dum
+			has_title = title:d_zirakzigil
+		}
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:decision_connect_west_east_with_forest_road
+			}
+		}
+	}
+
+	# Effect
+	effect = {
+		custom_tooltip = decision_connect_west_east_with_forest_road.send_message
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:decision_connect_west_east_with_forest_road
+		}
+		province:4339 = {
+			add_province_modifier = east_road_province_modifier
+		}
+		province:4342 = {
+			add_province_modifier = east_road_province_modifier
+		}
+		province:4348 = {
+			add_province_modifier = east_road_province_modifier
+		}
+		province:4347 = {
+			add_province_modifier = east_road_province_modifier
+		}
+		province:4349 = {
+			add_province_modifier = east_road_province_modifier
+		}
+		province:4517 = {
+			add_province_modifier = east_road_province_modifier
+		}
+		province:4518 = {
+			add_province_modifier = east_road_province_modifier
+		}
+	}
+
+	# Requirements
+	is_valid = {
+		is_ruler = yes
+		has_title = title:k_khazad_dum
+		OR = {
+			has_title = title:k_high_pass
+				any_vassal = {
+					has_title = title:k_high_pass
+				}
+		}
+		OR = {
+			has_title = title:d_high_pass
+				any_vassal = {
+					has_title = title:d_high_pass
+				}
+		}
+		character:linefinwe27 = {
+			opinion = {
+				target = root
+				value > 90
+			}
+		}
+	}
+
+	# Cost
+	cost = {
+		gold = {
+			value = 200
+		}
+	}
+
+	# AI
+	ai_check_interval = 12
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+decision_connect_erebor_with_forest_road = {
+	title = decision_erebor_with_forest_road
+	desc = decision_erebor_with_forest_road_desc
+	confirm_text = decision_erebor_with_forest_road_confirm
+	selection_tooltip = decision_erebor_with_forest_road_tooltip
+	picture = { 
+		reference = "gfx/interface/illustrations/decisions/decision_dwarven_road.dds"
+	}
+	sort_order = 5
+	decision_group_type = realms_in_exile_major
+
+	# Shown
+	is_shown = {
+		is_landed = yes
+		trigger_if = {
+			limit = {
+				OR = {
+					has_title = title:e_durins_folk
+					has_primary_title = title:e_misty_mountains
+					has_primary_title = title:k_khazad_dum
+				}
+			}
+			OR = { 
+				has_title = title:e_durins_folk
+				has_title = title:e_misty_mountains
+				has_title = title:k_khazad_dum
+				has_title = title:d_zirakzigil
+			}
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:decision_east_kazad_road
+			}
+		}
+		trigger_else = {
+			OR = { 
+				has_title = title:e_iron_mountains
+				has_title = title:k_erebor
+				has_title = title:k_iron_hills
+				has_title = title:d_erebor
+				has_title = title:d_azanulinbar_dum
+			}
+		}
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:decision_connect_erebor_with_forest_road
+			}
+		}
+	}
+
+	# Effect
+	effect = {
+		custom_tooltip = decision_connect_erebor_with_forest_road.send_message
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:decision_connect_erebor_with_forest_road
+		}
+		province:3429 = {
+			add_province_modifier = old_forest_road_province_modifier
+		}
+		province:3411 = {
+			add_province_modifier = old_forest_road_province_modifier
+		}
+		province:3408 = {
+			add_province_modifier = old_forest_road_province_modifier
+		}
+		province:3410 = {
+			add_province_modifier = old_forest_road_province_modifier
+		}
+		province:5055 = {
+			add_province_modifier = old_forest_road_province_modifier
+		}
+		province:5056 = {
+			add_province_modifier = old_forest_road_province_modifier
+		}
+		province:5046 = {
+			add_province_modifier = old_forest_road_province_modifier
+		}
+		province:5041 = {
+			add_province_modifier = old_forest_road_province_modifier
+		}
+	}
+
+	# Requirements
+	is_valid = {
+		is_ruler = yes
+		OR = {
+			has_title = title:k_iron_hills
+			any_vassal = {
+				has_title = title:k_iron_hills
+			}
+			trigger_if = { 
+				limit = { exists = title:k_iron_hills.holder } 
+				title:k_iron_hills.holder = {
+					opinion = {
+						target = root
+						value > 90
+					}
+				}
+			}
+		}
+		title:k_dale.holder = {
+			opinion = {
+				target = root
+				value > 90
+			}
+		}
+		character:lineoforopher3 = {
+			opinion = {
+				target = root
+				value > 90
+			}
+		}
+	}
+
+	# Cost
+	cost = {
+		gold = {
+			value = 200
+		}
+	}
+
+	# AI
+	ai_check_interval = 12
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+decision_reform_old_dwarf_road = {
+	title = decision_reform_old_dwarf_road
+	desc = decision_reform_old_dwarf_road_desc
+	confirm_text = decision_reform_old_dwarf_road_confirm
+	selection_tooltip = decision_reform_old_dwarf_road_tooltip
+	picture = { 
+		reference = "gfx/interface/illustrations/decisions/decision_dwarven_road.dds"
+	}
+	sort_order = 5
+	decision_group_type = realms_in_exile_major
+
+	# Shown
+	is_shown = {
+		is_landed = yes
+		is_target_in_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:decision_west_kazad_road
+		}
+		is_target_in_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:decision_east_kazad_road
+		}
+		is_target_in_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:decision_connect_firebeard_road
+		}
+		is_target_in_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:decision_connect_broadbeam_road
+		}
+		is_target_in_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:decision_connect_west_east_with_forest_road
+		}
+		is_target_in_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:decision_connect_erebor_with_forest_road
+		}
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:decision_reform_old_dwarf_road
+			}
+		}
+	}
+
+	# Effect
+	effect = {
+		custom_tooltip = decision_reform_old_dwarf_road.send_message
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:decision_reform_old_dwarf_road
+		}
+		every_province = {
+			limit = { 
+				OR = { 
+					has_province_modifier = old_forest_road_province_modifier
+					has_province_modifier = khazad_road_province_modifier
+					has_province_modifier = east_road_province_modifier
+					has_province_modifier = erebor_road_province_modifier 
+				}
+			}
+			remove_province_modifier = old_forest_road_province_modifier
+			remove_province_modifier = khazad_road_province_modifier
+			remove_province_modifier = east_road_province_modifier
+			remove_province_modifier = erebor_road_province_modifier 
+			add_province_modifier = old_dwarf_road_province_modifier
+		}
+	}
+
+	# Requirements
+	is_valid = {
+		is_ruler = yes
+		OR = { 
+			has_title = title:e_durins_folk
+			has_title = title:e_misty_mountains
+		}
+	}
+
+	# Cost
+	cost = {
+		gold = {
+			value = 450
+		}
+	}
+
+	# AI
+	ai_check_interval = 12
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+decision_white_mountains_road_north_south = {
+	title = decision_white_mountains_road_north_south
+	desc = decision_white_mountains_road_north_south_desc
+	confirm_text = decision_white_mountains_road_north_south_confirm
+	selection_tooltip = decision_white_mountains_road_north_south_tooltip
+	picture = { 
+		reference = "gfx/interface/illustrations/decisions/decision_dwarven_road.dds"
+	}
+	sort_order = 5
+	decision_group_type = realms_in_exile_major
+
+	# Shown
+	is_shown = {
+		is_landed = yes
+		OR = { 
+			has_title = title:e_white_mountains
+			has_title = title:k_eastern_white_mountains
+			any_vassal = {
+				has_title = title:k_eastern_white_mountains
+			}
+		}
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:decision_white_mountains_road_north_south
+			}
+		}
+	}
+
+	# Effect
+	effect = {
+		custom_tooltip = decision_white_mountains_road_north_south.send_message
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:decision_white_mountains_road_north_south
+		}
+		province:47 = {
+			add_province_modifier = crystal_road_province_modifier
+		}
+		province:5247 = {
+			add_province_modifier = crystal_road_province_modifier
+		}
+		province:5248 = {
+			add_province_modifier = crystal_road_province_modifier
+		}
+		province:6245 = {
+			add_province_modifier = crystal_road_province_modifier
+		}
+		province:6246 = {
+			add_province_modifier = crystal_road_province_modifier
+		}
+		province:6248 = {
+			add_province_modifier = crystal_road_province_modifier
+		}
+		province:6250 = {
+			add_province_modifier = crystal_road_province_modifier
+		}
+		province:6249 = {
+			add_province_modifier = crystal_road_province_modifier
+		}
+		province:419 = {
+			add_province_modifier = crystal_road_province_modifier
+		}
+		province:6244 = {
+			add_province_modifier = crystal_road_province_modifier
+		}
+		province:6243 = {
+			add_province_modifier = crystal_road_province_modifier
+		}
+		province:19 = {
+			add_province_modifier = crystal_road_province_modifier
+		}
+		province:18 = {
+			add_province_modifier = crystal_road_province_modifier
+		}
+		province:2 = {
+			add_province_modifier = crystal_road_province_modifier
+		}
+		province:6241 = {
+			add_province_modifier = crystal_road_province_modifier
+		}
+	}
+
+	# Requirements
+	is_valid = {
+		is_ruler = yes
+		OR = { 
+			has_title = title:e_white_mountains
+			has_title = title:k_eastern_white_mountains
+			any_vassal = {
+				has_title = title:k_eastern_white_mountains
+			}
+		}
+		title:k_rohan.holder = {
+			opinion = {
+				target = root
+				value > 90
+			}
+		}
+		title:c_minas_tirith.holder = {
+			opinion = {
+				target = root
+				value > 90
+			}
+		}
+	}
+
+	# Cost
+	cost = {
+		gold = {
+			value = 600
+		}
+	}
+
+	# AI
+	ai_check_interval = 12
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+decision_build_eregion_road = {
+	title = decision_build_eregion_road
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					OR = {
+						has_primary_title = title:e_orrostar
+						has_primary_title = title:e_noldor
+					}
+				}
+				desc = decision_build_eregion_road_desc
+			}
+			triggered_desc = {
+				trigger = {
+					OR = {
+						has_primary_title = title:e_numenor_in_exile
+						has_primary_title = title:e_reunitedkingdom
+					}
+				}
+				desc = decision_build_eregion_road_mannish_desc
+			}
+			desc = decision_build_eregion_road_desc
+		}
+	}
+	confirm_text = decision_build_eregion_road_confirm
+	selection_tooltip = decision_build_eregion_road_tooltip
+	picture = { 
+		reference = "gfx/interface/illustrations/decisions/decision_elven_road.dds"
+	}
+	sort_order = 5
+	decision_group_type = realms_in_exile_major
+
+	# Shown
+	is_shown = {
+		is_landed = yes
+		OR = { 
+			OR = { 
+				has_title = title:e_orrostar
+				has_title = title:e_noldor
+			}
+			AND = { 
+				OR = { 
+					has_title = title:e_numenor_in_exile
+					has_title = title:e_reunitedkingdom
+				}
+				is_target_in_global_variable_list = {
+					name = unavailable_unique_decisions
+					target = flag:decision_integrate_eregion
+				}
+			}
+		}
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:decision_build_eregion_road
+			}
+		}
+	}
+
+	# Effect
+	effect = {
+		custom_tooltip = decision_build_eregion_road.send_message
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:decision_build_eregion_road
+		}
+		province:4537 = {
+			add_province_modifier = eregion_road_province_modifier
+		}
+		province:4680 = {
+			add_province_modifier = eregion_road_province_modifier
+		}
+		province:4363 = {
+			add_province_modifier = eregion_road_province_modifier
+		}
+		province:4362 = {
+			add_province_modifier = eregion_road_province_modifier
+		}
+		province:4353 = {
+			add_province_modifier = eregion_road_province_modifier
+		}
+		province:4351 = {
+			add_province_modifier = eregion_road_province_modifier
+		}
+		province:4352 = {
+			add_province_modifier = eregion_road_province_modifier
+		}
+		province:4355 = {
+			add_province_modifier = eregion_road_province_modifier
+		}
+		province:4356 = {
+			add_province_modifier = eregion_road_province_modifier
+		}
+		province:4361 = {
+			add_province_modifier = eregion_road_province_modifier
+		}
+		province:4354 = {
+			add_province_modifier = eregion_road_province_modifier
+		}
+		province:4360 = {
+			add_province_modifier = eregion_road_province_modifier
+		}
+		province:4376 = {
+			add_province_modifier = eregion_road_province_modifier
+		}
+		province:4367 = {
+			add_province_modifier = eregion_road_province_modifier
+		}
+		province:4369 = {
+			add_province_modifier = eregion_road_province_modifier
+		}
+		province:4384 = {
+			add_province_modifier = eregion_road_province_modifier
+		}
+		province:4382 = {
+			add_province_modifier = eregion_road_province_modifier
+		}
+		province:4385 = {
+			add_province_modifier = eregion_road_province_modifier
+		}
+		province:4391 = {
+			add_province_modifier = eregion_road_province_modifier
+		}
+		province:4393 = {
+			add_province_modifier = eregion_road_province_modifier
+		}
+		province:4400 = {
+			add_province_modifier = eregion_road_province_modifier
+		}
+		province:4399 = {
+			add_province_modifier = eregion_road_province_modifier
+		}
+		province:4397 = {
+			add_province_modifier = eregion_road_province_modifier
+		}
+		province:4338 = {
+			add_province_modifier = eregion_road_province_modifier
+		}
+		province:4337 = {
+			add_province_modifier = eregion_road_province_modifier
+		}
+	}
+
+	# Requirements
+	is_valid = {
+		is_ruler = yes
+		has_title = title:k_eregion
+		OR = { 
+			has_title = title:e_orrostar
+			has_title = title:e_noldor
+		}
+	}
+
+	# Cost
+	cost = {
+		gold = {
+			value = 600
+		}
+	}
+
+	# AI
+	ai_check_interval = 12
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+decision_expand_woodland_road = {
+	title = decision_expand_woodland_road
+	desc = decision_expand_woodland_road_desc
+	confirm_text = decision_expand_woodland_road_confirm
+	selection_tooltip = decision_expand_woodland_road_tooltip
+	picture = { 
+		reference = "gfx/interface/illustrations/decisions/decision_elven_road.dds"
+	}
+	sort_order = 5
+	decision_group_type = realms_in_exile_major
+
+	# Shown
+	is_shown = {
+		is_landed = yes
+		OR = {  
+			has_title = title:k_lasgalen
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:claim_amon_lanc_for_laurelindorenan
+			}
+		}
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:decision_expand_woodland_road
+			}
+		}
+	}
+
+	# Effect
+	effect = {
+		custom_tooltip = decision_expand_woodland_road.send_message
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:decision_expand_woodland_road
+		}
+		every_province = {
+			limit = { 
+				has_province_modifier = woodland_realm_1_road_province_modifier
+			}
+			remove_province_modifier = woodland_realm_1_road_province_modifier
+			add_province_modifier = woodland_realm_2_road_province_modifier
+		}
+		province:3247 = {
+			add_province_modifier = woodland_realm_2_road_province_modifier
+		}
+		province:3330 = {
+			add_province_modifier = woodland_realm_2_road_province_modifier
+		}
+		province:3331 = {
+			add_province_modifier = woodland_realm_2_road_province_modifier
+		}
+		province:3332 = {
+			add_province_modifier = woodland_realm_2_road_province_modifier
+		}
+		province:3334 = {
+			add_province_modifier = woodland_realm_2_road_province_modifier
+		}
+		province:3336 = {
+			add_province_modifier = woodland_realm_2_road_province_modifier
+		}
+		province:3335 = {
+			add_province_modifier = woodland_realm_2_road_province_modifier
+		}
+		province:3337 = {
+			add_province_modifier = woodland_realm_2_road_province_modifier
+		}
+		province:3325 = {
+			add_province_modifier = woodland_realm_2_road_province_modifier
+		}
+		province:3324 = {
+			add_province_modifier = woodland_realm_2_road_province_modifier
+		}
+		province:3319 = {
+			add_province_modifier = woodland_realm_2_road_province_modifier
+		}
+		province:3311 = {
+			add_province_modifier = woodland_realm_2_road_province_modifier
+		}
+		province:3309 = {
+			add_province_modifier = woodland_realm_2_road_province_modifier
+		}
+		province:3317 = {
+			add_province_modifier = woodland_realm_2_road_province_modifier
+		}
+		province:3312 = {
+			add_province_modifier = woodland_realm_2_road_province_modifier
+		}
+		province:3313 = {
+			add_province_modifier = woodland_realm_2_road_province_modifier
+		}
+		province:3364 = {
+			add_province_modifier = woodland_realm_2_road_province_modifier
+		}
+		province:3365 = {
+			add_province_modifier = woodland_realm_2_road_province_modifier
+		}
+		province:3357 = {
+			add_province_modifier = woodland_realm_2_road_province_modifier
+		}
+		province:3358 = {
+			add_province_modifier = woodland_realm_2_road_province_modifier
+		}
+		province:3355 = {
+			add_province_modifier = woodland_realm_2_road_province_modifier
+		}
+		province:3353 = {
+			add_province_modifier = woodland_realm_2_road_province_modifier
+		}
+		province:3340 = {
+			add_province_modifier = woodland_realm_2_road_province_modifier
+		}
+		province:3339 = {
+			add_province_modifier = woodland_realm_2_road_province_modifier
+		}
+		province:3338 = {
+			add_province_modifier = woodland_realm_2_road_province_modifier
+		}
+	}
+
+	# Requirements
+	is_valid = {
+		is_ruler = yes
+		OR = { 
+			AND = { 
+				is_target_in_global_variable_list = {
+					name = unavailable_unique_decisions
+					target = flag:decision_establish_high_kingdom_of_eryn_lasgalen
+				}
+				has_title = title:e_greenwood
+			}
+			AND = { 
+				is_target_in_global_variable_list = {
+					name = unavailable_unique_decisions
+					target = flag:claim_amon_lanc_for_laurelindorenan
+				}
+				has_title = title:e_laurelindorenan
+				character:lineoforopher3 = {
+					opinion = {
+						target = root
+						value > 90
+					}
+				}
+			}
+		}
+	}
+
+	# Cost
+	cost = {
+		gold = {
+			value = 600
+		}
+	}
+
+	# AI
+	ai_check_interval = 12
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+decision_expand_lorien_road = {
+	title = decision_expand_lorien_road
+	desc = decision_expand_lorien_road_desc
+	confirm_text = decision_expand_lorien_road_confirm
+	selection_tooltip = decision_expand_lorien_road_tooltip
+	picture = { 
+		reference = "gfx/interface/illustrations/decisions/decision_elven_road.dds"
+	}
+	sort_order = 5
+	decision_group_type = realms_in_exile_major
+
+	# Shown
+	is_shown = {
+		is_landed = yes
+		OR = {  
+			has_title = title:k_lothlorien
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:decision_establish_high_kingdom_of_eryn_lasgalen
+			}
+		}
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:decision_expand_lorien_road
+			}
+		}
+	}
+
+	# Effect
+	effect = {
+		custom_tooltip = decision_expand_lorien_road.send_message
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:decision_expand_lorien_road
+		}
+		every_province = {
+			limit = { 
+				has_province_modifier = lorien_realm_1_road_province_modifier
+			}
+			remove_province_modifier = lorien_realm_1_road_province_modifier
+			add_province_modifier = lorien_realm_2_road_province_modifier
+		}
+		province:761 = {
+			add_province_modifier = lorien_realm_2_road_province_modifier
+		}
+		province:760 = {
+			add_province_modifier = lorien_realm_2_road_province_modifier
+		}
+		province:759 = {
+			add_province_modifier = lorien_realm_2_road_province_modifier
+		}
+		province:771 = {
+			add_province_modifier = lorien_realm_2_road_province_modifier
+		}
+		province:3346 = {
+			add_province_modifier = lorien_realm_2_road_province_modifier
+		}
+		province:3344 = {
+			add_province_modifier = lorien_realm_2_road_province_modifier
+		}
+		province:3343 = {
+			add_province_modifier = lorien_realm_2_road_province_modifier
+		}
+		province:3356 = {
+			add_province_modifier = lorien_realm_2_road_province_modifier
+		}
+		province:3339 = {
+			add_province_modifier = lorien_realm_2_road_province_modifier
+		}
+		province:3340 = {
+			add_province_modifier = lorien_realm_2_road_province_modifier
+		}
+		province:3338 = {
+			add_province_modifier = lorien_realm_2_road_province_modifier
+		}
+	}
+
+	# Requirements
+	is_valid = {
+		is_ruler = yes
+		OR = { 
+			AND = { 
+				is_target_in_global_variable_list = {
+					name = unavailable_unique_decisions
+					target = flag:decision_establish_high_kingdom_of_eryn_lasgalen
+				}
+				has_title = title:e_greenwood
+				character:linefinwe36 = {
+					opinion = {
+						target = root
+						value > 90
+					}
+				}
+			}
+			AND = { 
+				is_target_in_global_variable_list = {
+					name = unavailable_unique_decisions
+					target = flag:claim_amon_lanc_for_laurelindorenan
+				}
+				has_title = title:e_laurelindorenan
+			}
+		}
+	}
+
+	# Cost
+	cost = {
+		gold = {
+			value = 600
+		}
+	}
+
+	# AI
+	ai_check_interval = 12
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+decision_rebuild_erebor_road = {
+	title = decision_rebuild_erebor_road
+	desc = decision_rebuild_erebor_road_desc
+	confirm_text = decision_rebuild_erebor_road_confirm
+	selection_tooltip = decision_rebuild_erebor_road_tooltip
+	picture = { 
+		reference = "gfx/interface/illustrations/decisions/decision_dwarven_road.dds"
+	}
+	sort_order = 5
+	decision_group_type = realms_in_exile_major
+
+	# Shown
+	is_shown = {
+		is_landed = yes
+		OR = { 
+			has_title = title:k_erebor
+			has_title = title:d_erebor
+			any_vassal = {
+				OR = { 
+					has_title = title:k_erebor
+					has_title = title:d_erebor
+				}
+			}
+		}
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:decision_rebuild_erebor_road
+			}
+		}
+		NOT = { 
+			OR = { 
+				province:3396 = { 
+					has_province_modifier = erebor_road_province_modifier 
+				}
+				province:3393 = {
+					has_province_modifier = erebor_road_province_modifier 
+				}
+				province:3391 = {
+					has_province_modifier = erebor_road_province_modifier 
+				}
+				province:3390 = {
+					has_province_modifier = erebor_road_province_modifier 
+				}
+				province:4408 = {
+					has_province_modifier = erebor_road_province_modifier 
+				}
+			}
+		}
+	}
+
+	# Effect
+	effect = {
+		custom_tooltip = decision_rebuild_erebor_road.send_message
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:decision_rebuild_erebor_road
+		}
+		province:3396 = {
+			add_province_modifier = erebor_road_province_modifier 
+		}
+		province:3393 = {
+			add_province_modifier = erebor_road_province_modifier 
+		}
+		province:3391 = {
+			add_province_modifier = erebor_road_province_modifier 
+		}
+		province:3390 = {
+			add_province_modifier = erebor_road_province_modifier 
+		}
+		province:4408 = {
+			add_province_modifier = erebor_road_province_modifier 
+		}
+	}
+
+	# Requirements
+	is_valid = {
+		custom_tooltip = {
+			text = doesnt_have_smaug_erebor
+			province:4408 = {
+				NOT = {
+					has_building = smaug_desolation 
+				}
+			}		
+		}
+		is_ruler = yes
+		OR = { 
+			has_title = title:k_erebor
+			has_title = title:d_erebor
+			any_vassal = {
+				OR = { 
+					has_title = title:k_erebor
+					has_title = title:d_erebor
+				}
+			}
+		}
+	}
+
+	# Cost
+	cost = {
+		gold = {
+			value = 600
+		}
+	}
+
+	# AI
+	ai_check_interval = 12
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
