@@ -49,7 +49,6 @@ on_travel_plan_movement = {
 					has_province_modifier = wineland_way_road_province_modifier 
 					has_province_modifier = doom_road_province_modifier 
 					has_province_modifier = moroth_road_province_modifier 
-					has_province_modifier = abrakhar_caravan_province_modifier 
 					has_province_modifier = whitegold_road_province_modifier 
 					has_province_modifier = dunesea_caravan_province_modifier 
 					has_province_modifier = gwathlo_road_province_modifier 
@@ -61,6 +60,14 @@ on_travel_plan_movement = {
 					has_province_modifier = woodland_realm_2_road_province_modifier
 					has_province_modifier = lorien_realm_1_road_province_modifier
 					has_province_modifier = lorien_realm_2_road_province_modifier
+					has_province_modifier = khand_vosham_road_province_modifier
+					has_province_modifier = siryan_road_province_modifier
+					has_province_modifier = baruzimabul_road_province_modifier
+					has_province_modifier = lyneria_road_province_modifier
+					has_province_modifier = nhazadh_causeway_province_modifier
+					has_province_modifier = shay_caravan_province_modifier 
+					has_province_modifier = great_khy_road_province_modifier
+					has_province_modifier = ormal_roads_province_modifier
 				}
 			}
 			add_travel_plan_modifier = travel_steeds_acquired_modifier
@@ -88,7 +95,6 @@ on_travel_plan_movement = {
 						has_province_modifier = wineland_way_road_province_modifier 
 						has_province_modifier = doom_road_province_modifier 
 						has_province_modifier = moroth_road_province_modifier 
-						has_province_modifier = abrakhar_caravan_province_modifier 
 						has_province_modifier = whitegold_road_province_modifier 
 						has_province_modifier = dunesea_caravan_province_modifier 
 						has_province_modifier = gwathlo_road_province_modifier 
@@ -100,6 +106,14 @@ on_travel_plan_movement = {
 						has_province_modifier = woodland_realm_2_road_province_modifier
 						has_province_modifier = lorien_realm_1_road_province_modifier
 						has_province_modifier = lorien_realm_2_road_province_modifier
+						has_province_modifier = khand_vosham_road_province_modifier
+						has_province_modifier = siryan_road_province_modifier
+						has_province_modifier = baruzimabul_road_province_modifier
+						has_province_modifier = lyneria_road_province_modifier
+						has_province_modifier = nhazadh_causeway_province_modifier
+						has_province_modifier = shay_caravan_province_modifier 
+						has_province_modifier = great_khy_road_province_modifier
+						has_province_modifier = ormal_roads_province_modifier
 					}
 				}
 			}

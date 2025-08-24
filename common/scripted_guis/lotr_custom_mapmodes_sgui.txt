@@ -200,7 +200,6 @@ trade_routes_map = {
 							has_province_modifier = wineland_way_road_province_modifier 
 							has_province_modifier = doom_road_province_modifier 
 							has_province_modifier = moroth_road_province_modifier 
-							has_province_modifier = abrakhar_caravan_province_modifier 
 							has_province_modifier = whitegold_road_province_modifier 
 							has_province_modifier = dunesea_caravan_province_modifier 
 							has_province_modifier = gwathlo_road_province_modifier 
@@ -213,10 +212,68 @@ trade_routes_map = {
 							has_province_modifier = lorien_realm_1_road_province_modifier
 							has_province_modifier = lorien_realm_2_road_province_modifier
 							has_province_modifier = men_argrun_road_province_modifier
+							has_province_modifier = khand_vosham_road_province_modifier
+							has_province_modifier = siryan_road_province_modifier
+							has_province_modifier = baruzimabul_road_province_modifier
+							has_province_modifier = lyneria_road_province_modifier
+							has_province_modifier = nhazadh_causeway_province_modifier
+							has_province_modifier = shay_caravan_province_modifier 
+							has_province_modifier = great_khy_road_province_modifier
+							has_province_modifier = ormal_roads_province_modifier
 						}
 						##End Quonton
 					}
 					barony = { set_color_from_title = title:d_tributary_map_tributary_state }
+				}
+				if = {
+					# Good
+					limit = {
+						##Quonton
+						OR = {
+							has_province_modifier = harlond_port_province_modifier
+							has_province_modifier = forlond_port_province_modifier
+							has_province_modifier = eshellond_port_province_modifier
+							has_province_modifier = mithrhulond_port_province_modifier
+							has_province_modifier = mithannunlond_port_province_modifier
+							has_province_modifier = bozisha_dar_port_province_modifier
+							has_province_modifier = kandalar_port_province_modifier
+							has_province_modifier = jorash_port_province_modifier
+							has_province_modifier = kantilya_port_province_modifier
+							has_province_modifier = sanarth_port_province_modifier
+							has_province_modifier = majeha_port_province_modifier
+							has_province_modifier = pyrador_port_province_modifier
+							has_province_modifier = tul_harar_port_province_modifier
+							has_province_modifier = lyneria_port_province_modifier 
+							has_province_modifier = inyaloni_port_province_modifier 
+							has_province_modifier = kadar_abar_narik_port_province_modifier 
+							has_province_modifier = gilmileth_port_province_modifier 
+							has_province_modifier = sarul_port_province_modifier 
+							has_province_modifier = arpel_port_province_modifier 
+							has_province_modifier = urulomik_port_province_modifier 
+							has_province_modifier = mispir_port_province_modifier 
+							has_province_modifier = inzilloni_port_province_modifier
+							has_province_modifier = ishtra_port_province_modifier
+							has_province_modifier = annon_druin_port_province_modifier
+							has_province_modifier = ramlond_port_province_modifier
+							has_province_modifier = linhir_port_province_modifier
+							has_province_modifier = serelond_port_province_modifier
+							has_province_modifier = hyarmendacil_port_province_modifier
+							has_province_modifier = ethir_harnen_port_province_modifier
+							has_province_modifier = suthure_port_province_modifier
+							has_province_modifier = sornomar_port_province_modifier
+							has_province_modifier = ciryandur_port_province_modifier
+							has_province_modifier = korlea_port_province_modifier
+							has_province_modifier = dol_amroth_port_province_modifier
+							has_province_modifier = kadar_an_kharadun_port_province_modifier
+							has_province_modifier = urezayaneth_port_province_modifier 
+							has_province_modifier = lond_daer_port_province_modifier
+							has_province_modifier = umbar_port_province_modifier
+							has_province_modifier = pelargir_port_province_modifier
+							has_province_modifier = osgiliath_port_province_modifier
+						}
+						##End Quonton
+					}
+					barony = { set_color_from_title = title:d_port_map_quonton }
 				}
 			}
 			remove_global_variable = custom_map_mode_changing

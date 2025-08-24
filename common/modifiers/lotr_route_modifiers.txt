@@ -877,59 +877,17 @@ whitegold_road_income_character_modifier_7 = {
 
 whitegold_road_income_character_modifier_8 = {
 	icon = economy_positive
-	monthly_income = 8
+	monthly_income = 7
 }
 
-#Abrakhar Caravan Routes
-abrakhar_caravan_province_modifier = {
-	icon = economy_positive
-	monthly_income = 0.1
-	development_growth = 0.05
-}
-
-abrakhar_caravan_income_character_modifier_1 = {
-	icon = economy_positive
-	monthly_income = 1
-}
-
-abrakhar_caravan_income_character_modifier_2 = {
-	icon = economy_positive
-	monthly_income = 2
-}
-
-abrakhar_caravan_income_character_modifier_3 = {
-	icon = economy_positive
-	monthly_income = 3
-}
-
-abrakhar_caravan_income_character_modifier_4 = {
-	icon = economy_positive
-	monthly_income = 4
-}
-
-abrakhar_caravan_income_character_modifier_5 = {
-	icon = economy_positive
-	monthly_income = 5
-}
-
-abrakhar_caravan_income_character_modifier_6 = {
-	icon = economy_positive
-	monthly_income = 6
-}
-
-abrakhar_caravan_income_character_modifier_7 = {
+whitegold_road_income_character_modifier_9 = {
 	icon = economy_positive
 	monthly_income = 8
 }
 
-abrakhar_caravan_income_character_modifier_8 = {
+whitegold_road_income_character_modifier_10 = {
 	icon = economy_positive
 	monthly_income = 10
-}
-
-abrakhar_caravan_income_character_modifier_9 = {
-	icon = economy_positive
-	monthly_income = 12
 }
 
 #Dune Sea Caravan Routes
@@ -1005,7 +963,23 @@ dunesea_caravan_income_character_modifier_13 = {
 }
 dunesea_caravan_income_character_modifier_14 = {
 	icon = economy_positive
+	monthly_income = 18
+}
+dunesea_caravan_income_character_modifier_15 = {
+	icon = economy_positive
 	monthly_income = 20
+}
+dunesea_caravan_income_character_modifier_16 = {
+	icon = economy_positive
+	monthly_income = 22
+}
+dunesea_caravan_income_character_modifier_17 = {
+	icon = economy_positive
+	monthly_income = 24
+}
+dunesea_caravan_income_character_modifier_18 = {
+	icon = economy_positive
+	monthly_income = 28
 }
 
 #Gwathlo Road
@@ -1084,7 +1058,12 @@ ivory_road_income_character_modifier_9 = {
 
 ivory_road_income_character_modifier_10 = {
 	icon = economy_positive
-	monthly_income = 16
+	monthly_income = 14
+}
+
+ivory_road_income_character_modifier_11 = {
+	icon = economy_positive
+	monthly_income = 18
 }
 
 #Crystal Road
@@ -1406,4 +1385,325 @@ men_argrun_road_income_character_modifier_3 = {
 men_argrun_road_income_character_modifier_4 = {
 	icon = economy_positive
 	monthly_income = 8
+}
+
+#Khand-voshâm
+khand_vosham_road_province_modifier = {
+	icon = economy_positive
+	monthly_income = 0.1
+	development_growth = 0.1
+}
+
+khand_vosham_income_character_modifier_1 = {
+	icon = economy_positive
+	monthly_income = 0.5
+}
+
+khand_vosham_income_character_modifier_2 = {
+	icon = economy_positive
+	monthly_income = 1
+}
+
+khand_vosham_income_character_modifier_3 = {
+	icon = economy_positive
+	monthly_income = 2
+}
+
+khand_vosham_income_character_modifier_4 = {
+	icon = economy_positive
+	monthly_income = 3
+}
+
+khand_vosham_income_character_modifier_5 = {
+	icon = economy_positive
+	monthly_income = 4
+}
+
+khand_vosham_income_character_modifier_6 = {
+	icon = economy_positive
+	monthly_income = 6
+}
+
+#Vol Siryan
+siryan_road_province_modifier = {
+	icon = economy_positive
+	monthly_income = 0.1
+	development_growth = 0.1
+}
+
+siryan_road_income_character_modifier_1 = {
+	icon = economy_positive
+	monthly_income = 1
+}
+
+siryan_road_income_character_modifier_2 = {
+	icon = economy_positive
+	monthly_income = 3
+}
+
+siryan_road_income_character_modifier_3 = {
+	icon = economy_positive
+	monthly_income = 4
+}
+
+siryan_road_income_character_modifier_4 = {
+	icon = economy_positive
+	monthly_income = 6
+}
+
+siryan_road_income_character_modifier_5 = {
+	icon = economy_positive
+	monthly_income = 7
+}
+
+siryan_road_income_character_modifier_6 = {
+	icon = economy_positive
+	monthly_income = 9
+}
+
+siryan_road_income_character_modifier_7 = {
+	icon = economy_positive
+	monthly_income = 10
+}
+
+siryan_road_income_character_modifier_8 = {
+	icon = economy_positive
+	monthly_income = 12
+}
+
+siryan_road_income_character_modifier_9 = {
+	icon = economy_positive
+	monthly_income = 16
+}
+
+#The Baruzimabûl Road
+baruzimabul_road_province_modifier = {
+	icon = economy_positive
+	monthly_income = 0.1
+	development_growth = 0.1
+}
+
+baruzimabul_road_income_character_modifier_1 = {
+	icon = economy_positive
+	monthly_income = 2
+}
+
+baruzimabul_road_income_character_modifier_2 = {
+	icon = economy_positive
+	monthly_income = 3
+}
+
+baruzimabul_road_income_character_modifier_3 = {
+	icon = economy_positive
+	monthly_income = 4
+}
+
+baruzimabul_road_income_character_modifier_4 = {
+	icon = economy_positive
+	monthly_income = 5
+}
+
+baruzimabul_road_income_character_modifier_5 = {
+	icon = economy_positive
+	monthly_income = 8
+}
+
+#The Lynerian Road
+lyneria_road_province_modifier = {
+	icon = economy_positive
+	monthly_income = 0.2
+	development_growth = 0.1
+}
+
+lyneria_road_income_character_modifier_1 = {
+	icon = economy_positive
+	monthly_income = 2
+}
+
+lyneria_road_income_character_modifier_2 = {
+	icon = economy_positive
+	monthly_income = 4
+}
+
+lyneria_road_income_character_modifier_3 = {
+	icon = economy_positive
+	monthly_income = 6
+}
+
+lyneria_road_income_character_modifier_4 = {
+	icon = economy_positive
+	monthly_income = 8
+}
+
+lyneria_road_income_character_modifier_5 = {
+	icon = economy_positive
+	monthly_income = 10
+}
+
+lyneria_road_income_character_modifier_6 = {
+	icon = economy_positive
+	monthly_income = 12
+}
+
+lyneria_road_income_character_modifier_7 = {
+	icon = economy_positive
+	monthly_income = 14
+}
+
+lyneria_road_income_character_modifier_8 = {
+	icon = economy_positive
+	monthly_income = 16
+}
+
+lyneria_road_income_character_modifier_9 = {
+	icon = economy_positive
+	monthly_income = 20
+}
+
+#The Nhazadh's Causeway
+nhazadh_causeway_province_modifier = {
+	icon = economy_positive
+	monthly_income = 0.1
+	development_growth = 0.1
+}
+
+nhazadh_causeway_income_character_modifier_1 = {
+	icon = economy_positive
+	monthly_income = 1
+}
+
+nhazadh_causeway_income_character_modifier_2 = {
+	icon = economy_positive
+	monthly_income = 2
+}
+
+nhazadh_causeway_income_character_modifier_3 = {
+	icon = economy_positive
+	monthly_income = 4
+}
+
+nhazadh_causeway_income_character_modifier_4 = {
+	icon = economy_positive
+	monthly_income = 6
+}
+
+nhazadh_causeway_income_character_modifier_5 = {
+	icon = economy_positive
+	monthly_income = 8
+}
+
+nhazadh_causeway_income_character_modifier_6 = {
+	icon = economy_positive
+	monthly_income = 10
+}
+
+#The Sháy Caravan
+shay_caravan_province_modifier = {
+	icon = economy_positive
+	monthly_income = 0.1
+	development_growth = 0.01
+}
+
+shay_caravan_income_character_modifier_1 = {
+	icon = economy_positive
+	monthly_income = 2
+}
+
+shay_caravan_income_character_modifier_2 = {
+	icon = economy_positive
+	monthly_income = 4
+}
+
+#The Great Khy Road
+great_khy_road_province_modifier = {
+	icon = economy_positive
+	monthly_income = 0.1
+	development_growth = 0.1
+}
+
+great_khy_road_income_character_modifier_1 = {
+	icon = economy_positive
+	monthly_income = 1
+}
+
+great_khy_road_income_character_modifier_2 = {
+	icon = economy_positive
+	monthly_income = 2
+}
+
+great_khy_road_income_character_modifier_3 = {
+	icon = economy_positive
+	monthly_income = 4
+}
+
+great_khy_road_income_character_modifier_4 = {
+	icon = economy_positive
+	monthly_income = 6
+}
+
+great_khy_road_income_character_modifier_5 = {
+	icon = economy_positive
+	monthly_income = 8
+}
+
+great_khy_road_income_character_modifier_6 = {
+	icon = economy_positive
+	monthly_income = 10
+}
+
+great_khy_road_income_character_modifier_7 = {
+	icon = economy_positive
+	monthly_income = 12
+}
+
+#The Ormal Roads
+ormal_roads_province_modifier = {
+	icon = economy_positive
+	monthly_income = 0.1
+	development_growth = 0.1
+}
+
+ormal_road_income_character_modifier_1 = {
+	icon = economy_positive
+	monthly_income = 1
+}
+
+ormal_road_income_character_modifier_2 = {
+	icon = economy_positive
+	monthly_income = 2
+}
+
+ormal_road_income_character_modifier_3 = {
+	icon = economy_positive
+	monthly_income = 4
+}
+
+ormal_road_income_character_modifier_4 = {
+	icon = economy_positive
+	monthly_income = 6
+}
+
+ormal_road_income_character_modifier_5 = {
+	icon = economy_positive
+	monthly_income = 8
+}
+
+ormal_road_income_character_modifier_6 = {
+	icon = economy_positive
+	monthly_income = 10
+}
+
+ormal_road_income_character_modifier_7 = {
+	icon = economy_positive
+	monthly_income = 12
+}
+
+ormal_road_income_character_modifier_8 = {
+	icon = economy_positive
+	monthly_income = 14
+}
+
+ormal_road_income_character_modifier_9 = {
+	icon = economy_positive
+	monthly_income = 18
 }

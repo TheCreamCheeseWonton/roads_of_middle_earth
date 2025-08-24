@@ -330,22 +330,16 @@ define_trade_routes = {
 	province:2446 = {
 		add_province_modifier = rath_khand_road_province_modifier
 	}
-	province:2926 = {
+	province:2915 = {
 		add_province_modifier = rath_khand_road_province_modifier
 	}
-	province:2924 = {
-		add_province_modifier = rath_khand_road_province_modifier
-	}
-	province:3966 = {
-		add_province_modifier = rath_khand_road_province_modifier
-	}
-	province:3982 = {
-		add_province_modifier = rath_khand_road_province_modifier
-	}
-	province:3981 = {
+	province:2450 = {
 		add_province_modifier = rath_khand_road_province_modifier
 	}
 	province:2911 = {
+		add_province_modifier = rath_khand_road_province_modifier
+	}
+	province:2701 = {
 		add_province_modifier = rath_khand_road_province_modifier
 	}
 	province:2769 = {
@@ -396,77 +390,181 @@ define_trade_routes = {
 	province:2794 = {
 		add_province_modifier = rath_khand_road_province_modifier
 	}
-	province:2797 = {
+	province:2796 = {
 		add_province_modifier = rath_khand_road_province_modifier
 	}
 	province:2798 = {
 		add_province_modifier = rath_khand_road_province_modifier
 	}
-	province:3983 = {
+	province:2799 = {
 		add_province_modifier = rath_khand_road_province_modifier
+	}
+	province:2831 = {
+		add_province_modifier = rath_khand_road_province_modifier
+	}
+	province:2832 = {
+		add_province_modifier = rath_khand_road_province_modifier
+	}
+	province:2822 = {
+		add_province_modifier = rath_khand_road_province_modifier
+	}
+	province:6448 = {
+		add_province_modifier = rath_khand_road_province_modifier
+	}
+	province:6449 = {
+		add_province_modifier = rath_khand_road_province_modifier
+	}
+	province:6398 = {
+		add_province_modifier = rath_khand_road_province_modifier
+	}
+	province:6399 = {
+		add_province_modifier = rath_khand_road_province_modifier
+	}
+	province:6394 = {
+		add_province_modifier = rath_khand_road_province_modifier
+	}
+	province:6404 = {
+		add_province_modifier = rath_khand_road_province_modifier
+	}
+	province:6408 = {
+		add_province_modifier = rath_khand_road_province_modifier
+	}
+	province:6407 = {
+		add_province_modifier = rath_khand_road_province_modifier
+	}
+	province:6280 = {
+		add_province_modifier = rath_khand_road_province_modifier
+	}
+	province:6279 = {
+		add_province_modifier = rath_khand_road_province_modifier
+	}
+	province:6272 = {
+		add_province_modifier = rath_khand_road_province_modifier
+	}
+	province:6271 = {
+		add_province_modifier = rath_khand_road_province_modifier
+	}
+	province:803 = {
+		add_province_modifier = rath_khand_road_province_modifier
+	}
+	province:1338 = {
+		add_province_modifier = rath_khand_road_province_modifier
+	}
+	province:804 = {
+		add_province_modifier = rath_khand_road_province_modifier
+	}
+	province:2878 = {
+		add_province_modifier = rath_khand_road_province_modifier
+	}
+	province:2879 = {
+		add_province_modifier = rath_khand_road_province_modifier
+	}
+	province:2875 = {
+		add_province_modifier = rath_khand_road_province_modifier
+	}
+	province:2874 = {
+		add_province_modifier = rath_khand_road_province_modifier
+	}
+	province:2871 = {
+		add_province_modifier = rath_khand_road_province_modifier
+	}
+	province:2870 = {
+		add_province_modifier = rath_khand_road_province_modifier
+	}
+	
+	##Khand-vosham
+	province:2446 = {
+		add_province_modifier = khand_vosham_road_province_modifier
+	}
+	province:2926 = {
+		add_province_modifier = khand_vosham_road_province_modifier
+	}
+	province:2924 = {
+		add_province_modifier = khand_vosham_road_province_modifier
+	}
+	province:3966 = {
+		add_province_modifier = khand_vosham_road_province_modifier
+	}
+	province:3982 = {
+		add_province_modifier = khand_vosham_road_province_modifier
+	}
+	province:3981 = {
+		add_province_modifier = khand_vosham_road_province_modifier
+	}
+	province:3983 = {
+		add_province_modifier = khand_vosham_road_province_modifier
 	}
 	province:3985 = {
-		add_province_modifier = rath_khand_road_province_modifier
+		add_province_modifier = khand_vosham_road_province_modifier
 	}
 	province:3984 = {
-		add_province_modifier = rath_khand_road_province_modifier
+		add_province_modifier = khand_vosham_road_province_modifier
 	}
 	province:4050 = {
-		add_province_modifier = rath_khand_road_province_modifier
+		add_province_modifier = khand_vosham_road_province_modifier
 	}
 	province:4051 = {
-		add_province_modifier = rath_khand_road_province_modifier
+		add_province_modifier = khand_vosham_road_province_modifier
 	}
 	province:4052 = {
-		add_province_modifier = rath_khand_road_province_modifier
+		add_province_modifier = khand_vosham_road_province_modifier
 	}
 	province:4042 = {
-		add_province_modifier = rath_khand_road_province_modifier
+		add_province_modifier = khand_vosham_road_province_modifier
 	}
 	province:4043 = {
-		add_province_modifier = rath_khand_road_province_modifier
+		add_province_modifier = khand_vosham_road_province_modifier
 	}
 	province:4041 = {
-		add_province_modifier = rath_khand_road_province_modifier
+		add_province_modifier = khand_vosham_road_province_modifier
 	}
 	province:696 = {
-		add_province_modifier = rath_khand_road_province_modifier
+		add_province_modifier = khand_vosham_road_province_modifier
 	}
 	province:697 = {
-		add_province_modifier = rath_khand_road_province_modifier
+		add_province_modifier = khand_vosham_road_province_modifier
 	}
 	province:1442 = {
-		add_province_modifier = rath_khand_road_province_modifier
+		add_province_modifier = khand_vosham_road_province_modifier
 	}
 	province:1441 = {
-		add_province_modifier = rath_khand_road_province_modifier
+		add_province_modifier = khand_vosham_road_province_modifier
 	}
 	province:1439 = {
-		add_province_modifier = rath_khand_road_province_modifier
+		add_province_modifier = khand_vosham_road_province_modifier
 	}
 	province:1440 = {
-		add_province_modifier = rath_khand_road_province_modifier
+		add_province_modifier = khand_vosham_road_province_modifier
 	}
 	province:715 = {
-		add_province_modifier = rath_khand_road_province_modifier
+		add_province_modifier = khand_vosham_road_province_modifier
 	}
 	province:716 = {
-		add_province_modifier = rath_khand_road_province_modifier
+		add_province_modifier = khand_vosham_road_province_modifier
 	}
 	province:717 = {
-		add_province_modifier = rath_khand_road_province_modifier
+		add_province_modifier = khand_vosham_road_province_modifier
 	}
 	province:638 = {
-		add_province_modifier = rath_khand_road_province_modifier
+		add_province_modifier = khand_vosham_road_province_modifier
 	}
 	province:636 = {
-		add_province_modifier = rath_khand_road_province_modifier
+		add_province_modifier = khand_vosham_road_province_modifier
 	}
 	province:637 = {
-		add_province_modifier = rath_khand_road_province_modifier
+		add_province_modifier = khand_vosham_road_province_modifier
 	}
 	province:620 = {
-		add_province_modifier = rath_khand_road_province_modifier
+		add_province_modifier = khand_vosham_road_province_modifier
+	}
+	province:4047 = {
+		add_province_modifier = khand_vosham_road_province_modifier
+	}
+	province:4045 = {
+		add_province_modifier = khand_vosham_road_province_modifier
+	}
+	province:4036 = {
+		add_province_modifier = khand_vosham_road_province_modifier
 	}
 
 	##South Road
@@ -1434,6 +1532,24 @@ define_trade_routes = {
 	province:1665 = {
 		add_province_modifier = coast_way_road_province_modifier
 	}
+	province:1678 = {
+		add_province_modifier = coast_way_road_province_modifier
+	}
+	province:1670 = {
+		add_province_modifier = coast_way_road_province_modifier
+	}
+	province:1669 = {
+		add_province_modifier = coast_way_road_province_modifier
+	}
+	province:1679 = {
+		add_province_modifier = coast_way_road_province_modifier
+	}
+	province:1701 = {
+		add_province_modifier = coast_way_road_province_modifier
+	}
+	province:1697 = {
+		add_province_modifier = coast_way_road_province_modifier
+	}
 	province:1666 = {
 		add_province_modifier = coast_way_road_province_modifier
 	}
@@ -1614,7 +1730,13 @@ define_trade_routes = {
 	province:1984 = {
 		add_province_modifier = coast_way_road_province_modifier
 	}
-	province:1991 = {
+	province:1983 = {
+		add_province_modifier = coast_way_road_province_modifier
+	}
+	province:1986 = {
+		add_province_modifier = coast_way_road_province_modifier
+	}
+	province:1987 = {
 		add_province_modifier = coast_way_road_province_modifier
 	}
 	province:1990 = {
@@ -1623,22 +1745,103 @@ define_trade_routes = {
 	province:2004 = {
 		add_province_modifier = coast_way_road_province_modifier
 	}
-	province:2472 = {
-		add_province_modifier = coast_way_road_province_modifier
-	}
 	province:2471 = {
 		add_province_modifier = coast_way_road_province_modifier
 	}
-	province:2456 = {
+	province:2473 = {
 		add_province_modifier = coast_way_road_province_modifier
 	}
-	province:2457 = {
+	province:2476 = {
 		add_province_modifier = coast_way_road_province_modifier
 	}
-	province:2463 = {
+	province:2474 = {
 		add_province_modifier = coast_way_road_province_modifier
 	}
-	province:2462 = {
+	province:2478 = {
+		add_province_modifier = coast_way_road_province_modifier
+	}
+	province:2490 = {
+		add_province_modifier = coast_way_road_province_modifier
+	}
+	province:2489 = {
+		add_province_modifier = coast_way_road_province_modifier
+	}
+	province:2483 = {
+		add_province_modifier = coast_way_road_province_modifier
+	}
+	province:2482 = {
+		add_province_modifier = coast_way_road_province_modifier
+	}
+	province:2485 = {
+		add_province_modifier = coast_way_road_province_modifier
+	}
+	province:2487 = {
+		add_province_modifier = coast_way_road_province_modifier
+	}
+	province:2486 = {
+		add_province_modifier = coast_way_road_province_modifier
+	}
+	province:2461 = {
+		add_province_modifier = coast_way_road_province_modifier
+	}
+	province:1975 = {
+		add_province_modifier = coast_way_road_province_modifier
+	}
+	province:1959 = {
+		add_province_modifier = coast_way_road_province_modifier
+	}
+	province:1960 = {
+		add_province_modifier = coast_way_road_province_modifier
+	}
+	province:1966 = {
+		add_province_modifier = coast_way_road_province_modifier
+	}
+	province:1964 = {
+		add_province_modifier = coast_way_road_province_modifier
+	}
+	province:1974 = {
+		add_province_modifier = coast_way_road_province_modifier
+	}
+	province:1976 = {
+		add_province_modifier = coast_way_road_province_modifier
+	}
+	province:1971 = {
+		add_province_modifier = coast_way_road_province_modifier
+	}
+	province:2015 = {
+		add_province_modifier = coast_way_road_province_modifier
+	}
+	province:2011 = {
+		add_province_modifier = coast_way_road_province_modifier
+	}
+	province:2018 = {
+		add_province_modifier = coast_way_road_province_modifier
+	}
+	province:2016 = {
+		add_province_modifier = coast_way_road_province_modifier
+	}
+	province:2010 = {
+		add_province_modifier = coast_way_road_province_modifier
+	}
+	province:2008 = {
+		add_province_modifier = coast_way_road_province_modifier
+	}
+	province:2007 = {
+		add_province_modifier = coast_way_road_province_modifier
+	}
+	province:1994 = {
+		add_province_modifier = coast_way_road_province_modifier
+	}
+	province:1993 = {
+		add_province_modifier = coast_way_road_province_modifier
+	}
+	province:1995 = {
+		add_province_modifier = coast_way_road_province_modifier
+	}
+	province:1998 = {
+		add_province_modifier = coast_way_road_province_modifier
+	}
+	province:1997 = {
 		add_province_modifier = coast_way_road_province_modifier
 	}
 	province:2516 = {
@@ -2370,223 +2573,47 @@ define_trade_routes = {
 	province:1837 = {
 		add_province_modifier = whitegold_road_province_modifier 
 	}
-
-	##Abrakhar Caravan Routes
-	province:2093 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
+	province:1794 = {
+		add_province_modifier = whitegold_road_province_modifier 
 	}
-	province:2094 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
+	province:1795 = {
+		add_province_modifier = whitegold_road_province_modifier 
 	}
-	province:2118 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
+	province:1814 = {
+		add_province_modifier = whitegold_road_province_modifier 
 	}
-	province:2194 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
+	province:1812 = {
+		add_province_modifier = whitegold_road_province_modifier 
 	}
-	province:2193 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
+	province:1660 = {
+		add_province_modifier = whitegold_road_province_modifier 
 	}
-	province:2192 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
+	province:1661 = {
+		add_province_modifier = whitegold_road_province_modifier 
 	}
-	province:2139 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
+	province:1657 = {
+		add_province_modifier = whitegold_road_province_modifier 
 	}
-	province:2199 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
+	province:1658 = {
+		add_province_modifier = whitegold_road_province_modifier 
 	}
-	province:2196 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
+	province:1646 = {
+		add_province_modifier = whitegold_road_province_modifier 
 	}
-	province:2188 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2197 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2190 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2200 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2189 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2204 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2203 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2201 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2158 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2157 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2159 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2160 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2161 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2154 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2155 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2227 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2226 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2231 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2232 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2237 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2239 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2240 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2241 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:3005 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2971 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2975 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2979 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2978 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2242 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2243 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2273 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2269 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2267 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2274 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2298 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2277 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2279 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2286 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2287 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2289 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2288 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2256 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2255 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2254 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2266 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2253 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2251 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2252 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2250 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2258 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2257 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2280 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2282 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2262 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2261 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2260 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2838 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2833 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2834 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2781 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2780 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
-	}
-	province:2772 = {
-		add_province_modifier = abrakhar_caravan_province_modifier 
+	province:1644 = {
+		add_province_modifier = whitegold_road_province_modifier 
 	}
 
 	##Dune Sea Caravan Routes
+	province:3008 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:6840 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:6839 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
 	province:2451 = {
 		add_province_modifier = dunesea_caravan_province_modifier 
 	}
@@ -2791,18 +2818,6 @@ define_trade_routes = {
 	province:2395 = {
 		add_province_modifier = dunesea_caravan_province_modifier 
 	}
-	province:2226 = {
-		add_province_modifier = dunesea_caravan_province_modifier 
-	}
-	province:2224 = {
-		add_province_modifier = dunesea_caravan_province_modifier 
-	}
-	province:2225 = {
-		add_province_modifier = dunesea_caravan_province_modifier 
-	}
-	province:2998 = {
-		add_province_modifier = dunesea_caravan_province_modifier 
-	}
 	province:2927 = {
 		add_province_modifier = dunesea_caravan_province_modifier 
 	}
@@ -2884,10 +2899,7 @@ define_trade_routes = {
 	province:2859 = {
 		add_province_modifier = dunesea_caravan_province_modifier 
 	}
-	province:3106 = {
-		add_province_modifier = dunesea_caravan_province_modifier 
-	}
-	province:2849 = {
+	province:2309 = {
 		add_province_modifier = dunesea_caravan_province_modifier 
 	}
 	province:2858 = {
@@ -2899,7 +2911,7 @@ define_trade_routes = {
 	province:2263 = {
 		add_province_modifier = dunesea_caravan_province_modifier 
 	}
-	province:2259 = {
+	province:2261 = {
 		add_province_modifier = dunesea_caravan_province_modifier 
 	}
 	province:2252 = {
@@ -2908,7 +2920,7 @@ define_trade_routes = {
 	province:2250 = {
 		add_province_modifier = dunesea_caravan_province_modifier 
 	}
-	province:2257 = {
+	province:2262 = {
 		add_province_modifier = dunesea_caravan_province_modifier 
 	}
 	province:2251 = {
@@ -2978,6 +2990,156 @@ define_trade_routes = {
 		add_province_modifier = dunesea_caravan_province_modifier 
 	}
 	province:2719 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:2227 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:2228 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:2238 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:2154 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:2771 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:2235 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:2964 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:2965 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:2960 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:2972 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:2971 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:3105 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:2313 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:3007 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:7103 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:7096 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:3006 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:2397 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:2392 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:1906 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:1907 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:1904 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:1902 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:1590 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:1589 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:1591 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:2373 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:2374 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:2371 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:2370 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:1903 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:2772 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:2780 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:2781 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:2834 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:2833 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:2838 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:2260 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:2271 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:2272 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:2269 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:2268 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:2274 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:2298 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:2256 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:2255 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:1909 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:1908 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:1897 = {
+		add_province_modifier = dunesea_caravan_province_modifier 
+	}
+	province:1829 = {
 		add_province_modifier = dunesea_caravan_province_modifier 
 	}
 
@@ -3341,6 +3503,30 @@ define_trade_routes = {
 	province:5709 = {
 		add_province_modifier = ivory_road_province_modifier 
 	}
+	province:6006 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:6007 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:2265 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:2849 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7050 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7047 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7048 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7043 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
 
 	##Ossiriand Road
 	province:4266 = {
@@ -3646,6 +3832,1043 @@ define_trade_routes = {
 	province:3210 = {
 		add_province_modifier = men_argrun_road_province_modifier 
 	}
+	
+	##The Sirayn Road
+	province:2093 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2094 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2194 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2193 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2192 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2188 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2190 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2204 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2200 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2201 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2203 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2158 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2159 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2157 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2154 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2161 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2237 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2240 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2224 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2233 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2236 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2988 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2989 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:7093 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2189 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2171 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2178 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2175 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2166 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2164 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2162 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2207 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2207 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2215 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2214 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2997 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2980 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2995 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2992 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:7099 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:7097 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:7095 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:7100 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:7110 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:7107 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:7108 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:7115 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:7051 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:7052 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:7044 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:7043 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:7113 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:7078 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:7090 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:7087 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:7083 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:7076 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:7080 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:6916 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:6915 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:6917 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:6926 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:6899 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:6897 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2977 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2982 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:2993 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:7105 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:7104 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:7038 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:7024 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:7022 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:7028 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:7027 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:6898 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:6908 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:6909 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:6911 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:7089 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:7088 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:6927 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:6931 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:7017 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:7013 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:6919 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:6990 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:6989 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:6978 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:6977 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	province:6971 = {
+		add_province_modifier = siryan_road_province_modifier 
+	}
+	
+	##The Baruzimabûl Road
+	province:5249 = {
+		add_province_modifier = baruzimabul_road_province_modifier 
+	}
+	province:5250 = {
+		add_province_modifier = baruzimabul_road_province_modifier 
+	}
+	province:5287 = {
+		add_province_modifier = baruzimabul_road_province_modifier 
+	}
+	province:5288 = {
+		add_province_modifier = baruzimabul_road_province_modifier 
+	}
+	province:2673 = {
+		add_province_modifier = baruzimabul_road_province_modifier 
+	}
+	province:2668 = {
+		add_province_modifier = baruzimabul_road_province_modifier 
+	}
+	province:1038 = {
+		add_province_modifier = baruzimabul_road_province_modifier 
+	}
+	province:2667 = {
+		add_province_modifier = baruzimabul_road_province_modifier 
+	}
+	province:2669 = {
+		add_province_modifier = baruzimabul_road_province_modifier 
+	}
+	province:2664 = {
+		add_province_modifier = baruzimabul_road_province_modifier 
+	}
+	province:2693 = {
+		add_province_modifier = baruzimabul_road_province_modifier 
+	}
+	province:2691 = {
+		add_province_modifier = baruzimabul_road_province_modifier 
+	}
+	province:2683 = {
+		add_province_modifier = baruzimabul_road_province_modifier 
+	}
+	province:2684 = {
+		add_province_modifier = baruzimabul_road_province_modifier 
+	}
+	province:2677 = {
+		add_province_modifier = baruzimabul_road_province_modifier 
+	}
+	province:2680 = {
+		add_province_modifier = baruzimabul_road_province_modifier 
+	}
+	province:2647 = {
+		add_province_modifier = baruzimabul_road_province_modifier 
+	}
+	province:2645 = {
+		add_province_modifier = baruzimabul_road_province_modifier 
+	}
+	province:2646 = {
+		add_province_modifier = baruzimabul_road_province_modifier 
+	}
+	province:2657 = {
+		add_province_modifier = baruzimabul_road_province_modifier 
+	}
+	province:3103 = {
+		add_province_modifier = baruzimabul_road_province_modifier 
+	}
+	province:2626 = {
+		add_province_modifier = baruzimabul_road_province_modifier 
+	}
+	province:2620 = {
+		add_province_modifier = baruzimabul_road_province_modifier 
+	}
+	province:2621 = {
+		add_province_modifier = baruzimabul_road_province_modifier 
+	}
+	province:1981 = {
+		add_province_modifier = baruzimabul_road_province_modifier 
+	}
+	province:1982 = {
+		add_province_modifier = baruzimabul_road_province_modifier 
+	}
+	province:1977 = {
+		add_province_modifier = baruzimabul_road_province_modifier 
+	}
+	
+	##The Lynerian Road
+	province:6897 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:6901 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:6933 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:6939 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:6936 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:6937 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:6923 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:6921 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:6919 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:6941 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:6940 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:6958 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:6957 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:6960 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:6966 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:6977 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:6978 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:6971 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:6972 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:6975 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:6974 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:6964 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:6965 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:6968 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:6969 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:7184 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:7182 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:7180 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:7181 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:7177 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:7176 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:7178 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:7174 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:7173 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:7172 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:7169 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:7167 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:7168 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:7195 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:7194 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:7192 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:7191 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:7190 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:7188 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:7187 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:7200 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:7205 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	
+	##The Nhazadh's Causeway
+	province:6833 = {
+		add_province_modifier = nhazadh_causeway_province_modifier 
+	}
+	province:6821 = {
+		add_province_modifier = nhazadh_causeway_province_modifier 
+	}
+	province:6822 = {
+		add_province_modifier = nhazadh_causeway_province_modifier 
+	}
+	province:6817 = {
+		add_province_modifier = nhazadh_causeway_province_modifier 
+	}
+	province:6818 = {
+		add_province_modifier = nhazadh_causeway_province_modifier 
+	}
+	province:6802 = {
+		add_province_modifier = nhazadh_causeway_province_modifier 
+	}
+	province:6783 = {
+		add_province_modifier = nhazadh_causeway_province_modifier 
+	}
+	province:6786 = {
+		add_province_modifier = nhazadh_causeway_province_modifier 
+	}
+	province:6790 = {
+		add_province_modifier = nhazadh_causeway_province_modifier 
+	}
+	province:6793 = {
+		add_province_modifier = nhazadh_causeway_province_modifier 
+	}
+	province:6796 = {
+		add_province_modifier = nhazadh_causeway_province_modifier 
+	}
+	province:6784 = {
+		add_province_modifier = nhazadh_causeway_province_modifier 
+	}
+	province:6729 = {
+		add_province_modifier = nhazadh_causeway_province_modifier 
+	}
+	province:6728 = {
+		add_province_modifier = nhazadh_causeway_province_modifier 
+	}
+	province:6727 = {
+		add_province_modifier = nhazadh_causeway_province_modifier 
+	}
+	province:6724 = {
+		add_province_modifier = nhazadh_causeway_province_modifier 
+	}
+	province:6722 = {
+		add_province_modifier = nhazadh_causeway_province_modifier 
+	}
+	province:6723 = {
+		add_province_modifier = nhazadh_causeway_province_modifier 
+	}
+	province:6761 = {
+		add_province_modifier = nhazadh_causeway_province_modifier 
+	}
+	province:6760 = {
+		add_province_modifier = nhazadh_causeway_province_modifier 
+	}
+	province:6759 = {
+		add_province_modifier = nhazadh_causeway_province_modifier 
+	}
+	province:6762 = {
+		add_province_modifier = nhazadh_causeway_province_modifier 
+	}
+	province:6734 = {
+		add_province_modifier = nhazadh_causeway_province_modifier 
+	}
+	province:6735 = {
+		add_province_modifier = nhazadh_causeway_province_modifier 
+	}
+	province:6730 = {
+		add_province_modifier = nhazadh_causeway_province_modifier 
+	}
+	province:6731 = {
+		add_province_modifier = nhazadh_causeway_province_modifier 
+	}
+	province:6746 = {
+		add_province_modifier = nhazadh_causeway_province_modifier 
+	}
+	province:6745 = {
+		add_province_modifier = nhazadh_causeway_province_modifier 
+	}
+	province:6744 = {
+		add_province_modifier = nhazadh_causeway_province_modifier 
+	}
+	province:6740 = {
+		add_province_modifier = nhazadh_causeway_province_modifier 
+	}
+	province:6763 = {
+		add_province_modifier = nhazadh_causeway_province_modifier 
+	}
+	province:6758 = {
+		add_province_modifier = nhazadh_causeway_province_modifier 
+	}
+	province:6756 = {
+		add_province_modifier = nhazadh_causeway_province_modifier 
+	}
+	province:6755 = {
+		add_province_modifier = nhazadh_causeway_province_modifier 
+	}
+	
+	##Sháy Caravan
+	province:6290 = {
+		add_province_modifier = shay_caravan_province_modifier 
+	}
+	province:6305 = {
+		add_province_modifier = shay_caravan_province_modifier 
+	}
+	province:6356 = {
+		add_province_modifier = shay_caravan_province_modifier 
+	}
+	province:6355 = {
+		add_province_modifier = shay_caravan_province_modifier 
+	}
+	province:6353 = {
+		add_province_modifier = shay_caravan_province_modifier 
+	}
+	province:6351 = {
+		add_province_modifier = shay_caravan_province_modifier 
+	}
+	province:6350 = {
+		add_province_modifier = shay_caravan_province_modifier 
+	}
+	province:6352 = {
+		add_province_modifier = shay_caravan_province_modifier 
+	}
+	province:6357 = {
+		add_province_modifier = shay_caravan_province_modifier 
+	}
+	province:6359 = {
+		add_province_modifier = shay_caravan_province_modifier 
+	}
+	
+	##The Great Khy Road
+	province:6271 = {
+		add_province_modifier = great_khy_road_province_modifier 
+	}
+	province:6273 = {
+		add_province_modifier = great_khy_road_province_modifier 
+	}
+	province:6282 = {
+		add_province_modifier = great_khy_road_province_modifier 
+	}
+	province:6385 = {
+		add_province_modifier = great_khy_road_province_modifier 
+	}
+	province:6384 = {
+		add_province_modifier = great_khy_road_province_modifier 
+	}
+	province:6393 = {
+		add_province_modifier = great_khy_road_province_modifier 
+	}
+	province:6392 = {
+		add_province_modifier = great_khy_road_province_modifier 
+	}
+	province:6277 = {
+		add_province_modifier = great_khy_road_province_modifier 
+	}
+	province:6296 = {
+		add_province_modifier = great_khy_road_province_modifier 
+	}
+	province:6294 = {
+		add_province_modifier = great_khy_road_province_modifier 
+	}
+	province:6295 = {
+		add_province_modifier = great_khy_road_province_modifier 
+	}
+	province:6302 = {
+		add_province_modifier = great_khy_road_province_modifier 
+	}
+	province:6291 = {
+		add_province_modifier = great_khy_road_province_modifier 
+	}
+	province:6290 = {
+		add_province_modifier = great_khy_road_province_modifier 
+	}
+	province:6310 = {
+		add_province_modifier = great_khy_road_province_modifier 
+	}
+	province:6307 = {
+		add_province_modifier = great_khy_road_province_modifier 
+	}
+	province:6317 = {
+		add_province_modifier = great_khy_road_province_modifier 
+	}
+	province:6315 = {
+		add_province_modifier = great_khy_road_province_modifier 
+	}
+	province:6308 = {
+		add_province_modifier = great_khy_road_province_modifier 
+	}
+	province:6468 = {
+		add_province_modifier = great_khy_road_province_modifier 
+	}
+	province:6467 = {
+		add_province_modifier = great_khy_road_province_modifier 
+	}
+	province:6506 = {
+		add_province_modifier = great_khy_road_province_modifier 
+	}
+	province:6497 = {
+		add_province_modifier = great_khy_road_province_modifier 
+	}
+	province:6464 = {
+		add_province_modifier = great_khy_road_province_modifier 
+	}
+	province:6462 = {
+		add_province_modifier = great_khy_road_province_modifier 
+	}
+	province:6461 = {
+		add_province_modifier = great_khy_road_province_modifier 
+	}
+	province:6495 = {
+		add_province_modifier = great_khy_road_province_modifier 
+	}
+	province:6318 = {
+		add_province_modifier = great_khy_road_province_modifier 
+	}
+	province:6320 = {
+		add_province_modifier = great_khy_road_province_modifier 
+	}
+	province:6334 = {
+		add_province_modifier = great_khy_road_province_modifier 
+	}
+	province:6332 = {
+		add_province_modifier = great_khy_road_province_modifier 
+	}
+	province:6329 = {
+		add_province_modifier = great_khy_road_province_modifier 
+	}
+	province:6465 = {
+		add_province_modifier = great_khy_road_province_modifier 
+	}
+	province:6485 = {
+		add_province_modifier = great_khy_road_province_modifier 
+	}
+	province:6271 = {
+		add_province_modifier = great_khy_road_province_modifier 
+	}
+	
+	##The Ormal Roads
+	province:6979 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6986 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6985 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:7004 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:7002 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:7005 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6998 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6995 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6997 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6753 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6742 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6743 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6765 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6854 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6853 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6848 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6846 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6852 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6866 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6865 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6869 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6870 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6872 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6871 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6847 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6859 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6875 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6874 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6891 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6892 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6887 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6884 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6885 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6890 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6474 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6475 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6477 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6478 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6484 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6483 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6470 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6461 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6495 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6499 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6516 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6513 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6515 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6552 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6547 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6545 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6544 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6554 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6578 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6546 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6558 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6539 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6538 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6543 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6523 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6522 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6532 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6527 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6529 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6597 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6596 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6595 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6526 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6536 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6534 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6566 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6568 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6562 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6564 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6621 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6622 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6618 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6619 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6632 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6631 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6613 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6609 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6614 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6615 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6628 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:2856 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6647 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6645 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6646 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6653 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6657 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6656 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:2890 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:2942 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:2937 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:2895 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6654 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6662 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
+	province:6659 = {
+		add_province_modifier = ormal_roads_province_modifier 
+	}
 
 	###Ports###
 	province:202 = {
@@ -3722,6 +4945,54 @@ define_trade_routes = {
 	}
 	province:5401 = {
 		add_province_modifier = gilmileth_port_province_modifier 
+	}
+	province:6609 = {
+		add_province_modifier = kadar_abar_narik_port_province_modifier 
+	}
+	province:6645 = {
+		add_province_modifier = inyaloni_port_province_modifier 
+	}
+	province:7167 = {
+		add_province_modifier = lyneria_port_province_modifier 
+	}
+	province:6977 = {
+		add_province_modifier = tul_harar_port_province_modifier 
+	}
+	province:6740 = {
+		add_province_modifier = pyrador_port_province_modifier 
+	}
+	province:6846 = {
+		add_province_modifier = majeha_port_province_modifier 
+	}
+	province:6461 = {
+		add_province_modifier = sanarth_port_province_modifier 
+	}
+	province:6544 = {
+		add_province_modifier = kantilya_port_province_modifier 
+	}
+	province:6522 = {
+		add_province_modifier = jorash_port_province_modifier 
+	}
+	province:6562 = {
+		add_province_modifier = kandalar_port_province_modifier 
+	}
+	province:2093 = {
+		add_province_modifier = bozisha_dar_port_province_modifier 
+	}
+	province:4274 = {
+		add_province_modifier = mithannunlond_port_province_modifier 
+	}
+	province:4266 = {
+		add_province_modifier = mithrhulond_port_province_modifier 
+	}
+	province:420 = {
+		add_province_modifier = eshellond_port_province_modifier 
+	}
+	province:4178 = {
+		add_province_modifier = forlond_port_province_modifier 
+	}
+	province:4117 = {
+		add_province_modifier = harlond_port_province_modifier 
 	}
 	##End Quonton LOL
 }

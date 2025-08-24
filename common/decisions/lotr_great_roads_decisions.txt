@@ -287,12 +287,34 @@ decision_west_kazad_road = {
 	is_valid = {
 		is_ruler = yes
 		has_title = title:k_khazad_dum
-		character:linefinwe27 = {
-			opinion = {
-				target = root
-				value > 90
+		trigger_if = { 
+			limit = {exists = title:d_eregion.holder }
+			title:d_eregion.holder = {
+				opinion = {
+					target = root
+					value > 90
+				}
 			}
 		}
+		trigger_else_if = { 
+			limit = {is_alive = character:lineofelrond1 }
+			character:lineofelrond1 = {
+				opinion = {
+					target = root
+					value > 90
+				}
+			}
+		}
+		trigger_else_if = {
+			limit = {exists = title:k_imladris.holder }
+			title:k_imladris.holder = {
+				opinion = {
+					target = root
+					value > 90
+				}
+			}
+		}
+		trigger_else = { prestige_level >= high_prestige_level }
 	}
 
 	# Cost
@@ -406,12 +428,25 @@ decision_east_kazad_road = {
 	is_valid = {
 		is_ruler = yes
 		has_title = title:k_khazad_dum
-		character:linefinwe36 = {
-			opinion = {
-				target = root
-				value > 90
+		trigger_if = { 
+			limit = {is_alive = character:lineoffinarfin5 }
+			character:lineoffinarfin5 = {
+				opinion = {
+					target = root
+					value > 90
+				}
 			}
 		}
+		trigger_else_if = {
+			limit = {exists = title:k_lothlorien.holder }
+			title:k_lothlorien.holder = {
+				opinion = {
+					target = root
+					value > 90
+				}
+			}
+		}
+		trigger_else = { prestige_level >= high_prestige_level }
 	}
 
 	# Cost
@@ -549,12 +584,25 @@ decision_connect_firebeard_road = {
 				}
 			}
 		}
-		character:lineofcirdan = {
-			opinion = {
-				target = root
-				value > 90
+		trigger_if = { 
+			limit = {is_alive = character:lineofcirdan }
+			character:lineofcirdan = {
+				opinion = {
+					target = root
+					value > 90
+				}
 			}
 		}
+		trigger_else_if = {
+			limit = {exists = title:e_lindon.holder }
+			title:e_lindon.holder = {
+				opinion = {
+					target = root
+					value > 90
+				}
+			}
+		}
+		trigger_else = { prestige_level >= high_prestige_level }
 	}
 
 	# Cost
@@ -799,12 +847,25 @@ decision_connect_broadbeam_road = {
 				}
 			}
 		}
-		character:lineofcirdan = {
-			opinion = {
-				target = root
-				value > 90
+		trigger_if = { 
+			limit = {is_alive = character:lineofcirdan }
+			character:lineofcirdan = {
+				opinion = {
+					target = root
+					value > 90
+				}
 			}
 		}
+		trigger_else_if = {
+			limit = {exists = title:e_lindon.holder }
+			title:e_lindon.holder = {
+				opinion = {
+					target = root
+					value > 90
+				}
+			}
+		}
+		trigger_else = { prestige_level >= high_prestige_level }
 	}
 	# Cost
 	cost = {
@@ -899,12 +960,25 @@ decision_connect_west_east_with_forest_road = {
 					has_title = title:d_high_pass
 				}
 		}
-		character:linefinwe27 = {
-			opinion = {
-				target = root
-				value > 90
+		trigger_if = { 
+			limit = {is_alive = character:lineofelrond1 }
+			character:lineofelrond1 = {
+				opinion = {
+					target = root
+					value > 90
+				}
 			}
 		}
+		trigger_else_if = {
+			limit = {exists = title:k_imladris.holder }
+			title:k_imladris.holder = {
+				opinion = {
+					target = root
+					value > 90
+				}
+			}
+		}
+		trigger_else = { prestige_level >= high_prestige_level }
 	}
 
 	# Cost
@@ -1027,18 +1101,34 @@ decision_connect_erebor_with_forest_road = {
 				}
 			}
 		}
-		title:k_dale.holder = {
-			opinion = {
-				target = root
-				value > 90
+		trigger_if = {
+			limit = {exists = title:k_dale.holder }
+			title:k_dale.holder = {
+				opinion = {
+					target = root
+					value > 90
+				}
 			}
 		}
-		character:lineoforopher3 = {
-			opinion = {
-				target = root
-				value > 90
+		trigger_if = { 
+			limit = {is_alive = character:lineoforopher3 }
+			character:lineoforopher3 = {
+				opinion = {
+					target = root
+					value > 90
+				}
 			}
 		}
+		trigger_else_if = {
+			limit = {exists = title:k_lasgalen.holder }
+			title:k_lasgalen.holder = {
+				opinion = {
+					target = root
+					value > 90
+				}
+			}
+		}
+		trigger_else = { prestige_level >= high_prestige_level }
 	}
 
 	# Cost
@@ -1251,18 +1341,26 @@ decision_white_mountains_road_north_south = {
 				has_title = title:k_eastern_white_mountains
 			}
 		}
-		title:k_rohan.holder = {
-			opinion = {
-				target = root
-				value > 90
+		trigger_if = {
+			limit = {exists = title:k_rohan.holder }
+			title:k_rohan.holder = {
+				opinion = {
+					target = root
+					value > 90
+				}
 			}
 		}
-		title:c_minas_tirith.holder = {
-			opinion = {
-				target = root
-				value > 90
+		trigger_else = { prestige_level >= high_prestige_level }
+		trigger_if = {
+			limit = {exists = title:c_minas_tirith.holder }
+			title:c_minas_tirith.holder = {
+				opinion = {
+					target = root
+					value > 90
+				}
 			}
 		}
+		trigger_else = { prestige_level >= high_prestige_level }
 	}
 
 	# Cost
@@ -1594,12 +1692,25 @@ decision_expand_woodland_road = {
 					target = flag:claim_amon_lanc_for_laurelindorenan
 				}
 				has_title = title:e_laurelindorenan
-				character:lineoforopher3 = {
-					opinion = {
-						target = root
-						value > 90
+				trigger_if = { 
+					limit = {is_alive = character:lineoforopher3 }
+					character:lineoforopher3 = {
+						opinion = {
+							target = root
+							value > 90
+						}
 					}
 				}
+				trigger_else_if = {
+					limit = {exists = title:k_lasgalen.holder }
+					title:k_lasgalen.holder = {
+						opinion = {
+							target = root
+							value > 90
+						}
+					}
+				}
+				trigger_else = { prestige_level >= high_prestige_level }
 			}
 		}
 	}
@@ -1711,12 +1822,25 @@ decision_expand_lorien_road = {
 					target = flag:decision_establish_high_kingdom_of_eryn_lasgalen
 				}
 				has_title = title:e_greenwood
-				character:linefinwe36 = {
-					opinion = {
-						target = root
-						value > 90
+				trigger_if = { 
+					limit = {is_alive = character:lineoffinarfin5 }
+					character:lineoffinarfin5 = {
+						opinion = {
+							target = root
+							value > 90
+						}
 					}
 				}
+				trigger_else_if = {
+					limit = {exists = title:k_lothlorien.holder }
+					title:k_lothlorien.holder = {
+						opinion = {
+							target = root
+							value > 90
+						}
+					}
+				}
+				trigger_else = { prestige_level >= high_prestige_level }
 			}
 			AND = { 
 				is_target_in_global_variable_list = {

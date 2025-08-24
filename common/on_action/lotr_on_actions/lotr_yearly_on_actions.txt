@@ -152,30 +152,31 @@
 		}
 		
 		# Foundations of Stone / Deepest Darkness Stress events
-		every_held_county = {
-			limit = {
-				has_county_modifier = foundations_of_stone_county_modifier
-			}
-			holder = {
-				random_list = {
-					20 = {
-						add_character_modifier = {
-							modifier = foundations_of_stone_character_modifier
-							years = 1
+		every_ruler = { 
+			every_held_county = {
+				limit = {
+					has_county_modifier = foundations_of_stone_county_modifier
+				}
+				holder = {
+					random_list = {
+						20 = {
+							add_character_modifier = {
+								modifier = foundations_of_stone_character_modifier
+								years = 1
+							}
+							trigger_event = goblins.1000
 						}
-						trigger_event = goblins.1000
-					}
-					80 = {
-						add_character_modifier = {
-							modifier = foundations_of_stone_character_modifier
-							years = 1
+						80 = {
+							add_character_modifier = {
+								modifier = foundations_of_stone_character_modifier
+								years = 1
+							}
 						}
 					}
 				}
 			}
 		}
-
-
+		
 		##Quonton 
 		#Trade Routes 
 		#Rhun Road
@@ -306,8 +307,6 @@
 				}
 			}
 		}
-
-		##Quonton
 		#Harad Road
 		every_ruler = {
 			limit = {
@@ -1466,7 +1465,7 @@
 			if = {
 				limit = { 
 					any_realm_province = {
-						count >= 275
+						count >= 315
 						has_province_modifier = coast_way_road_province_modifier
 					}
 				}
@@ -1478,7 +1477,7 @@
 			else_if = {
 				limit = { 
 					any_realm_province = {
-						count > 240
+						count > 275
 						has_province_modifier = coast_way_road_province_modifier
 					}
 				}
@@ -1490,7 +1489,7 @@
 			else_if = {
 				limit = { 
 					any_realm_province = {
-						count > 200
+						count > 215
 						has_province_modifier = coast_way_road_province_modifier
 					}
 				}
@@ -2048,6 +2047,30 @@
 			if = {
 				limit = { 
 					any_realm_province = {
+						count > 50
+						has_province_modifier = whitegold_road_province_modifier 
+					}
+				}
+				add_character_modifier = {
+					modifier = whitegold_road_income_character_modifier_10
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 45
+						has_province_modifier = whitegold_road_province_modifier 
+					}
+				}
+				add_character_modifier = {
+					modifier = whitegold_road_income_character_modifier_9
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
 						count > 40
 						has_province_modifier = whitegold_road_province_modifier 
 					}
@@ -2143,123 +2166,6 @@
 			}
 		}
 
-		#Abrakhan Caravan Routes
-		every_ruler = {
-			limit = {
-				any_realm_province = {
-					has_province_modifier = abrakhar_caravan_province_modifier 
-				}
-			}	
-			if = {
-				limit = { 
-					any_realm_province = {
-						count > 70
-						has_province_modifier = abrakhar_caravan_province_modifier 
-					}
-				}
-				add_character_modifier = {
-					modifier = abrakhar_caravan_income_character_modifier_9
-					years = 1
-				}
-			}
-			else_if = {
-				limit = { 
-					any_realm_province = {
-						count > 60
-						has_province_modifier = abrakhar_caravan_province_modifier 
-					}
-				}
-				add_character_modifier = {
-					modifier = abrakhar_caravan_income_character_modifier_8
-					years = 1
-				}
-			}
-			else_if = {
-				limit = { 
-					any_realm_province = {
-						count > 50
-						has_province_modifier = abrakhar_caravan_province_modifier 
-					}
-				}
-				add_character_modifier = {
-					modifier = abrakhar_caravan_income_character_modifier_7
-					years = 1
-				}
-			}
-			else_if = {
-				limit = { 
-					any_realm_province = {
-						count > 40
-						has_province_modifier = abrakhar_caravan_province_modifier 
-					}
-				}
-				add_character_modifier = {
-					modifier = abrakhar_caravan_income_character_modifier_6
-					years = 1
-				}
-			}
-			else_if = {
-				limit = { 
-					any_realm_province = {
-						count > 25
-						has_province_modifier = abrakhar_caravan_province_modifier 
-					}
-				}
-				add_character_modifier = {
-					modifier = abrakhar_caravan_income_character_modifier_5
-					years = 1
-				}
-			}
-			else_if = {
-				limit = { 
-					any_realm_province = {
-						count > 20
-						has_province_modifier = abrakhar_caravan_province_modifier 
-					}
-				}
-				add_character_modifier = {
-					modifier = abrakhar_caravan_income_character_modifier_4
-					years = 1
-				}
-			}
-			else_if = {
-				limit = { 
-					any_realm_province = {
-						count > 15
-						has_province_modifier = abrakhar_caravan_province_modifier 
-					}
-				}
-				add_character_modifier = {
-					modifier = abrakhar_caravan_income_character_modifier_3
-					years = 1
-				}
-			}
-			else_if = {
-				limit = { 
-					any_realm_province = {
-						count > 10
-						has_province_modifier = abrakhar_caravan_province_modifier 
-					}
-				}
-				add_character_modifier = {
-					modifier = abrakhar_caravan_income_character_modifier_2
-					years = 1
-				}
-			}
-			else_if = {
-				limit = { 
-					any_realm_province = {
-						count > 5
-						has_province_modifier = abrakhar_caravan_province_modifier 
-					}
-				}
-				add_character_modifier = {
-					modifier = abrakhar_caravan_income_character_modifier_1 
-					years = 1
-				}
-			}
-		}
-
 		#Dune Sea Caravan Routes
 		every_ruler = {
 			limit = {
@@ -2268,6 +2174,54 @@
 				}
 			}	
 			if = {
+				limit = { 
+					any_realm_province = {
+						count > 170
+						has_province_modifier = dunesea_caravan_province_modifier 
+					}
+				}
+				add_character_modifier = {
+					modifier = dunesea_caravan_income_character_modifier_18
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 160
+						has_province_modifier = dunesea_caravan_province_modifier 
+					}
+				}
+				add_character_modifier = {
+					modifier = dunesea_caravan_income_character_modifier_17
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 150
+						has_province_modifier = dunesea_caravan_province_modifier 
+					}
+				}
+				add_character_modifier = {
+					modifier = dunesea_caravan_income_character_modifier_16
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 140
+						has_province_modifier = dunesea_caravan_province_modifier 
+					}
+				}
+				add_character_modifier = {
+					modifier = dunesea_caravan_income_character_modifier_15
+					years = 1
+				}
+			}
+			else_if = {
 				limit = { 
 					any_realm_province = {
 						count > 130
@@ -2492,7 +2446,19 @@
 			if = {
 				limit = { 
 					any_realm_province = {
-						count >= 100
+						count >= 110
+						has_province_modifier = ivory_road_province_modifier 
+					}
+				}
+				add_character_modifier = {
+					modifier = ivory_road_income_character_modifier_11
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 100
 						has_province_modifier = ivory_road_province_modifier 
 					}
 				}
@@ -3151,6 +3117,706 @@
 				}
 				add_character_modifier = {
 					modifier = men_argrun_road_income_character_modifier_1
+					years = 1
+				}
+			}
+		}
+		#Khand-voshâm
+		every_ruler = {
+			limit = {
+				any_realm_province = {
+					has_province_modifier = khand_vosham_road_province_modifier
+				}
+			}
+			if = {
+				limit = { 
+					any_realm_province = {
+						count >= 27
+						has_province_modifier = khand_vosham_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = khand_vosham_income_character_modifier_6
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 25
+						has_province_modifier = khand_vosham_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = khand_vosham_income_character_modifier_5
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 20
+						has_province_modifier = khand_vosham_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = khand_vosham_income_character_modifier_4
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 15
+						has_province_modifier = khand_vosham_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = khand_vosham_income_character_modifier_3
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 10
+						has_province_modifier = khand_vosham_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = khand_vosham_income_character_modifier_2
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 5
+						has_province_modifier = khand_vosham_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = khand_vosham_income_character_modifier_1
+					years = 1
+				}
+			}
+		}
+		#Sirayn Road
+		every_ruler = {
+			limit = {
+				any_realm_province = {
+					has_province_modifier = siryan_road_province_modifier 
+				}
+			}
+			if = {
+				limit = { 
+					any_realm_province = {
+						count >= 90
+						has_province_modifier = siryan_road_province_modifier 
+					}
+				}
+				add_character_modifier = {
+					modifier = siryan_road_income_character_modifier_9
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 80
+						has_province_modifier = siryan_road_province_modifier 
+					}
+				}
+				add_character_modifier = {
+					modifier = siryan_road_income_character_modifier_8
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 70
+						has_province_modifier = siryan_road_province_modifier 
+					}
+				}
+				add_character_modifier = {
+					modifier = siryan_road_income_character_modifier_7
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 60
+						has_province_modifier = siryan_road_province_modifier 
+					}
+				}
+				add_character_modifier = {
+					modifier = siryan_road_income_character_modifier_6
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 50
+						has_province_modifier = siryan_road_province_modifier 
+					}
+				}
+				add_character_modifier = {
+					modifier = siryan_road_income_character_modifier_5
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 40
+						has_province_modifier = siryan_road_province_modifier 
+					}
+				}
+				add_character_modifier = {
+					modifier = siryan_road_income_character_modifier_4
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 30
+						has_province_modifier = siryan_road_province_modifier 
+					}
+				}
+				add_character_modifier = {
+					modifier = siryan_road_income_character_modifier_3
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 20
+						has_province_modifier = siryan_road_province_modifier 
+					}
+				}
+				add_character_modifier = {
+					modifier = siryan_road_income_character_modifier_2
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 10
+						has_province_modifier = siryan_road_province_modifier 
+					}
+				}
+				add_character_modifier = {
+					modifier = siryan_road_income_character_modifier_1
+					years = 1
+				}
+			}
+		}
+		#Baruzimabûl Road
+		every_ruler = {
+			limit = {
+				any_realm_province = {
+					has_province_modifier = baruzimabul_road_province_modifier
+				}
+			}
+			if = {
+				limit = { 
+					any_realm_province = {
+						count > 25
+						has_province_modifier = baruzimabul_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = baruzimabul_road_income_character_modifier_5
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 20
+						has_province_modifier = baruzimabul_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = baruzimabul_road_income_character_modifier_4
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 15
+						has_province_modifier = baruzimabul_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = baruzimabul_road_income_character_modifier_3
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 10
+						has_province_modifier = baruzimabul_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = baruzimabul_road_income_character_modifier_2
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 5
+						has_province_modifier = baruzimabul_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = baruzimabul_road_income_character_modifier_1
+					years = 1
+				}
+			}
+		}
+		#Lyneria Road
+		every_ruler = {
+			limit = {
+				any_realm_province = {
+					has_province_modifier = lyneria_road_province_modifier
+				}
+			}
+			if = {
+				limit = { 
+					any_realm_province = {
+						count > 45
+						has_province_modifier = lyneria_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = lyneria_road_income_character_modifier_9
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 40
+						has_province_modifier = lyneria_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = lyneria_road_income_character_modifier_8
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 35
+						has_province_modifier = lyneria_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = lyneria_road_income_character_modifier_7
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 30
+						has_province_modifier = lyneria_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = lyneria_road_income_character_modifier_6
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 25
+						has_province_modifier = lyneria_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = lyneria_road_income_character_modifier_5
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 20
+						has_province_modifier = lyneria_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = lyneria_road_income_character_modifier_4
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 15
+						has_province_modifier = lyneria_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = lyneria_road_income_character_modifier_3
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 10
+						has_province_modifier = lyneria_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = lyneria_road_income_character_modifier_2
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 5
+						has_province_modifier = lyneria_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = lyneria_road_income_character_modifier_1
+					years = 1
+				}
+			}
+		}
+		#The Nhazadh's Causeway
+		every_ruler = {
+			limit = {
+				any_realm_province = {
+					has_province_modifier = nhazadh_causeway_province_modifier
+				}
+			}
+			if = {
+				limit = { 
+					any_realm_province = {
+						count > 30
+						has_province_modifier = nhazadh_causeway_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = nhazadh_causeway_income_character_modifier_6
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 25
+						has_province_modifier = nhazadh_causeway_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = nhazadh_causeway_income_character_modifier_5
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 20
+						has_province_modifier = nhazadh_causeway_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = nhazadh_causeway_income_character_modifier_4
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 15
+						has_province_modifier = nhazadh_causeway_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = nhazadh_causeway_income_character_modifier_3
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 10
+						has_province_modifier = nhazadh_causeway_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = nhazadh_causeway_income_character_modifier_2
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 5
+						has_province_modifier = nhazadh_causeway_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = nhazadh_causeway_income_character_modifier_1
+					years = 1
+				}
+			}
+		}
+		#The Sháy Caravan
+		every_ruler = {
+			limit = {
+				any_realm_province = {
+					has_province_modifier = shay_caravan_province_modifier
+				}
+			}
+			if = {
+				limit = { 
+					any_realm_province = {
+						count >= 10
+						has_province_modifier = shay_caravan_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = shay_caravan_income_character_modifier_2
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 5
+						has_province_modifier = shay_caravan_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = shay_caravan_income_character_modifier_1
+					years = 1
+				}
+			}
+		}
+		#The Great Khy Road
+		every_ruler = {
+			limit = {
+				any_realm_province = {
+					has_province_modifier = great_khy_road_province_modifier
+				}
+			}
+			if = {
+				limit = { 
+					any_realm_province = {
+						count >= 34
+						has_province_modifier = great_khy_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = great_khy_road_income_character_modifier_7
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 30
+						has_province_modifier = great_khy_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = great_khy_road_income_character_modifier_6
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 25
+						has_province_modifier = great_khy_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = great_khy_road_income_character_modifier_5
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 20
+						has_province_modifier = great_khy_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = great_khy_road_income_character_modifier_4
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 15
+						has_province_modifier = great_khy_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = great_khy_road_income_character_modifier_3
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 10
+						has_province_modifier = great_khy_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = great_khy_road_income_character_modifier_2
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 5
+						has_province_modifier = great_khy_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = great_khy_road_income_character_modifier_1
+					years = 1
+				}
+			}
+		}
+		#The Ormal Roads
+		every_ruler = {
+			limit = {
+				any_realm_province = {
+					has_province_modifier = ormal_roads_province_modifier 
+				}
+			}
+			if = {
+				limit = { 
+					any_realm_province = {
+						count >= 90
+						has_province_modifier = ormal_roads_province_modifier 
+					}
+				}
+				add_character_modifier = {
+					modifier = ormal_road_income_character_modifier_9
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 80
+						has_province_modifier = ormal_roads_province_modifier 
+					}
+				}
+				add_character_modifier = {
+					modifier = ormal_road_income_character_modifier_8
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 70
+						has_province_modifier = ormal_roads_province_modifier 
+					}
+				}
+				add_character_modifier = {
+					modifier = ormal_road_income_character_modifier_7
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 60
+						has_province_modifier = ormal_roads_province_modifier 
+					}
+				}
+				add_character_modifier = {
+					modifier = ormal_road_income_character_modifier_6
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 50
+						has_province_modifier = ormal_roads_province_modifier 
+					}
+				}
+				add_character_modifier = {
+					modifier = ormal_road_income_character_modifier_5
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 40
+						has_province_modifier = ormal_roads_province_modifier 
+					}
+				}
+				add_character_modifier = {
+					modifier = ormal_road_income_character_modifier_4
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 30
+						has_province_modifier = ormal_roads_province_modifier 
+					}
+				}
+				add_character_modifier = {
+					modifier = ormal_road_income_character_modifier_3
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 20
+						has_province_modifier = ormal_roads_province_modifier 
+					}
+				}
+				add_character_modifier = {
+					modifier = ormal_road_income_character_modifier_2
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 10
+						has_province_modifier = ormal_roads_province_modifier 
+					}
+				}
+				add_character_modifier = {
+					modifier = ormal_road_income_character_modifier_1
 					years = 1
 				}
 			}

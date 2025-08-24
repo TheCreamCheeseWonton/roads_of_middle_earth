@@ -120,3 +120,96 @@ gilmileth_port_province_modifier = {
 	monthly_income = 0.5
 	development_growth = 0.25
 }
+
+kadar_abar_narik_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 1.0
+	development_growth = 0.5
+}
+
+inyaloni_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 0.5
+	development_growth = 0.25
+}
+
+# Elvish Ports
+mithannunlond_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 1.0
+	development_growth = 0.5
+}
+
+mithrhulond_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 1.0
+	development_growth = 0.5
+}
+
+eshellond_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 1.0
+	development_growth = 0.5
+}
+
+forlond_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 1.0
+	development_growth = 0.5
+}
+
+harlond_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 1.0
+	development_growth = 0.5
+}
+
+
+#Manish Ports
+bozisha_dar_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 0.5
+	development_growth = 0.25
+}
+
+#Ormal Ports
+lyneria_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 0.5
+	development_growth = 0.25
+}
+tul_harar_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 0.4
+	development_growth = 0.2
+}
+pyrador_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 0.25
+	development_growth = 0.1
+}
+majeha_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 0.2
+	development_growth = 0.1
+}
+sanarth_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 0.4
+	development_growth = 0.2
+}
+kantilya_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 0.2
+	development_growth = 0.1
+}
+jorash_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 0.2
+	development_growth = 0.1
+}
+kandalar_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 0.2
+	development_growth = 0.1
+}

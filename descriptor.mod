@@ -1,4 +1,4 @@
-version="1.6a"
+version="1.7"
 tags={
 	"Gameplay"
 }
