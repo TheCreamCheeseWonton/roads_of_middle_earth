@@ -52,8 +52,8 @@ mispir_port_province_modifier = {
 }
 korlea_port_province_modifier = {
 	icon = compass_positive
-	monthly_income = 0.8
-	development_growth = 0.4
+	monthly_income = 1.0
+	development_growth = 0.5
 }
 ciryandur_port_province_modifier = {
 	icon = compass_positive
