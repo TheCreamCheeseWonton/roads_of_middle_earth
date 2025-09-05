@@ -798,6 +798,7 @@
  decision_build_eregion_road_mannish_desc:0 "The great realm of [eregion|E] has been claimed by the Men of [westernesse|E]! Destroyed during the [waroftheelvesandsauron|E], [eregion|E] has sat abandoned and silent for an [age|E]. Now, with the [dunedain|E] inhabiting the land of [celebrimbor|E], the realm is healing and once again filled with life. We should better solidify the reclamation of our lands by rebuilding the old Elven Road to [khazaddum|E] and building a road from [imladris|E] to [ostinedhil|E]."
  decision_build_eregion_road_confirm:0 "Get to work!"
  decision_build_eregion_road_tooltip:0 "Build the Noldor Road"
+ has_integrated_eregion_du:0 "Eregion has been integrated into the Reunited Kingdom"
 
  decision_expand_woodland_road:0 "Expand the Râd Annon"
  decision_expand_woodland_road_desc:0 "[mirkwood|E], a forest of evil, decay, and necromancy was once a great shadow over the North of [middleearth|E]. At its center was [dolguldur|E], home of the [necromancer_sauron|E]. With the destruction of the great pits of [dolguldur|E] and the cleansing and healing of [greenwood|E], Elvendom once again controls both Northern and Southern [greenwoodshort|E]! [amonlanc|E] and Aradhyrnd should again be united, with the Grace of the Eldar once again seen throughout these lands."
