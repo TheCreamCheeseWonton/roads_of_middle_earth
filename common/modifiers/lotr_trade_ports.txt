@@ -11,7 +11,7 @@ pelargir_port_province_modifier = {
 	development_growth_factor = 0.25
 }
 umbar_port_province_modifier = {
-	icon = compass_pos itive
+	icon = compass_positive
 	monthly_income = 1.0
 	development_growth_factor = 0.25
 }
