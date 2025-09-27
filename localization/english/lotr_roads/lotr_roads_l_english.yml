@@ -831,4 +831,4 @@
  decision_expand_woodland_road.send_message: "The old capital of Oropher will be reconnected!"
  decision_expand_lorien_road.send_message: "The splendor of the Heart of Elvendom expands eastward!"
  decision_has_15_greenway_prov: "You have 15 or more Baronys with the #P The Greenway#! province modifier"
- decision_has_7_north_south_prov: "You have 70 or more Baronys with the #P West Road#!, #P Old South Road#!, or #P The Greenway#! province modifiers"
+ decision_has_70_north_south_prov: "You have 70 or more Baronys with the #P West Road#!, #P Old South Road#!, or #P The Greenway#! province modifiers"

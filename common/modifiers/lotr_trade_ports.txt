@@ -3,165 +3,165 @@
 osgiliath_port_province_modifier = {
 	icon = compass_positive
 	monthly_income = 1.0
-	development_growth = 0.5
+	development_growth_factor = 0.25
 }
 pelargir_port_province_modifier = {
-	icon = compass_positive
+	icon = compass_positive 
 	monthly_income = 1.0
-	development_growth = 0.5
+	development_growth_factor = 0.25
 }
 umbar_port_province_modifier = {
-	icon = compass_positive
+	icon = compass_pos itive
 	monthly_income = 1.0
-	development_growth = 0.5
+	development_growth_factor = 0.25
 }
 lond_daer_port_province_modifier = {
 	icon = compass_positive
 	monthly_income = 1.0
-	development_growth = 0.5
+	development_growth_factor = 0.25
 }
 urezayaneth_port_province_modifier = {
 	icon = compass_positive
 	monthly_income = 1.0
-	development_growth = 0.5
+	development_growth_factor = 0.25
 }
 kadar_an_kharadun_port_province_modifier = {
 	icon = compass_positive
 	monthly_income = 1.0
-	development_growth = 0.5
+	development_growth_factor = 0.25
 }
 dol_amroth_port_province_modifier = {
 	icon = compass_positive
 	monthly_income = 1.0
-	development_growth = 0.5
+	development_growth_factor = 0.25
 }
 suthure_port_province_modifier = {
 	icon = compass_positive
 	monthly_income = 1.0
-	development_growth = 0.5
+	development_growth_factor = 0.25
 }
 inzilloni_port_province_modifier = {
 	icon = compass_positive
 	monthly_income = 1.0
-	development_growth = 0.5
+	development_growth_factor = 0.25
 }
 mispir_port_province_modifier = {
 	icon = compass_positive
 	monthly_income = 1.0
-	development_growth = 0.5
+	development_growth_factor = 0.25
 }
 korlea_port_province_modifier = {
 	icon = compass_positive
 	monthly_income = 1.0
-	development_growth = 0.5
+	development_growth_factor = 0.25
 }
 ciryandur_port_province_modifier = {
 	icon = compass_positive
 	monthly_income = 0.8
-	development_growth = 0.4
+	development_growth_factor = 0.2
 }
 sornomar_port_province_modifier = {
 	icon = compass_positive
 	monthly_income = 0.8
-	development_growth = 0.4
+	development_growth_factor = 0.2
 }
 ethir_harnen_port_province_modifier = {
 	icon = compass_positive
 	monthly_income = 0.8
-	development_growth = 0.4
+	development_growth_factor = 0.2
 }
 hyarmendacil_port_province_modifier = {
 	icon = compass_positive
 	monthly_income = 0.8
-	development_growth = 0.4
+	development_growth_factor = 0.2
 }
 serelond_port_province_modifier = {
 	icon = compass_positive
 	monthly_income = 0.8
-	development_growth = 0.4
+	development_growth_factor = 0.2
 }
 linhir_port_province_modifier = {
 	icon = compass_positive
 	monthly_income = 0.8
-	development_growth = 0.4
+	development_growth_factor = 0.2
 }
 ramlond_port_province_modifier = {
 	icon = compass_positive
 	monthly_income = 0.8
-	development_growth = 0.4
+	development_growth_factor = 0.2
 }
 urulomik_port_province_modifier = {
 	icon = compass_positive
 	monthly_income = 0.8
-	development_growth = 0.4
+	development_growth_factor = 0.2
 }
 arpel_port_province_modifier = {
 	icon = compass_positive
 	monthly_income = 0.8
-	development_growth = 0.4
+	development_growth_factor = 0.2
 }
 sarul_port_province_modifier = {
 	icon = compass_positive
 	monthly_income = 0.8
-	development_growth = 0.4
+	development_growth_factor = 0.2
 }
 annon_druin_port_province_modifier = {
 	icon = compass_positive
 	monthly_income = 0.5
-	development_growth = 0.25
+	development_growth_factor = 0.15
 }
 ishtra_port_province_modifier = {
 	icon = compass_positive
 	monthly_income = 0.5
-	development_growth = 0.25
+	development_growth_factor = 0.10
 }
 gilmileth_port_province_modifier = {
 	icon = compass_positive
 	monthly_income = 0.5
-	development_growth = 0.25
+	development_growth_factor = 0.15
 }
 
 kadar_abar_narik_port_province_modifier = {
 	icon = compass_positive
 	monthly_income = 1.0
-	development_growth = 0.5
+	development_growth_factor = 0.25
 }
 
 inyaloni_port_province_modifier = {
 	icon = compass_positive
 	monthly_income = 0.5
-	development_growth = 0.25
+	development_growth_factor = 0.15
 }
 
 # Elvish Ports
 mithannunlond_port_province_modifier = {
 	icon = compass_positive
 	monthly_income = 1.0
-	development_growth = 0.5
+	development_growth_factor = 0.25
 }
 
 mithrhulond_port_province_modifier = {
 	icon = compass_positive
 	monthly_income = 1.0
-	development_growth = 0.5
+	development_growth_factor = 0.25
 }
 
 eshellond_port_province_modifier = {
 	icon = compass_positive
 	monthly_income = 1.0
-	development_growth = 0.5
+	development_growth_factor = 0.25
 }
 
 forlond_port_province_modifier = {
 	icon = compass_positive
 	monthly_income = 1.0
-	development_growth = 0.5
+	development_growth_factor = 0.25
 }
 
 harlond_port_province_modifier = {
 	icon = compass_positive
 	monthly_income = 1.0
-	development_growth = 0.5
+	development_growth_factor = 0.25
 }
 
 
@@ -169,47 +169,47 @@ harlond_port_province_modifier = {
 bozisha_dar_port_province_modifier = {
 	icon = compass_positive
 	monthly_income = 0.5
-	development_growth = 0.25
+	development_growth_factor = 0.15
 }
 
 #Ormal Ports
 lyneria_port_province_modifier = {
 	icon = compass_positive
 	monthly_income = 0.5
-	development_growth = 0.25
+	development_growth_factor = 0.15
 }
 tul_harar_port_province_modifier = {
 	icon = compass_positive
 	monthly_income = 0.4
-	development_growth = 0.2
+	development_growth_factor = 0.1
 }
 pyrador_port_province_modifier = {
 	icon = compass_positive
 	monthly_income = 0.25
-	development_growth = 0.1
+	development_growth_factor = 0.05
 }
 majeha_port_province_modifier = {
 	icon = compass_positive
 	monthly_income = 0.2
-	development_growth = 0.1
+	development_growth_factor = 0.05
 }
 sanarth_port_province_modifier = {
 	icon = compass_positive
 	monthly_income = 0.4
-	development_growth = 0.2
+	development_growth_factor = 0.1
 }
 kantilya_port_province_modifier = {
 	icon = compass_positive
 	monthly_income = 0.2
-	development_growth = 0.1
+	development_growth_factor = 0.05
 }
 jorash_port_province_modifier = {
 	icon = compass_positive
 	monthly_income = 0.2
-	development_growth = 0.1
+	development_growth_factor = 0.05
 }
 kandalar_port_province_modifier = {
 	icon = compass_positive
 	monthly_income = 0.2
-	development_growth = 0.1
+	development_growth_factor = 0.05
 }

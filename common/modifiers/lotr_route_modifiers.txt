@@ -5,7 +5,7 @@
 rhun_road_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.1
-	development_growth = 0.05
+	development_growth_factor = 0.05
 }
 
 rhun_road_income_character_modifier_1 = {
@@ -62,7 +62,7 @@ rhun_road_income_character_modifier_10 = {
 harad_road_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.1
-	development_growth = 0.05
+	development_growth_factor = 0.05
 }
 
 harad_road_income_character_modifier_1 = {
@@ -104,7 +104,7 @@ harad_road_income_character_modifier_7 = {
 rath_khand_road_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.1
-	development_growth = 0.05
+	development_growth_factor = 0.05
 }
 
 rath_khand_road_income_character_modifier_1 = {
@@ -177,7 +177,7 @@ rath_khand_road_income_character_modifier_13 = {
 south_road_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.1
-	development_growth = 0.05
+	development_growth_factor = 0.05
 }
 
 south_road_income_character_modifier_1 = {
@@ -239,7 +239,7 @@ south_road_income_character_modifier_11 = {
 west_road_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.1
-	development_growth = 0.05
+	development_growth_factor = 0.05
 }
 
 west_road_income_character_modifier_1 = {
@@ -281,7 +281,7 @@ west_road_income_character_modifier_7 = {
 old_south_road_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.1
-	development_growth = 0.05
+	development_growth_factor = 0.05
 }
 
 old_south_road_income_character_modifier_1 = {
@@ -303,7 +303,7 @@ old_south_road_income_character_modifier_3 = {
 greenway_road_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.1
-	development_growth = 0.05
+	development_growth_factor = 0.05
 }
 
 greenway_road_income_character_modifier_1 = {
@@ -335,7 +335,7 @@ greenway_road_income_character_modifier_5 = {
 east_road_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.1
-	development_growth = 0.05
+	development_growth_factor = 0.05
 }
 
 east_road_income_character_modifier_1 = {
@@ -372,7 +372,7 @@ east_road_income_character_modifier_6 = {
 north_south_road_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.2
-	development_growth = 0.1
+	development_growth_factor = 0.1
 }
 
 north_south_road_income_character_modifier_1 = {
@@ -439,7 +439,7 @@ north_south_road_income_character_modifier_12 = {
 old_forest_road_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.1
-	development_growth = 0.05
+	development_growth_factor = 0.05
 }
 
 old_forest_road_income_character_modifier_1 = {
@@ -471,7 +471,7 @@ old_forest_road_income_character_modifier_5 = {
 khazad_road_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.1
-	development_growth = 0.05
+	development_growth_factor = 0.05
 }
 
 khazad_road_income_character_modifier_1 = {
@@ -508,7 +508,7 @@ khazad_road_income_character_modifier_6 = {
 old_dwarf_road_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.2
-	development_growth = 0.1
+	development_growth_factor = 0.1
 }
 
 old_dwarf_road_income_character_modifier_1 = {
@@ -575,7 +575,7 @@ old_dwarf_road_income_character_modifier_12 = {
 coast_way_road_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.1
-	development_growth = 0.05
+	development_growth_factor = 0.05
 }
 
 coast_way_road_income_character_modifier_1 = {
@@ -682,7 +682,7 @@ coast_way_road_income_character_modifier_20 = {
 east_way_road_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.1
-	development_growth = 0.05
+	development_growth_factor = 0.05
 }
 
 east_way_road_income_character_modifier_1 = {
@@ -719,7 +719,7 @@ east_way_road_income_character_modifier_6 = {
 erebor_road_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.1
-	development_growth = 0.05
+	development_growth_factor = 0.05
 }
 
 erebor_road_income_character_modifier_1 = {
@@ -741,7 +741,7 @@ erebor_road_income_character_modifier_3 = {
 wineland_way_road_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.1
-	development_growth = 0.05
+	development_growth_factor = 0.05
 }
 
 wineland_way_road_income_character_modifier_1 = {
@@ -773,7 +773,7 @@ wineland_way_road_income_character_modifier_5 = {
 doom_road_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.1
-	development_growth = 0.05
+	development_growth_factor = 0.05
 }
 
 doom_road_income_character_modifier_1 = {
@@ -790,7 +790,7 @@ doom_road_income_character_modifier_2 = {
 moroth_road_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.1
-	development_growth = 0.05
+	development_growth_factor = 0.05
 }
 
 moroth_road_income_character_modifier_1 = {
@@ -837,7 +837,7 @@ moroth_road_income_character_modifier_8 = {
 whitegold_road_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.1
-	development_growth = 0.05
+	development_growth_factor = 0.05
 }
 
 whitegold_road_income_character_modifier_1 = {
@@ -894,7 +894,7 @@ whitegold_road_income_character_modifier_10 = {
 dunesea_caravan_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.1
-	development_growth = 0.01
+	development_growth_factor = 0.01
 }
 
 dunesea_caravan_income_character_modifier_1 = {
@@ -986,7 +986,7 @@ dunesea_caravan_income_character_modifier_18 = {
 gwathlo_road_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.1
-	development_growth = 0.05
+	development_growth_factor = 0.05
 }
 
 gwathlo_road_income_character_modifier_1 = {
@@ -1008,7 +1008,7 @@ gwathlo_road_income_character_modifier_3 = {
 ivory_road_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.1
-	development_growth = 0.05
+	development_growth_factor = 0.05
 }
 
 ivory_road_income_character_modifier_1 = {
@@ -1070,7 +1070,7 @@ ivory_road_income_character_modifier_11 = {
 crystal_road_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.1
-	development_growth = 0.05
+	development_growth_factor = 0.05
 }
 
 crystal_road_income_character_modifier_1 = {
@@ -1092,7 +1092,7 @@ crystal_road_income_character_modifier_3 = {
 ossiriand_road_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.1
-	development_growth = 0.05
+	development_growth_factor = 0.05
 }
 
 ossiriand_road_income_character_modifier_1 = {
@@ -1154,7 +1154,7 @@ ossiriand_road_income_character_modifier_11 = {
 eregion_road_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.1
-	development_growth = 0.05
+	development_growth_factor = 0.05
 }
 
 eregion_road_income_character_modifier_1 = {
@@ -1186,7 +1186,7 @@ eregion_road_income_character_modifier_5 = {
 eregion_road_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.1
-	development_growth = 0.05
+	development_growth_factor = 0.05
 }
 
 eregion_road_income_character_modifier_1 = {
@@ -1218,7 +1218,7 @@ eregion_road_income_character_modifier_5 = {
 eregion_road_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.1
-	development_growth = 0.05
+	development_growth_factor = 0.05
 }
 
 eregion_road_income_character_modifier_1 = {
@@ -1250,7 +1250,7 @@ eregion_road_income_character_modifier_5 = {
 woodland_realm_1_road_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.1
-	development_growth = 0.05
+	development_growth_factor = 0.05
 }
 
 woodland_realm_1_road_income_character_modifier_1 = {
@@ -1277,7 +1277,7 @@ woodland_realm_1_road_income_character_modifier_4 = {
 woodland_realm_2_road_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.1
-	development_growth = 0.05
+	development_growth_factor = 0.05
 }
 
 woodland_realm_2_road_income_character_modifier_1 = {
@@ -1324,7 +1324,7 @@ woodland_realm_2_road_income_character_modifier_8 = {
 lorien_realm_1_road_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.1
-	development_growth = 0.05
+	development_growth_factor = 0.05
 }
 
 lorien_realm_1_road_income_character_modifier_1 = {
@@ -1336,7 +1336,7 @@ lorien_realm_1_road_income_character_modifier_1 = {
 lorien_realm_2_road_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.1
-	development_growth = 0.05
+	development_growth_factor = 0.05
 }
 
 lorien_realm_2_road_income_character_modifier_1 = {
@@ -1363,7 +1363,7 @@ lorien_realm_2_road_income_character_modifier_4 = {
 men_argrun_road_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.06
-	development_growth = 0.03
+	development_growth_factor = 0.03
 	levy_size = 0.1
 }
 
@@ -1391,7 +1391,7 @@ men_argrun_road_income_character_modifier_4 = {
 khand_vosham_road_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.1
-	development_growth = 0.05
+	development_growth_factor = 0.05
 }
 
 khand_vosham_income_character_modifier_1 = {
@@ -1428,7 +1428,7 @@ khand_vosham_income_character_modifier_6 = {
 siryan_road_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.1
-	development_growth = 0.05
+	development_growth_factor = 0.05
 }
 
 siryan_road_income_character_modifier_1 = {
@@ -1480,7 +1480,7 @@ siryan_road_income_character_modifier_9 = {
 baruzimabul_road_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.1
-	development_growth = 0.05
+	development_growth_factor = 0.05
 }
 
 baruzimabul_road_income_character_modifier_1 = {
@@ -1512,7 +1512,7 @@ baruzimabul_road_income_character_modifier_5 = {
 lyneria_road_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.2
-	development_growth = 0.1
+	development_growth_factor = 0.1
 }
 
 lyneria_road_income_character_modifier_1 = {
@@ -1564,7 +1564,7 @@ lyneria_road_income_character_modifier_9 = {
 nhazadh_causeway_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.1
-	development_growth = 0.05
+	development_growth_factor = 0.05
 }
 
 nhazadh_causeway_income_character_modifier_1 = {
@@ -1601,7 +1601,7 @@ nhazadh_causeway_income_character_modifier_6 = {
 shay_caravan_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.1
-	development_growth = 0.01
+	development_growth_factor = 0.01
 }
 
 shay_caravan_income_character_modifier_1 = {
@@ -1618,7 +1618,7 @@ shay_caravan_income_character_modifier_2 = {
 great_khy_road_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.1
-	development_growth = 0.05
+	development_growth_factor = 0.05
 }
 
 great_khy_road_income_character_modifier_1 = {
@@ -1660,7 +1660,7 @@ great_khy_road_income_character_modifier_7 = {
 ormal_roads_province_modifier = {
 	icon = economy_positive
 	monthly_income = 0.1
-	development_growth = 0.05
+	development_growth_factor = 0.05
 }
 
 ormal_road_income_character_modifier_1 = {
