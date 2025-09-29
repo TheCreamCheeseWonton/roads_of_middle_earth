@@ -285,6 +285,7 @@ trade_routes_map = {
 							has_province_modifier = umbar_port_province_modifier
 							has_province_modifier = pelargir_port_province_modifier
 							has_province_modifier = osgiliath_port_province_modifier
+							has_province_modifier = tharbad_port_province_modifier
 						}
 						##End Quonton
 					}

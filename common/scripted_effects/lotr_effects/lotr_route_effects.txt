@@ -4994,5 +4994,8 @@ define_trade_routes = {
 	province:4117 = {
 		add_province_modifier = harlond_port_province_modifier 
 	}
+	province:4537 = {
+		add_province_modifier = tharbad_port_province_modifier 
+	}
 	##End Quonton LOL
 }

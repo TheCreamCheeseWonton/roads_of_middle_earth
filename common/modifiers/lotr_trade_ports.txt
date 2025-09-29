@@ -133,6 +133,12 @@ inyaloni_port_province_modifier = {
 	development_growth_factor = 0.15
 }
 
+tharbad_port_province_modifier = {
+	icon = compass_positive
+	monthly_income = 0.8
+	development_growth_factor = 0.2
+}
+
 # Elvish Ports
 mithannunlond_port_province_modifier = {
 	icon = compass_positive
