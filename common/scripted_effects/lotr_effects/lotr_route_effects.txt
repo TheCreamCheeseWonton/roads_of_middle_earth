@@ -3527,6 +3527,126 @@ define_trade_routes = {
 	province:7043 = {
 		add_province_modifier = ivory_road_province_modifier 
 	}
+	province:7551 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7550 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7548 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7543 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7532 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7530 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7565 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7531 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7568 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7569 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7354 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7355 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7349 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7347 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7346 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7343 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7687 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7685 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7696 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7695 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7342 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7341 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7340 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7319 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7325 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7326 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7327 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7321 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7333 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7332 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7322 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7323 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7311 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7310 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7315 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7314 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7397 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7396 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7422 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
+	province:7421 = {
+		add_province_modifier = ivory_road_province_modifier 
+	}
 
 	##Ossiriand Road
 	province:4266 = {
@@ -4328,6 +4448,12 @@ define_trade_routes = {
 		add_province_modifier = lyneria_road_province_modifier 
 	}
 	province:7205 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:7820 = {
+		add_province_modifier = lyneria_road_province_modifier 
+	}
+	province:7819 = {
 		add_province_modifier = lyneria_road_province_modifier 
 	}
 	

@@ -1013,57 +1013,52 @@ ivory_road_province_modifier = {
 
 ivory_road_income_character_modifier_1 = {
 	icon = economy_positive
-	monthly_income = 0.5
+	monthly_income = 1
 }
 
 ivory_road_income_character_modifier_2 = {
 	icon = economy_positive
-	monthly_income = 1
+	monthly_income = 2
 }
 
 ivory_road_income_character_modifier_3 = {
 	icon = economy_positive
-	monthly_income = 1.5
+	monthly_income = 3
 }
 
 ivory_road_income_character_modifier_4 = {
 	icon = economy_positive
-	monthly_income = 2
+	monthly_income = 4
 }
 
 ivory_road_income_character_modifier_5 = {
 	icon = economy_positive
-	monthly_income = 2.5
+	monthly_income = 5
 }
 
 ivory_road_income_character_modifier_6 = {
 	icon = economy_positive
-	monthly_income = 3
+	monthly_income = 6
 }
 
 ivory_road_income_character_modifier_7 = {
 	icon = economy_positive
-	monthly_income = 4
+	monthly_income = 7
 }
 
 ivory_road_income_character_modifier_8 = {
 	icon = economy_positive
-	monthly_income = 5
+	monthly_income = 8
 }
 
 ivory_road_income_character_modifier_9 = {
 	icon = economy_positive
-	monthly_income = 6
+	monthly_income = 9
 }
 
 ivory_road_income_character_modifier_10 = {
 	icon = economy_positive
-	monthly_income = 7
-}
-
-ivory_road_income_character_modifier_11 = {
-	icon = economy_positive
-	monthly_income = 9
+	monthly_income = 10
 }
 
 #Crystal Road

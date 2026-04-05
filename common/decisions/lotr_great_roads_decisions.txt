@@ -14,8 +14,8 @@ decision_connect_capital_road = {
 	is_shown = {
 		is_landed = yes
 		OR = { 
-			has_title = title:e_numenor_in_exile
-			has_title = title:e_reunitedkingdom
+			has_title = title:h_numenor_in_exile
+			has_title = title:h_reunited_kingdom
 			has_title = title:e_arnor
 			has_title = title:k_arthedain
 		}
@@ -132,8 +132,8 @@ decision_reform_north_south_road = {
 			}
 		}
 		OR = { 
-			has_title = title:e_numenor_in_exile
-			has_title = title:e_reunitedkingdom
+			has_title = title:h_numenor_in_exile
+			has_title = title:h_reunited_kingdom
 		}
 		is_target_in_global_variable_list = {
 			name = unavailable_unique_decisions
@@ -1398,8 +1398,8 @@ decision_build_eregion_road = {
 			triggered_desc = {
 				trigger = {
 					OR = {
-						has_primary_title = title:e_numenor_in_exile
-						has_primary_title = title:e_reunitedkingdom
+						has_primary_title = title:h_numenor_in_exile
+						has_primary_title = title:h_reunited_kingdom
 					}
 				}
 				desc = decision_build_eregion_road_mannish_desc
@@ -1524,8 +1524,8 @@ decision_build_eregion_road = {
 			}
 			AND = { 
 				OR = { 
-					has_title = title:e_numenor_in_exile
-					has_title = title:e_reunitedkingdom
+					has_title = title:h_numenor_in_exile
+					has_title = title:h_reunited_kingdom
 				}
 				custom_tooltip = {
 					text = has_integrated_eregion_du
