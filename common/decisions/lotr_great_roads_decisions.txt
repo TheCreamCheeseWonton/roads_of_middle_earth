@@ -924,12 +924,12 @@ decision_connect_west_east_with_forest_road = {
 		province:4339 = {
 			add_province_modifier = east_road_province_modifier
 		}
-		province:4342 = {
-			add_province_modifier = east_road_province_modifier
-		}
-		province:4348 = {
-			add_province_modifier = east_road_province_modifier
-		}
+		#province:4342 = {
+		#	add_province_modifier = east_road_province_modifier
+		#}
+		#province:4348 = {
+		#	add_province_modifier = east_road_province_modifier
+		#}
 		province:4347 = {
 			add_province_modifier = east_road_province_modifier
 		}
@@ -1506,9 +1506,9 @@ decision_build_eregion_road = {
 		province:4397 = {
 			add_province_modifier = eregion_road_province_modifier
 		}
-		province:4338 = {
-			add_province_modifier = eregion_road_province_modifier
-		}
+		#province:4338 = {
+		#	add_province_modifier = eregion_road_province_modifier
+		#}
 		province:4337 = {
 			add_province_modifier = eregion_road_province_modifier
 		}
