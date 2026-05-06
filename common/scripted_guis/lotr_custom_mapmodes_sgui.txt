@@ -1679,3 +1679,691 @@ elven_subregions_map = {
 		}
 	}
 }
+
+language_map = {
+	is_shown = {
+		trigger_if = {
+			limit = { exists = global_var:custom_map_mode }
+			global_var:custom_map_mode = flag:language_map
+		}
+	}
+	is_valid = {
+		NOT = { exists = global_var:custom_map_mode_changing }
+	}
+	effect = {
+		if = {
+			limit = {
+				trigger_if = {
+					limit = { exists = global_var:custom_map_mode }
+					NOT = { global_var:custom_map_mode = flag:language_map }
+				}
+			}
+			set_global_variable = {
+				name = custom_map_mode_changing
+				value = 1
+			}
+			set_global_variable = {
+				name = custom_map_mode
+				value = flag:language_map
+			}
+			every_county = {
+				if = {
+					limit = { culture = { has_cultural_pillar = language_eldarin } }
+					every_county_province = {
+						barony = { set_title_color = { 204 255 204 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_eldarin }
+						set_variable = { name = language_group_map_tooltip value = flag:group_eldarin }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_quenya } }
+					every_county_province = {
+						barony = { set_title_color = { 0 1 85 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_quenya }
+						set_variable = { name = language_group_map_tooltip value = flag:group_eldarin }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_telerin } }
+					every_county_province = {
+						barony = { set_title_color = { 204 204 255 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_telerin }
+						set_variable = { name = language_group_map_tooltip value = flag:group_eldarin }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_sindarin } }
+					every_county_province = {
+						barony = { set_title_color = { 83 152 20 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_sindarin }
+						set_variable = { name = language_group_map_tooltip value = flag:group_eldarin }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_avarin } }
+					every_county_province = {
+						barony = { set_title_color = { 45 25 127 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_avarin }
+						set_variable = { name = language_group_map_tooltip value = flag:group_avarin }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_hwenti } }
+					every_county_province = {
+						barony = { set_title_color = { 25 25 140 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_hwenti }
+						set_variable = { name = language_group_map_tooltip value = flag:group_avarin }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_penni } }
+					every_county_province = {
+						barony = { set_title_color = { 50 40 120 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_penni }
+						set_variable = { name = language_group_map_tooltip value = flag:group_avarin }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_windan } }
+					every_county_province = {
+						barony = { set_title_color = { 50 90 75 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_windan }
+						set_variable = { name = language_group_map_tooltip value = flag:group_avarin }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_cuind } }
+					every_county_province = {
+						barony = { set_title_color = { 80 60 140 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_cuind }
+						set_variable = { name = language_group_map_tooltip value = flag:group_avarin }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_kinnlai } }
+					every_county_province = {
+						barony = { set_title_color = { 70 70 110 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_kinnlai }
+						set_variable = { name = language_group_map_tooltip value = flag:group_avarin }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_kindi } }
+					every_county_province = {
+						barony = { set_title_color = { 70 70 110 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_kindi }
+						set_variable = { name = language_group_map_tooltip value = flag:group_avarin }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_westron } }
+					every_county_province = {
+						barony = { set_title_color = { 1 40 106 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_westron }
+						set_variable = { name = language_group_map_tooltip value = flag:group_westron }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_westron_south } }
+					every_county_province = {
+						barony = { set_title_color = { 43 97 89 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_westron_south }
+						set_variable = { name = language_group_map_tooltip value = flag:group_westron }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_westron_orc } }
+					every_county_province = {
+						barony = { set_title_color = { 31 21 19 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_westron_orc }
+						set_variable = { name = language_group_map_tooltip value = flag:group_westron }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_hobbitish } }
+					every_county_province = {
+						barony = { set_title_color = { 100 220 0 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_hobbitish }
+						set_variable = { name = language_group_map_tooltip value = flag:group_westron }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_dalish } }
+					every_county_province = {
+						barony = { set_title_color = { 200 100 0 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_dalish }
+						set_variable = { name = language_group_map_tooltip value = flag:group_rhovanic }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_dorwinic } }
+					every_county_province = {
+						barony = { set_title_color = { 115 0 25 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_dorwinic }
+						set_variable = { name = language_group_map_tooltip value = flag:group_rhovanic }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_rohirric } }
+					every_county_province = {
+						barony = { set_title_color = { 67 115 44 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_rohirric }
+						set_variable = { name = language_group_map_tooltip value = flag:group_rhovanic }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_rhovanic } }
+					every_county_province = {
+						barony = { set_title_color = { 220 120 40 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_rhovanic }
+						set_variable = { name = language_group_map_tooltip value = flag:group_rhovanic }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_adunaic } }
+					every_county_province = {
+						barony = { set_title_color = { 33 46 46 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_adunaic }
+						set_variable = { name = language_group_map_tooltip value = flag:group_adunaic }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_adunaic_bellakar } }
+					every_county_province = {
+						barony = { set_title_color = { 100 20 50 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_adunaic_bellakar }
+						set_variable = { name = language_group_map_tooltip value = flag:group_adunaic }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_kharadunaic } }
+					every_county_province = {
+						barony = { set_title_color = { 29 31 84 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_kharadunaic }
+						set_variable = { name = language_group_map_tooltip value = flag:group_adunaic }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_tanturaki } }
+					every_county_province = {
+						barony = { set_title_color = { 10 10 15 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_tanturaki }
+						set_variable = { name = language_group_map_tooltip value = flag:group_adunaic }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_adunaic_umbar } }
+					every_county_province = {
+						barony = { set_title_color = { 33 59 40 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_adunaic_umbar }
+						set_variable = { name = language_group_map_tooltip value = flag:group_adunaic }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_azulunaic } }
+					every_county_province = {
+						barony = { set_title_color = { 145 99 15 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_azulunaic }
+						set_variable = { name = language_group_map_tooltip value = flag:group_adunaic }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_taliska } }
+					every_county_province = {
+						barony = { set_title_color = { 95 71 102 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_taliska }
+						set_variable = { name = language_group_map_tooltip value = flag:group_old_edainic }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_eriadoric } }
+					every_county_province = {
+						barony = { set_title_color = { 95 71 102 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_eriadoric }
+						set_variable = { name = language_group_map_tooltip value = flag:group_old_edainic }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_northern_apysaic } }
+					every_county_province = {
+						barony = { set_title_color = { 209 105 0 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_northern_apysaic }
+						set_variable = { name = language_group_map_tooltip value = flag:group_fariyian }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_karrani } }
+					every_county_province = {
+						barony = { set_title_color = { 204 169 29 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_karrani }
+						set_variable = { name = language_group_map_tooltip value = flag:group_fariyian }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_jelut } }
+					every_county_province = {
+						barony = { set_title_color = { 240 120 10 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_jelut }
+						set_variable = { name = language_group_map_tooltip value = flag:group_fariyian }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_arysan } }
+					every_county_province = {
+						barony = { set_title_color = { 219 92 57 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_arysan }
+						set_variable = { name = language_group_map_tooltip value = flag:group_fariyian }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_pust } }
+					every_county_province = {
+						barony = { set_title_color = { 252 189 86 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_pust }
+						set_variable = { name = language_group_map_tooltip value = flag:group_fariyian }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_middle_apysaic } }
+					every_county_province = {
+						barony = { set_title_color = { 232 152 94 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_middle_apysaic }
+						set_variable = { name = language_group_map_tooltip value = flag:group_fariyian }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_new_sirayni } }
+					every_county_province = {
+						barony = { set_title_color = { 150 60 30 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_new_sirayni }
+						set_variable = { name = language_group_map_tooltip value = flag:group_fariyian }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_southern_apysaic } }
+					every_county_province = {
+						barony = { set_title_color = { 255 219 130 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_southern_apysaic }
+						set_variable = { name = language_group_map_tooltip value = flag:group_new_apysan }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_gai } }
+					every_county_province = {
+						barony = { set_title_color = { 177 162 100 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_gai }
+						set_variable = { name = language_group_map_tooltip value = flag:group_new_apysan }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_ansith } }
+					every_county_province = {
+						barony = { set_title_color = { 50 60 0 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_ansith }
+						set_variable = { name = language_group_map_tooltip value = flag:group_new_apysan }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_amutani } }
+					every_county_province = {
+						barony = { set_title_color = { 190 152 142 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_amutani }
+						set_variable = { name = language_group_map_tooltip value = flag:group_new_apysan }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_elinse } }
+					every_county_province = {
+						barony = { set_title_color = { 197 195 107 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_elinse }
+						set_variable = { name = language_group_map_tooltip value = flag:group_elinse }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_ioradya } }
+					every_county_province = {
+						barony = { set_title_color = { 100 25 25 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_ioradya }
+						set_variable = { name = language_group_map_tooltip value = flag:group_ioradya }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_tedjin } }
+					every_county_province = {
+						barony = { set_title_color = { 130 120 90 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_tedjin }
+						set_variable = { name = language_group_map_tooltip value = flag:group_ioradya }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_varadia } }
+					every_county_province = {
+						barony = { set_title_color = { 60 20 20 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_varadia }
+						set_variable = { name = language_group_map_tooltip value = flag:group_ioradya }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_ulgathig } }
+					every_county_province = {
+						barony = { set_title_color = { 130 150 0 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_ulgathig }
+						set_variable = { name = language_group_map_tooltip value = flag:group_ulgathig }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_hillmen } }
+					every_county_province = {
+						barony = { set_title_color = { 128 87 68 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_hillmen }
+						set_variable = { name = language_group_map_tooltip value = flag:group_gwathuilach }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_gwathuirim } }
+					every_county_province = {
+						barony = { set_title_color = { 107 91 77 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_gwathuirim }
+						set_variable = { name = language_group_map_tooltip value = flag:group_gwathuilach }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_dunlendish } }
+					every_county_province = {
+						barony = { set_title_color = { 85 18 17 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_dunlendish }
+						set_variable = { name = language_group_map_tooltip value = flag:group_gwathuilach }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_daenael } }
+					every_county_province = {
+						barony = { set_title_color = { 112 87 84 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_daenael }
+						set_variable = { name = language_group_map_tooltip value = flag:group_daenael }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_halethian } }
+					every_county_province = {
+						barony = { set_title_color = { 95 71 102 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_halethian }
+						set_variable = { name = language_group_map_tooltip value = flag:group_old_edainic }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_drug } }
+					every_county_province = {
+						barony = { set_title_color = { 226 204 108 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_drug }
+						set_variable = { name = language_group_map_tooltip value = flag:group_drughic }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_beffraen } }
+					every_county_province = {
+						barony = { set_title_color = { 171 169 147 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_beffraen }
+						set_variable = { name = language_group_map_tooltip value = flag:group_drughic }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_honnin } }
+					every_county_province = {
+						barony = { set_title_color = { 204 204 108 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_honnin }
+						set_variable = { name = language_group_map_tooltip value = flag:group_drughic }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_chaialla } }
+					every_county_province = {
+						barony = { set_title_color = { 195 252 112 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_chaialla }
+						set_variable = { name = language_group_map_tooltip value = flag:group_drughic }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_yatali_gan } }
+					every_county_province = {
+						barony = { set_title_color = { 114 179 151 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_yatali_gan }
+						set_variable = { name = language_group_map_tooltip value = flag:group_drughic }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_muranian } }
+					every_county_province = {
+						barony = { set_title_color = { 157 165 167 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_muranian }
+						set_variable = { name = language_group_map_tooltip value = flag:group_harshandatti }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_old_sirayni } }
+					every_county_province = {
+						barony = { set_title_color = { 150 120 30 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_old_sirayni }
+						set_variable = { name = language_group_map_tooltip value = flag:group_old_siryani }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_akanali } }
+					every_county_province = {
+						barony = { set_title_color = { 30 45 45 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_akanali }
+						set_variable = { name = language_group_map_tooltip value = flag:group_mumakani }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_mumakani } }
+					every_county_province = {
+						barony = { set_title_color = { 10 39 10 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_mumakani }
+						set_variable = { name = language_group_map_tooltip value = flag:group_mumakani }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_inkamaki } }
+					every_county_province = {
+						barony = { set_title_color = { 10 28 10 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_inkamaki }
+						set_variable = { name = language_group_map_tooltip value = flag:group_mumakani }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_nafarati } }
+					every_county_province = {
+						barony = { set_title_color = { 27 42 28 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_nafarati }
+						set_variable = { name = language_group_map_tooltip value = flag:group_mumakani }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_batamai } }
+					every_county_province = {
+						barony = { set_title_color = { 56 53 20 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_batamai }
+						set_variable = { name = language_group_map_tooltip value = flag:group_mumakani }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_kirani } }
+					every_county_province = {
+						barony = { set_title_color = { 10 50 35 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_kirani }
+						set_variable = { name = language_group_map_tooltip value = flag:group_kirani }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_hathori } }
+					every_county_province = {
+						barony = { set_title_color = { 10 30 40 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_hathori }
+						set_variable = { name = language_group_map_tooltip value = flag:group_kirani }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_usakani } }
+					every_county_province = {
+						barony = { set_title_color = { 112 116 29 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_usakani }
+						set_variable = { name = language_group_map_tooltip value = flag:group_magri }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_magri } }
+					every_county_province = {
+						barony = { set_title_color = { 84 118 41 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_magri }
+						set_variable = { name = language_group_map_tooltip value = flag:group_magri }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_geshanin } }
+					every_county_province = {
+						barony = { set_title_color = { 44 40 40 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_geshanin }
+						set_variable = { name = language_group_map_tooltip value = flag:group_geshanin }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_tuktanin } }
+					every_county_province = {
+						barony = { set_title_color = { 54 46 12 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_tuktanin }
+						set_variable = { name = language_group_map_tooltip value = flag:group_geshanin }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_dusheraen } }
+					every_county_province = {
+						barony = { set_title_color = { 37 35 21 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_dusheraen }
+						set_variable = { name = language_group_map_tooltip value = flag:group_geshanin }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_drenin } }
+					every_county_province = {
+						barony = { set_title_color = { 212 191 103 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_drenin }
+						set_variable = { name = language_group_map_tooltip value = flag:group_shayni }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_ganin } }
+					every_county_province = {
+						barony = { set_title_color = { 230 255 143 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_ganin }
+						set_variable = { name = language_group_map_tooltip value = flag:group_shayni }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_ahavan } }
+					every_county_province = {
+						barony = { set_title_color = { 254 223 100 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_ahavan }
+						set_variable = { name = language_group_map_tooltip value = flag:group_shayni }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_lyneri } }
+					every_county_province = {
+						barony = { set_title_color = { 220 230 183 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_lyneri }
+						set_variable = { name = language_group_map_tooltip value = flag:group_shayni }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_senga } }
+					every_county_province = {
+						barony = { set_title_color = { 252 198 85 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_senga }
+						set_variable = { name = language_group_map_tooltip value = flag:group_sare }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_khyan } }
+					every_county_province = {
+						barony = { set_title_color = { 210 100 180 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_khyan }
+						set_variable = { name = language_group_map_tooltip value = flag:group_south_khailuza }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_tazinain } }
+					every_county_province = {
+						barony = { set_title_color = { 108 175 175 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_tazinain }
+						set_variable = { name = language_group_map_tooltip value = flag:group_south_khailuza }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_anarikean } }
+					every_county_province = {
+						barony = { set_title_color = { 200 90 140 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_anarikean }
+						set_variable = { name = language_group_map_tooltip value = flag:group_south_khailuza }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_drakespeech } }
+					every_county_province = {
+						barony = { set_title_color = { 37 20 153 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_drakespeech }
+						set_variable = { name = language_group_map_tooltip value = flag:group_womaw }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_arhuneri } }
+					every_county_province = {
+						barony = { set_title_color = { 11 32 38 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_arhuneri }
+						set_variable = { name = language_group_map_tooltip value = flag:group_arhuneri }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_orcish } }
+					every_county_province = {
+						barony = { set_title_color = { 37 48 29 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_orcish }
+						set_variable = { name = language_group_map_tooltip value = flag:group_orcish }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_kurr } }
+					every_county_province = {
+						barony = { set_title_color = { 40 43 23 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_kurr }
+						set_variable = { name = language_group_map_tooltip value = flag:group_orcish }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_black_speech } }
+					every_county_province = {
+						barony = { set_title_color = { 0 0 0 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_black_speech }
+						set_variable = { name = language_group_map_tooltip value = flag:group_morgothic }
+					}
+				}
+				else_if = {
+					limit = { culture = { has_cultural_pillar = language_khuzdul } }
+					every_county_province = {
+						barony = { set_title_color = { 0 33 55 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_khuzdul }
+						set_variable = { name = language_group_map_tooltip value = flag:group_dwarven }
+					}
+				}
+				else = {
+					every_county_province = {
+						barony = { set_title_color = { 8 8 8 0 } }
+						set_variable = { name = language_map_tooltip value = flag:lang_none }
+						set_variable = { name = language_group_map_tooltip value = flag:group_none }
+					}
+				}
+			}
+			remove_global_variable = custom_map_mode_changing
+		}
+	}
+}
