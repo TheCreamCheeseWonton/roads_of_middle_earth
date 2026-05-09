@@ -4997,6 +4997,9 @@ define_trade_routes = {
 	}
 
 	###Ports###
+	province:5779 = {
+		add_province_modifier = pharasphurus_port_province_modifier 
+	}
 	province:202 = {
 		add_province_modifier = osgiliath_port_province_modifier 
 	}
@@ -5104,6 +5107,15 @@ define_trade_routes = {
 	}
 	province:2093 = {
 		add_province_modifier = bozisha_dar_port_province_modifier 
+	}
+	province:7823 = {
+		add_province_modifier = thaamutasenga_port_province_modifier 
+	}
+	province:7332 = {
+		add_province_modifier = ruak_aji_port_province_modifier 
+	}
+	province:7530 = {
+		add_province_modifier = korlan_port_province_modifier 
 	}
 	province:4274 = {
 		add_province_modifier = mithannunlond_port_province_modifier 

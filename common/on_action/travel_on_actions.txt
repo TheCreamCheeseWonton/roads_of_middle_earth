@@ -68,6 +68,8 @@ on_travel_plan_movement = {
 					has_province_modifier = shay_caravan_province_modifier 
 					has_province_modifier = great_khy_road_province_modifier
 					has_province_modifier = ormal_roads_province_modifier
+					has_province_modifier = grey_mountain_road_province_modifier
+					has_province_modifier =	yellow_mountain_road_province_modifier
 				}
 			}
 			add_travel_plan_modifier = travel_steeds_acquired_modifier
@@ -114,6 +116,8 @@ on_travel_plan_movement = {
 						has_province_modifier = shay_caravan_province_modifier 
 						has_province_modifier = great_khy_road_province_modifier
 						has_province_modifier = ormal_roads_province_modifier
+						has_province_modifier = grey_mountain_road_province_modifier
+						has_province_modifier =	yellow_mountain_road_province_modifier
 					}
 				}
 			}

@@ -166,6 +166,11 @@ d_resources_map_quartz = {
 	capital = c_minas_tirith
 	can_create = { always = no }
 }
+d_great_roads_map_quonton = {
+	color = { 80 50 80 }
+	capital = c_minas_tirith
+	can_create = { always = no }
+}
 d_port_map_quonton = {
 	color = { 10 102 204 }
 	capital = c_minas_tirith

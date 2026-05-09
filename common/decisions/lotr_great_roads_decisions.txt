@@ -8,7 +8,7 @@ decision_connect_capital_road = {
 		reference = "gfx/interface/illustrations/decisions/decision_human_road.dds"
 	}
 	sort_order = 5
-	decision_group_type = realms_in_exile_major
+	decision_group_type = raods_of_middle_earth
 
 	# Shown
 	is_shown = {
@@ -77,16 +77,16 @@ decision_connect_capital_road = {
 			has_title = title:d_tarmea
 			has_title = title:c_annuminas
 			OR = {
+				has_title = title:c_fornost
+				any_vassal = {
 					has_title = title:c_fornost
-					any_vassal = {
-						has_title = title:c_fornost
-					}
+				}
 			}
 			OR = {
+				has_title = title:c_rhovanduin
+				any_vassal = {
 					has_title = title:c_rhovanduin
-					any_vassal = {
-						has_title = title:c_rhovanduin
-					}
+				}
 			}
 		}
 	}
@@ -119,7 +119,7 @@ decision_reform_north_south_road = {
 		reference = "gfx/interface/illustrations/decisions/decision_human_road.dds"
 	}
 	sort_order = 5
-	decision_group_type = realms_in_exile_major
+	decision_group_type = raods_of_middle_earth
 
 	# Shown
 	is_shown = {
@@ -213,7 +213,7 @@ decision_west_kazad_road = {
 		reference = "gfx/interface/illustrations/decisions/decision_dwarven_road.dds"
 	}
 	sort_order = 5
-	decision_group_type = realms_in_exile_major
+	decision_group_type = raods_of_middle_earth
 
 	# Shown
 	is_shown = {
@@ -297,7 +297,11 @@ decision_west_kazad_road = {
 			}
 		}
 		trigger_else_if = { 
-			limit = {is_alive = character:lineofelrond1 }
+			limit = {
+				character:lineofelrond1 = { 
+					is_alive = yes
+				}
+			}
 			character:lineofelrond1 = {
 				opinion = {
 					target = root
@@ -345,7 +349,7 @@ decision_east_kazad_road = {
 		reference = "gfx/interface/illustrations/decisions/decision_dwarven_road.dds"
 	}
 	sort_order = 5
-	decision_group_type = realms_in_exile_major
+	decision_group_type = raods_of_middle_earth
 
 	# Shown
 	is_shown = {
@@ -429,7 +433,11 @@ decision_east_kazad_road = {
 		is_ruler = yes
 		has_title = title:k_khazad_dum
 		trigger_if = { 
-			limit = {is_alive = character:lineoffinarfin5 }
+			limit = {
+				character:lineoffinarfin5 = { 
+					is_alive = yes
+				}
+			}
 			character:lineoffinarfin5 = {
 				opinion = {
 					target = root
@@ -477,7 +485,7 @@ decision_connect_firebeard_road = {
 		reference = "gfx/interface/illustrations/decisions/decision_dwarven_road.dds"
 	}
 	sort_order = 5
-	decision_group_type = realms_in_exile_major
+	decision_group_type = raods_of_middle_earth
 
 	# Shown
 	is_shown = {
@@ -585,7 +593,11 @@ decision_connect_firebeard_road = {
 			}
 		}
 		trigger_if = { 
-			limit = {is_alive = character:lineofcirdan }
+			limit = {
+				character:lineofcirdan = { 
+					is_alive = yes
+				}
+			}
 			character:lineofcirdan = {
 				opinion = {
 					target = root
@@ -633,7 +645,7 @@ decision_connect_broadbeam_road = {
 		reference = "gfx/interface/illustrations/decisions/decision_dwarven_road.dds"
 	}
 	sort_order = 5
-	decision_group_type = realms_in_exile_major
+	decision_group_type = raods_of_middle_earth
 
 	# Shown
 	is_shown = {
@@ -734,6 +746,9 @@ decision_connect_broadbeam_road = {
 			add_province_modifier = east_road_province_modifier
 		}
 		province:4293 = {
+			add_province_modifier = east_road_province_modifier
+		}
+		province:4221 = {
 			add_province_modifier = east_road_province_modifier
 		}
 	}
@@ -848,7 +863,11 @@ decision_connect_broadbeam_road = {
 			}
 		}
 		trigger_if = { 
-			limit = {is_alive = character:lineofcirdan }
+			limit = {
+				character:lineofcirdan = { 
+					is_alive = yes
+				}
+			}
 			character:lineofcirdan = {
 				opinion = {
 					target = root
@@ -895,7 +914,7 @@ decision_connect_west_east_with_forest_road = {
 		reference = "gfx/interface/illustrations/decisions/decision_dwarven_road.dds"
 	}
 	sort_order = 5
-	decision_group_type = realms_in_exile_major
+	decision_group_type = raods_of_middle_earth
 
 	# Shown
 	is_shown = {
@@ -961,7 +980,11 @@ decision_connect_west_east_with_forest_road = {
 				}
 		}
 		trigger_if = { 
-			limit = {is_alive = character:lineofelrond1 }
+			limit = {
+				character:lineofelrond1 = { 
+					is_alive = yes
+				}
+			}
 			character:lineofelrond1 = {
 				opinion = {
 					target = root
@@ -1009,7 +1032,7 @@ decision_connect_erebor_with_forest_road = {
 		reference = "gfx/interface/illustrations/decisions/decision_dwarven_road.dds"
 	}
 	sort_order = 5
-	decision_group_type = realms_in_exile_major
+	decision_group_type = raods_of_middle_earth
 
 	# Shown
 	is_shown = {
@@ -1111,7 +1134,11 @@ decision_connect_erebor_with_forest_road = {
 			}
 		}
 		trigger_if = { 
-			limit = {is_alive = character:lineoforopher3 }
+			limit = {
+				character:lineoforopher3 = { 
+					is_alive = yes
+				}
+			}
 			character:lineoforopher3 = {
 				opinion = {
 					target = root
@@ -1159,7 +1186,7 @@ decision_reform_old_dwarf_road = {
 		reference = "gfx/interface/illustrations/decisions/decision_dwarven_road.dds"
 	}
 	sort_order = 5
-	decision_group_type = realms_in_exile_major
+	decision_group_type = raods_of_middle_earth
 
 	# Shown
 	is_shown = {
@@ -1257,7 +1284,7 @@ decision_white_mountains_road_north_south = {
 		reference = "gfx/interface/illustrations/decisions/decision_dwarven_road.dds"
 	}
 	sort_order = 5
-	decision_group_type = realms_in_exile_major
+	decision_group_type = raods_of_middle_earth
 
 	# Shown
 	is_shown = {
@@ -1382,6 +1409,249 @@ decision_white_mountains_road_north_south = {
 	}
 }
 
+decision_connect_erebor_grey_mountains = {
+	title = decision_connect_erebor_grey_mountains
+	desc = decision_connect_erebor_grey_mountains_desc
+	confirm_text = decision_connect_erebor_grey_mountains_confirm
+	selection_tooltip = decision_connect_erebor_grey_mountains_tooltip
+	picture = { 
+		reference = "gfx/interface/illustrations/decisions/decision_dwarven_road.dds"
+	}
+	sort_order = 5
+	decision_group_type = raods_of_middle_earth
+
+	# Shown
+	is_shown = {
+		is_landed = yes
+		OR = { 
+			has_title = title:k_erebor
+			has_title = title:k_khazad_dum
+			has_title = title:k_grey_mountains
+		}
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:decision_connect_erebor_grey_mountains
+			}
+		}
+	}
+	
+	# Requirements
+	is_valid = {
+		is_ruler = yes
+		has_title = title:k_grey_mountains
+		completely_controls = title:d_thakalgund
+		trigger_if = {
+			limit = {exists = title:k_dale.holder }
+			title:k_dale.holder = {
+				opinion = {
+					target = root
+					value > 90
+				}
+			}
+		}
+		trigger_if = {
+			limit = {exists = title:d_ronen_in_anduin.holder }
+			title:d_ronen_in_anduin.holder = {
+				opinion = {
+					target = root
+					value > 90
+				}
+			}
+		}
+		prestige_level >= high_prestige_level
+	}
+
+	# Effect
+	effect = {
+		custom_tooltip = decision_connect_erebor_grey_mountains.send_message
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:decision_connect_erebor_grey_mountains
+		}
+		if = { 
+			limit = {
+				NOT = { 
+					is_target_in_global_variable_list = {
+						name = unavailable_unique_decisions
+						target = flag:decision_reform_old_dwarf_road
+					}
+				}
+			}
+			province:3399 = {
+				add_province_modifier = grey_mountain_road_province_modifier
+			}
+			province:3622 = {
+				add_province_modifier = grey_mountain_road_province_modifier
+			}
+			province:3621 = {
+				add_province_modifier = grey_mountain_road_province_modifier
+			}
+			province:3624 = {
+				add_province_modifier = grey_mountain_road_province_modifier
+			}
+			province:3623 = {
+				add_province_modifier = grey_mountain_road_province_modifier
+			}
+			province:3625 = {
+				add_province_modifier = grey_mountain_road_province_modifier
+			}
+			province:3627 = {
+				add_province_modifier = grey_mountain_road_province_modifier
+			}
+			province:5019 = {
+				add_province_modifier = grey_mountain_road_province_modifier
+			}
+			province:5017 = {
+				add_province_modifier = grey_mountain_road_province_modifier
+			}
+			province:3629 = {
+				add_province_modifier = grey_mountain_road_province_modifier
+			}
+			province:3631 = {
+				add_province_modifier = grey_mountain_road_province_modifier
+			}
+			province:3632 = {
+				add_province_modifier = grey_mountain_road_province_modifier
+			}
+			province:3633 = {
+				add_province_modifier = grey_mountain_road_province_modifier
+			}
+			province:3208 = {
+				add_province_modifier = grey_mountain_road_province_modifier
+			}
+			province:3209 = {
+				add_province_modifier = grey_mountain_road_province_modifier
+			}
+			province:3178 = {
+				add_province_modifier = grey_mountain_road_province_modifier
+			}
+			province:3171 = {
+				add_province_modifier = grey_mountain_road_province_modifier
+			}
+			province:3168 = {
+				add_province_modifier = grey_mountain_road_province_modifier
+			}
+			province:3173 = {
+				add_province_modifier = grey_mountain_road_province_modifier
+			}
+			province:3175 = {
+				add_province_modifier = grey_mountain_road_province_modifier
+			}
+			province:3167 = {
+				add_province_modifier = grey_mountain_road_province_modifier
+			}
+			province:3164 = {
+				add_province_modifier = grey_mountain_road_province_modifier
+			}
+			province:4102 = {
+				add_province_modifier = grey_mountain_road_province_modifier
+			}
+			province:3158 = {
+				add_province_modifier = grey_mountain_road_province_modifier
+			}
+			province:3155 = {
+				add_province_modifier = grey_mountain_road_province_modifier
+			}
+		}
+		else = { 
+			province:3399 = {
+				add_province_modifier = old_dwarf_road_province_modifier
+			}
+			province:3622 = {
+				add_province_modifier = old_dwarf_road_province_modifier
+			}
+			province:3621 = {
+				add_province_modifier = old_dwarf_road_province_modifier
+			}
+			province:3624 = {
+				add_province_modifier = old_dwarf_road_province_modifier
+			}
+			province:3623 = {
+				add_province_modifier = old_dwarf_road_province_modifier
+			}
+			province:3625 = {
+				add_province_modifier = old_dwarf_road_province_modifier
+			}
+			province:3627 = {
+				add_province_modifier = old_dwarf_road_province_modifier
+			}
+			province:5019 = {
+				add_province_modifier = old_dwarf_road_province_modifier
+			}
+			province:5017 = {
+				add_province_modifier = old_dwarf_road_province_modifier
+			}
+			province:3629 = {
+				add_province_modifier = old_dwarf_road_province_modifier
+			}
+			province:3631 = {
+				add_province_modifier = old_dwarf_road_province_modifier
+			}
+			province:3632 = {
+				add_province_modifier = old_dwarf_road_province_modifier
+			}
+			province:3633 = {
+				add_province_modifier = old_dwarf_road_province_modifier
+			}
+			province:3208 = {
+				add_province_modifier = old_dwarf_road_province_modifier
+			}
+			province:3209 = {
+				add_province_modifier = old_dwarf_road_province_modifier
+			}
+			province:3178 = {
+				add_province_modifier = old_dwarf_road_province_modifier
+			}
+			province:3171 = {
+				add_province_modifier = old_dwarf_road_province_modifier
+			}
+			province:3168 = {
+				add_province_modifier = old_dwarf_road_province_modifier
+			}
+			province:3173 = {
+				add_province_modifier = old_dwarf_road_province_modifier
+			}
+			province:3175 = {
+				add_province_modifier = old_dwarf_road_province_modifier
+			}
+			province:3167 = {
+				add_province_modifier = old_dwarf_road_province_modifier
+			}
+			province:3164 = {
+				add_province_modifier = old_dwarf_road_province_modifier
+			}
+			province:4102 = {
+				add_province_modifier = old_dwarf_road_province_modifier
+			}
+			province:3158 = {
+				add_province_modifier = old_dwarf_road_province_modifier
+			}
+			province:3155 = {
+				add_province_modifier = old_dwarf_road_province_modifier
+			}
+		}
+	}
+
+	# Cost
+	cost = {
+		gold = {
+			value = 600
+		}
+	}
+
+	# AI
+	ai_check_interval = 12
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
 decision_build_eregion_road = {
 	title = decision_build_eregion_road
 	desc = {
@@ -1413,7 +1683,7 @@ decision_build_eregion_road = {
 		reference = "gfx/interface/illustrations/decisions/decision_elven_road.dds"
 	}
 	sort_order = 5
-	decision_group_type = realms_in_exile_major
+	decision_group_type = raods_of_middle_earth
 
 	# Shown
 	is_shown = {
@@ -1566,7 +1836,7 @@ decision_expand_woodland_road = {
 		reference = "gfx/interface/illustrations/decisions/decision_elven_road.dds"
 	}
 	sort_order = 5
-	decision_group_type = realms_in_exile_major
+	decision_group_type = raods_of_middle_earth
 
 	# Shown
 	is_shown = {
@@ -1695,7 +1965,11 @@ decision_expand_woodland_road = {
 				}
 				has_title = title:e_laurelindorenan
 				trigger_if = { 
-					limit = {is_alive = character:lineoforopher3 }
+					limit = {
+						character:lineoforopher3 = { 
+							is_alive = yes
+						}
+					}
 					character:lineoforopher3 = {
 						opinion = {
 							target = root
@@ -1745,7 +2019,7 @@ decision_expand_lorien_road = {
 		reference = "gfx/interface/illustrations/decisions/decision_elven_road.dds"
 	}
 	sort_order = 5
-	decision_group_type = realms_in_exile_major
+	decision_group_type = raods_of_middle_earth
 
 	# Shown
 	is_shown = {
@@ -1825,7 +2099,11 @@ decision_expand_lorien_road = {
 				}
 				has_title = title:e_greenwood
 				trigger_if = { 
-					limit = {is_alive = character:lineoffinarfin5 }
+					limit = {
+						character:lineoffinarfin5 = { 
+							is_alive = yes
+						}
+					}
 					character:lineoffinarfin5 = {
 						opinion = {
 							target = root
@@ -1882,7 +2160,7 @@ decision_rebuild_erebor_road = {
 		reference = "gfx/interface/illustrations/decisions/decision_dwarven_road.dds"
 	}
 	sort_order = 5
-	decision_group_type = realms_in_exile_major
+	decision_group_type = raods_of_middle_earth
 
 	# Shown
 	is_shown = {
@@ -1975,6 +2253,927 @@ decision_rebuild_erebor_road = {
 				}
 			}
 		}
+	}
+
+	# Cost
+	cost = {
+		gold = {
+			value = 600
+		}
+	}
+
+	# AI
+	ai_check_interval = 12
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+decision_connect_rhovanian_capital = {
+	title = decision_connect_rhovanian_capital
+	desc = decision_connect_rhovanian_capital_desc
+	confirm_text = decision_connect_rhovanian_capital_confirm
+	selection_tooltip = decision_connect_rhovanian_capital_tooltip
+	picture = { 
+		reference = "gfx/interface/illustrations/decisions/decision_human_road.dds"
+	}
+	sort_order = 5
+	decision_group_type = raods_of_middle_earth
+
+	# Shown
+	is_shown = {
+		is_landed = yes
+		OR = { 
+			has_title = title:e_rhovanion
+			has_title = title:k_rhovanion
+			any_vassal = {
+				OR = { 
+					has_title = title:e_rhovanion
+					has_title = title:k_rhovanion
+				}
+			}
+		}
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:decision_connect_rhovanian_capital
+			}
+		}
+		NOT = { 
+			OR = { 
+				province:3827 = { 
+					has_province_modifier = east_way_road_province_modifier 
+				}
+				province:3826 = {
+					has_province_modifier = east_way_road_province_modifier 
+				}
+				province:3832 = {
+					has_province_modifier = east_way_road_province_modifier 
+				}
+				province:3833 = {
+					has_province_modifier = east_way_road_province_modifier 
+				}
+				province:3829 = {
+					has_province_modifier = east_way_road_province_modifier 
+				}
+				province:3830 = {
+					has_province_modifier = east_way_road_province_modifier 
+				}
+				province:3867 = {
+					has_province_modifier = east_way_road_province_modifier 
+				}
+				province:3871 = {
+					has_province_modifier = east_way_road_province_modifier 
+				}
+				province:3860 = {
+					has_province_modifier = east_way_road_province_modifier 
+				}
+				province:3856 = {
+					has_province_modifier = east_way_road_province_modifier 
+				}
+			}
+		}
+	}
+
+	# Effect
+	effect = {
+		custom_tooltip = decision_connect_rhovanian_capital.send_message
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:decision_connect_rhovanian_capital
+		}
+		province:3827 = { 
+			add_province_modifier = east_way_road_province_modifier 
+		}
+		province:3826 = {
+			add_province_modifier = east_way_road_province_modifier 
+		}
+		province:3832 = {
+			add_province_modifier = east_way_road_province_modifier 
+		}
+		province:3833 = {
+			add_province_modifier = east_way_road_province_modifier 
+		}
+		province:3829 = {
+			add_province_modifier = east_way_road_province_modifier 
+		}
+		province:3830 = {
+			add_province_modifier = east_way_road_province_modifier 
+		}
+		province:3867 = {
+			add_province_modifier = east_way_road_province_modifier 
+		}
+		province:3871 = {
+			add_province_modifier = east_way_road_province_modifier 
+		}
+		province:3860 = {
+			add_province_modifier = east_way_road_province_modifier 
+		}
+		province:3856 = {
+			add_province_modifier = east_way_road_province_modifier 
+		}
+	}
+
+	# Requirements
+	is_valid = {
+		is_ruler = yes
+		OR = { 
+			has_title = title:e_rhovanion
+			has_title = title:k_rhovanion
+			any_vassal = {
+				OR = { 
+					has_title = title:e_rhovanion
+					has_title = title:k_rhovanion
+				}
+			}
+		}
+		completely_controls = title:d_heahand
+		completely_controls = title:d_east_bight
+	}
+
+	# Cost
+	cost = {
+		gold = {
+			value = 400
+		}
+	}
+
+	# AI
+	ai_check_interval = 12
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+decision_east_barazimabul_road = {
+	title = decision_east_barazimabul_road
+	desc = decision_east_barazimabul_road_desc
+	confirm_text = decision_east_barazimabul_road_confirm
+	selection_tooltip = decision_east_barazimabul_road_tooltip
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_dwarven_road.dds"
+	}
+	sort_order = 5
+	decision_group_type = raods_of_middle_earth
+
+	# Shown
+	is_shown = {
+		is_landed = yes
+		OR = { 
+			has_title = title:e_yellow_mountains
+			any_vassal = {
+				has_title = title:e_yellow_mountains
+			}
+			has_title = title:k_barazimab_ul
+			any_vassal = {
+				has_title = title:k_barazimab_ul
+			}
+		}
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:decision_east_barazimabul_road
+			}
+		}
+	}
+
+	# Effect
+	effect = {
+		custom_tooltip = decision_east_barazimabul_road.send_message
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:decision_east_barazimabul_road
+		}
+		province:5281 = {
+			add_province_modifier = baruzimabul_road_province_modifier
+		}
+		province:5280 = {
+			add_province_modifier = baruzimabul_road_province_modifier
+		}
+		province:5279 = {
+			add_province_modifier = baruzimabul_road_province_modifier
+		}
+		province:5295 = {
+			add_province_modifier = baruzimabul_road_province_modifier
+		}
+		province:5284 = {
+			add_province_modifier = baruzimabul_road_province_modifier
+		}
+		province:5285 = {
+			add_province_modifier = baruzimabul_road_province_modifier
+		}
+		province:6012 = {
+			add_province_modifier = baruzimabul_road_province_modifier
+		}
+		province:6013 = {
+			add_province_modifier = baruzimabul_road_province_modifier
+		}
+		province:6015 = {
+			add_province_modifier = baruzimabul_road_province_modifier
+		}
+		province:7927 = {
+			add_province_modifier = baruzimabul_road_province_modifier
+		}
+		province:7926 = {
+			add_province_modifier = baruzimabul_road_province_modifier
+		}
+	}
+
+	# Requirements
+	is_valid = {
+		is_ruler = yes
+		OR = { 
+			has_title = title:e_yellow_mountains
+			any_vassal = {
+				has_title = title:e_yellow_mountains
+			}
+			has_title = title:k_barazimab_ul
+			any_vassal = {
+				has_title = title:k_barazimab_ul
+			}
+		}
+		OR = { 
+			has_title = title:k_raimumahal
+			any_vassal = {
+				has_title = title:k_raimumahal
+			}
+		}
+		completely_controls = title:k_barazimab_ul
+		prestige_level >= 3
+	}
+
+	# Cost
+	cost = {
+		gold = {
+			value = 400
+		}
+	}
+
+	# AI
+	ai_check_interval = 12
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+decision_upgrade_barazimabul_road = {
+	title = decision_upgrade_barazimabul_road
+	desc = decision_upgrade_barazimabul_road_desc
+	confirm_text = decision_upgrade_barazimabul_road_confirm
+	selection_tooltip = decision_upgrade_barazimabul_road_tooltip
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_dwarven_road.dds"
+	}
+	sort_order = 5
+	decision_group_type = raods_of_middle_earth
+
+	# Shown
+	is_shown = {
+		is_landed = yes
+		OR = { 
+			has_title = title:e_yellow_mountains
+			any_vassal = {
+				has_title = title:e_yellow_mountains
+			}
+			has_title = title:k_mablad_dum
+			any_vassal = {
+				has_title = title:k_mablad_dum
+			}
+		}
+		is_target_in_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:decision_east_barazimabul_road
+		}
+		is_target_in_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:decision_west_yellow_mountain_road
+		}
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:decision_upgrade_barazimabul_road
+			}
+		}
+	}
+
+	# Effect
+	effect = {
+		custom_tooltip = decision_upgrade_barazimabul_road.send_message
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:decision_upgrade_barazimabul_road
+		}
+		every_province = {
+			limit = { 
+				has_province_modifier = baruzimabul_road_province_modifier 
+			}
+			remove_province_modifier = baruzimabul_road_province_modifier
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+	}
+
+	# Requirements
+	is_valid = {
+		is_ruler = yes
+		OR = { 
+			has_title = title:e_yellow_mountains
+			any_vassal = {
+				has_title = title:e_yellow_mountains
+			}
+			has_title = title:k_mablad_dum
+			any_vassal = {
+				has_title = title:k_mablad_dum
+			}
+		}
+		OR = { 
+			has_title = title:k_raimumahal
+			any_vassal = {
+				has_title = title:k_raimumahal
+			}
+		}
+		OR = { 
+			has_title = title:k_barazimab_ul
+			any_vassal = {
+				has_title = title:k_barazimab_ul
+			}
+		}
+		completely_controls = title:k_barazimab_ul
+		completely_controls = title:k_mablad_dum
+		prestige_level >= 4 
+	}
+
+	# Cost
+	cost = {
+		gold = {
+			value = 400
+		}
+	}
+
+	# AI
+	ai_check_interval = 12
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+
+decision_west_yellow_mountain_road = {
+	title = decision_west_yellow_mountain_road
+	desc = decision_west_yellow_mountain_road_desc
+	confirm_text = decision_west_yellow_mountain_road_confirm
+	selection_tooltip = decision_west_yellow_mountain_road_tooltip
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_dwarven_road.dds"
+	}
+	sort_order = 5
+	decision_group_type = raods_of_middle_earth
+
+	# Shown
+	is_shown = {
+		is_landed = yes
+		OR = { 
+			has_title = title:e_yellow_mountains
+			any_vassal = {
+				has_title = title:e_yellow_mountains
+			}
+			has_title = title:k_mablad_dum
+			any_vassal = {
+				has_title = title:k_mablad_dum
+			}
+			has_title = title:d_kurud_ursel
+			any_vassal = {
+				has_title = title:d_kurud_ursel
+			}
+		}
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:decision_west_yellow_mountain_road
+			}
+		}
+	}
+
+	# Effect
+	effect = {
+		custom_tooltip = decision_west_yellow_mountain_road.send_message
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:decision_west_yellow_mountain_road
+		}
+		province:2265 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7899 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7897 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7896 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7900 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7898 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7893 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7895 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7894 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7892 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7891 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7884 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7886 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7887 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+	}
+
+	# Requirements
+	is_valid = {
+		is_ruler = yes
+		OR = { 
+			has_title = title:e_yellow_mountains
+			any_vassal = {
+				has_title = title:e_yellow_mountains
+			}
+			has_title = title:k_mablad_dum
+			any_vassal = {
+				has_title = title:k_mablad_dum
+			}
+		}
+		completely_controls = title:d_kurud_ursel
+		prestige_level >= high_prestige_level
+	}
+
+	# Cost
+	cost = {
+		gold = {
+			value = 400
+		}
+	}
+
+	# AI
+	ai_check_interval = 12
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+decision_east_yellow_mountain_road = {
+	title = decision_east_yellow_mountain_road
+	desc = decision_east_yellow_mountain_road_desc
+	confirm_text = decision_east_yellow_mountain_road_confirm
+	selection_tooltip = decision_east_yellow_mountain_road_tooltip
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_dwarven_road.dds"
+	}
+	sort_order = 5
+	decision_group_type = raods_of_middle_earth
+
+	# Shown
+	is_shown = {
+		is_landed = yes
+		OR = { 
+			has_title = title:e_yellow_mountains
+			any_vassal = {
+				has_title = title:e_yellow_mountains
+			}
+			has_title = title:k_mablad_dum
+			any_vassal = {
+				has_title = title:k_mablad_dum
+			}
+			has_title = title:d_kurud_ursel
+			any_vassal = {
+				has_title = title:d_kurud_ursel
+			}
+		}
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:decision_east_yellow_mountain_road
+			}
+		}
+	}
+
+	# Effect
+	effect = {
+		custom_tooltip = decision_east_yellow_mountain_road.send_message
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:decision_east_yellow_mountain_road
+		}
+		province:7890 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7889 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7903 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7906 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7908 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7910 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7909 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7924 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7922 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7945 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7941 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7940 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7943 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7944 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7951 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7950 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7946 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7888 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7925 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+	}
+
+	# Requirements
+	is_valid = {
+		is_ruler = yes
+		OR = { 
+			has_title = title:e_yellow_mountains
+			any_vassal = {
+				has_title = title:e_yellow_mountains
+			}
+			has_title = title:k_mablad_dum
+			any_vassal = {
+				has_title = title:k_mablad_dum
+			}
+		}
+		completely_controls = title:d_kurud_ursel
+		prestige_level >= high_prestige_level
+	}
+
+	# Cost
+	cost = {
+		gold = {
+			value = 400
+		}
+	}
+
+	# AI
+	ai_check_interval = 12
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+decision_south_yellow_mountain_road = {
+	title = decision_south_yellow_mountain_road
+	desc = decision_south_yellow_mountain_road_desc
+	confirm_text = decision_south_yellow_mountain_road_confirm
+	selection_tooltip = decision_south_yellow_mountain_road_tooltip
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_dwarven_road.dds"
+	}
+	sort_order = 5
+	decision_group_type = raods_of_middle_earth
+
+	# Shown
+	is_shown = {
+		is_landed = yes
+		OR = { 
+			has_title = title:e_yellow_mountains
+			any_vassal = {
+				has_title = title:e_yellow_mountains
+			}
+			has_title = title:k_mablad_dum
+			any_vassal = {
+				has_title = title:k_mablad_dum
+			}
+		}
+		OR = { 
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:decision_east_yellow_mountain_road
+			}
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:decision_west_yellow_mountain_road
+			}
+		}
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:decision_south_yellow_mountain_road
+			}
+		}
+	}
+
+	# Effect
+	effect = {
+		custom_tooltip = decision_south_yellow_mountain_road.send_message
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:decision_south_yellow_mountain_road
+		}
+		province:6944 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:6943 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:6947 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:6936 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7885 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7915 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7913 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7914 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7919 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7642 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7640 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7643 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7680 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:5845 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:5838 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:5836 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:5832 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7641 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7637 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7638 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7629 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7630 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7633 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7917 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7916 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7646 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7645 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7652 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7666 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7667 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7669 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7665 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7663 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7664 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7537 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7538 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7541 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7540 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7675 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7350 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7349 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7631 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7632 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7636 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7712 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7711 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7708 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7691 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7692 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7689 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7688 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7684 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7681 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7695 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7923 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7938 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7739 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7734 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7733 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7730 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+		province:7690 = {
+			add_province_modifier = yellow_mountain_road_province_modifier
+		}
+	}
+
+	# Requirements
+	is_valid = {
+		is_ruler = yes
+		OR = { 
+			has_title = title:e_yellow_mountains
+			any_vassal = {
+				has_title = title:e_yellow_mountains
+			}
+			has_title = title:k_mablad_dum
+			any_vassal = {
+				has_title = title:k_mablad_dum
+			}
+		}
+		completely_controls = title:k_mablad_dum
+		trigger_if = {
+			limit = { exists = title:c_tyarrett.holder } 
+			title:c_tyarrett.holder = {
+				opinion = {
+					target = root
+					value > 60
+				}
+			}
+		}
+		trigger_if = { 
+			limit = { exists = title:k_mumakan.holder } 
+			title:k_mumakan.holder = {
+				opinion = {
+					target = root
+					value > 60
+				}
+			}
+		}
+		trigger_if = { 
+			limit = { exists = title:k_koronande.holder } 
+			title:k_koronande.holder = {
+				opinion = {
+					target = root
+					value > 60
+				}
+			}
+		}
+		prestige_level >= high_prestige_level
 	}
 
 	# Cost

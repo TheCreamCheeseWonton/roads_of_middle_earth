@@ -1225,6 +1225,76 @@
 				}
 			}
 		}
+		
+		#Grey Road
+		every_ruler = {
+			limit = {
+				any_realm_province = {
+					has_province_modifier = grey_mountain_road_province_modifier
+				}
+			}
+			if = {
+				limit = { 
+					OR = { 
+						has_title = title:k_grey_mountains
+						has_title = title:e_misty_mountains
+					}
+				}
+				add_character_modifier = {
+					modifier = grey_mountain_road_income_character_modifier_4
+					years = 1
+				}
+			}	
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count >= 20
+						has_province_modifier = grey_mountain_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = grey_mountain_road_income_character_modifier_4
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 15
+						has_province_modifier = grey_mountain_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = grey_mountain_road_income_character_modifier_3
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 10
+						has_province_modifier = grey_mountain_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = grey_mountain_road_income_character_modifier_2
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 5
+						has_province_modifier = grey_mountain_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = grey_mountain_road_income_character_modifier_1
+					years = 1
+				}
+			}
+		}
+		
 		#Old Dwarf Road
 		every_ruler = {
 			limit = {
@@ -1385,6 +1455,201 @@
 				}
 				add_character_modifier = {
 					modifier = old_dwarf_road_income_character_modifier_1
+					years = 1
+				}
+			}
+		}
+		
+		#Yellow Mountain Road
+		every_ruler = {
+			limit = {
+				any_realm_province = {
+					has_province_modifier = yellow_mountain_road_province_modifier
+				}
+			}
+			if = {
+				limit = { 
+					OR = { 
+						has_title = title:e_thrars_folk
+						has_title = title:e_yellow_mountains
+					}
+					is_target_in_global_variable_list = {
+						name = unavailable_unique_decisions
+						target = flag:decision_upgrade_barazimabul_road
+					}
+					is_target_in_global_variable_list = {
+						name = unavailable_unique_decisions
+						target = flag:decision_south_yellow_mountain_road
+					}
+				}
+				add_character_modifier = {
+					modifier = yellow_mountain_road_income_character_modifier_13
+					years = 1
+				}
+			}	
+			else_if = {
+				limit = { 
+					OR = { 
+						has_title = title:e_thrars_folk
+						has_title = title:e_yellow_mountains
+					}
+					OR = { 
+						is_target_in_global_variable_list = {
+							name = unavailable_unique_decisions
+							target = flag:decision_upgrade_barazimabul_road
+						}
+						is_target_in_global_variable_list = {
+							name = unavailable_unique_decisions
+							target = flag:decision_south_yellow_mountain_road
+						}
+					}
+				}
+				add_character_modifier = {
+					modifier = yellow_mountain_road_income_character_modifier_12
+					years = 1
+				}
+			}	
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count >= 100
+						has_province_modifier = yellow_mountain_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = yellow_mountain_road_income_character_modifier_12
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 80
+						has_province_modifier = yellow_mountain_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = yellow_mountain_road_income_character_modifier_11
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 60
+						has_province_modifier = yellow_mountain_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = yellow_mountain_road_income_character_modifier_10
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 45
+						has_province_modifier = yellow_mountain_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = yellow_mountain_road_income_character_modifier_9
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 40
+						has_province_modifier = yellow_mountain_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = yellow_mountain_road_income_character_modifier_8
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 35
+						has_province_modifier = yellow_mountain_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = yellow_mountain_road_income_character_modifier_7
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 30
+						has_province_modifier = yellow_mountain_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = yellow_mountain_road_income_character_modifier_6
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 25
+						has_province_modifier = yellow_mountain_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = yellow_mountain_road_income_character_modifier_5
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 20
+						has_province_modifier = yellow_mountain_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = yellow_mountain_road_income_character_modifier_4
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 15
+						has_province_modifier = yellow_mountain_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = yellow_mountain_road_income_character_modifier_3
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 10
+						has_province_modifier = yellow_mountain_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = yellow_mountain_road_income_character_modifier_2
+					years = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					any_realm_province = {
+						count > 5
+						has_province_modifier = yellow_mountain_road_province_modifier
+					}
+				}
+				add_character_modifier = {
+					modifier = yellow_mountain_road_income_character_modifier_1
 					years = 1
 				}
 			}
@@ -3248,6 +3513,22 @@
 				}
 			}
 			if = {
+				limit = { 
+					is_target_in_global_variable_list = {
+						name = unavailable_unique_decisions
+						target = flag:decision_east_barazimabul_road
+					}
+					OR = { 
+						has_title = title:e_yellow_mountains
+						has_title = title:k_barazimab_ul
+					}
+				}
+				add_character_modifier = {
+					modifier = baruzimabul_road_income_character_modifier_6
+					years = 1
+				}
+			}
+			else_if = {
 				limit = { 
 					any_realm_province = {
 						count > 25

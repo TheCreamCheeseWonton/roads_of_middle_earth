@@ -1,0 +1,7 @@
+﻿# Name of group, localization is selected by: "decision_group_type" + <key>
+raods_of_middle_earth = {
+	sort_order = 1500			# The order decision groups show up in the decision view, higher number is sorted first, tie breaking is on definition order. Default = 0
+	gui_tags = { big_button }
+	important_decision_group = yes	# List of gui tags, used to set size etc in gui views
+}
+

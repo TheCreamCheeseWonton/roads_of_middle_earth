@@ -203,13 +203,10 @@ trade_routes_map = {
 							has_province_modifier = old_south_road_province_modifier
 							has_province_modifier = greenway_road_province_modifier
 							has_province_modifier = east_road_province_modifier
-							has_province_modifier = north_south_road_province_modifier
 							has_province_modifier = rath_khand_road_province_modifier
 							has_province_modifier = south_road_province_modifier
 							has_province_modifier = old_forest_road_province_modifier
 							has_province_modifier = khazad_road_province_modifier
-							has_province_modifier = old_dwarf_road_province_modifier
-							has_province_modifier = coast_way_road_province_modifier
 							has_province_modifier = east_way_road_province_modifier 
 							has_province_modifier = erebor_road_province_modifier 
 							has_province_modifier = wineland_way_road_province_modifier 
@@ -223,22 +220,37 @@ trade_routes_map = {
 							has_province_modifier = ossiriand_road_province_modifier
 							has_province_modifier = eregion_road_province_modifier
 							has_province_modifier = woodland_realm_1_road_province_modifier
-							has_province_modifier = woodland_realm_2_road_province_modifier
 							has_province_modifier = lorien_realm_1_road_province_modifier
-							has_province_modifier = lorien_realm_2_road_province_modifier
 							has_province_modifier = men_argrun_road_province_modifier
 							has_province_modifier = khand_vosham_road_province_modifier
 							has_province_modifier = siryan_road_province_modifier
 							has_province_modifier = baruzimabul_road_province_modifier
-							has_province_modifier = lyneria_road_province_modifier
 							has_province_modifier = nhazadh_causeway_province_modifier
 							has_province_modifier = shay_caravan_province_modifier 
 							has_province_modifier = great_khy_road_province_modifier
 							has_province_modifier = ormal_roads_province_modifier
+							has_province_modifier = grey_mountain_road_province_modifier
 						}
 						##End Quonton
 					}
 					barony = { set_color_from_title = title:d_tributary_map_tributary_state }
+				}
+				if = {
+					# Good
+					limit = {
+						##Quonton
+						OR = {
+							has_province_modifier = north_south_road_province_modifier
+							has_province_modifier = old_dwarf_road_province_modifier
+							has_province_modifier = coast_way_road_province_modifier
+							has_province_modifier = lyneria_road_province_modifier
+							has_province_modifier = yellow_mountain_road_province_modifier
+							has_province_modifier = woodland_realm_2_road_province_modifier
+							has_province_modifier = lorien_realm_2_road_province_modifier
+						}
+						##End Quonton
+					}
+					barony = { set_color_from_title = title:d_great_roads_map_quonton }
 				}
 				if = {
 					# Good
@@ -286,6 +298,10 @@ trade_routes_map = {
 							has_province_modifier = pelargir_port_province_modifier
 							has_province_modifier = osgiliath_port_province_modifier
 							has_province_modifier = tharbad_port_province_modifier
+							has_province_modifier = ruak_aji_port_province_modifier
+							has_province_modifier = thaamutasenga_port_province_modifier
+							has_province_modifier = korlan_port_province_modifier
+							has_province_modifier = pharasphurus_port_province_modifier
 						}
 						##End Quonton
 					}

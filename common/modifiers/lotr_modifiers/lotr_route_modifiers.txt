@@ -574,7 +574,7 @@ old_dwarf_road_income_character_modifier_12 = {
 #The Coast Way
 coast_way_road_province_modifier = {
 	icon = economy_positive
-	monthly_income = 0.1
+	monthly_income = 0.2
 	development_growth_factor = 0.02
 }
 
@@ -1271,8 +1271,8 @@ woodland_realm_1_road_income_character_modifier_4 = {
 #Woodland Road 2
 woodland_realm_2_road_province_modifier = {
 	icon = economy_positive
-	monthly_income = 0.1
-	development_growth_factor = 0.02
+	monthly_income = 0.2
+	development_growth_factor = 0.05
 }
 
 woodland_realm_2_road_income_character_modifier_1 = {
@@ -1330,8 +1330,8 @@ lorien_realm_1_road_income_character_modifier_1 = {
 #Lorien Road 2
 lorien_realm_2_road_province_modifier = {
 	icon = economy_positive
-	monthly_income = 0.1
-	development_growth_factor = 0.02
+	monthly_income = 0.2
+	development_growth_factor = 0.05
 }
 
 lorien_realm_2_road_income_character_modifier_1 = {
@@ -1501,6 +1501,11 @@ baruzimabul_road_income_character_modifier_4 = {
 baruzimabul_road_income_character_modifier_5 = {
 	icon = economy_positive
 	monthly_income = 4
+}
+
+baruzimabul_road_income_character_modifier_6 = {
+	icon = economy_positive
+	monthly_income = 6
 }
 
 #The Lynerian Road
@@ -1701,4 +1706,103 @@ ormal_road_income_character_modifier_8 = {
 ormal_road_income_character_modifier_9 = {
 	icon = economy_positive
 	monthly_income = 10
+}
+
+#Grey Mountain Road
+grey_mountain_road_province_modifier = {
+	icon = economy_positive
+	monthly_income = 0.1
+	development_growth_factor = 0.02
+}
+
+grey_mountain_road_income_character_modifier_1 = {
+	icon = economy_positive
+	monthly_income = 1
+}
+
+grey_mountain_road_income_character_modifier_2 = {
+	icon = economy_positive
+	monthly_income = 2
+}
+
+grey_mountain_road_income_character_modifier_3 = {
+	icon = economy_positive
+	monthly_income = 3
+}
+
+grey_mountain_road_income_character_modifier_4 = {
+	icon = economy_positive
+	monthly_income = 4
+}
+
+#Yellow Mountain Road
+yellow_mountain_road_province_modifier = {
+	icon = economy_positive
+	monthly_income = 0.2
+	development_growth_factor = 0.05
+}
+
+yellow_mountain_road_income_character_modifier_1 = {
+	icon = economy_positive
+	monthly_income = 1
+}
+
+yellow_mountain_road_income_character_modifier_2 = {
+	icon = economy_positive
+	monthly_income = 2
+}
+
+yellow_mountain_road_income_character_modifier_3 = {
+	icon = economy_positive
+	monthly_income = 3
+}
+
+yellow_mountain_road_income_character_modifier_4 = {
+	icon = economy_positive
+	monthly_income = 4
+}
+
+yellow_mountain_road_income_character_modifier_5 = {
+	icon = economy_positive
+	monthly_income = 5
+}
+
+yellow_mountain_road_income_character_modifier_6 = {
+	icon = economy_positive
+	monthly_income = 6
+}
+
+yellow_mountain_road_income_character_modifier_7 = {
+	icon = economy_positive
+	monthly_income = 7
+}
+
+yellow_mountain_road_income_character_modifier_8 = {
+	icon = economy_positive
+	monthly_income = 8
+}
+
+yellow_mountain_road_income_character_modifier_9 = {
+	icon = economy_positive
+	monthly_income = 9
+}
+
+yellow_mountain_road_income_character_modifier_10 = {
+	icon = economy_positive
+	monthly_income = 10
+}
+
+yellow_mountain_road_income_character_modifier_11 = {
+	icon = economy_positive
+	monthly_income = 12
+}
+
+yellow_mountain_road_income_character_modifier_12 = {
+	icon = economy_positive
+	monthly_income = 14
+}
+
+yellow_mountain_road_income_character_modifier_13 = {
+	icon = economy_positive
+	monthly_income = 18
 }

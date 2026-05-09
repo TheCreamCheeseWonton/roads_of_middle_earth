@@ -1,5 +1,6 @@
 ﻿l_english:
  any_realm_province_count: "Any Realm Barony"
+ decision_group_type_raods_of_middle_earth: "Roads of Middle Earth"
 
  ###Ports###
 
@@ -55,6 +56,8 @@
  kadar_abar_narik_port_province_modifier_desc: "Kadar Abar-narîk was once a great port and haven of [numenor|E]. Thousands of ships sailed through the Bay of Ormal, entered her ports from the Isle, and trade flowed from Kadar Abar-narîk to her parent ports in [numenor|E]. The port here is incredibly impressive, being a great trade center with the capacity to hold hundreds of great ships. Now, however, with the destruction of [westernesse|E], the port seems strangely overbuilt, and very rarely reaches the heights of ages past."
  inyaloni_port_province_modifier: "The Númenórean Port of Inyalôni - Númenor Lost"
  inyaloni_port_province_modifier_desc: "Inyalôni was once a great port and haven of [numenor|E]. Hundreds of ships entered her ports from the Isle, and trade flowed from Inyalôni to her parent ports in [numenor|E]. The port here is incredibly impressive, being a great trade center with the capacity to hold dozens of great ships. Now, however, with the destruction of [westernesse|E], the port seems strangely overbuilt, and very rarely reaches the heights of ages past."
+ pharasphurus_port_province_modifier: "The Númenórean Port of Pharasphurus - Númenor Lost"
+ pharasphurus_port_province_modifier_desc: "Pharasphurus was once a great port and haven of [numenor|E]. Hundreds of ships entered her ports from the Isle, and trade flowed from Pharasphurus to her parent ports in [numenor|E]. The port here is incredibly impressive, being a great trade center with the capacity to hold dozens of great ships. Now, however, with the destruction of [westernesse|E], the port seems strangely overbuilt, and very rarely reaches the heights of ages past."
 
  tharbad_port_province_modifier: "The Númenórean Port of Tharbad - Númenor Lost"
  tharbad_port_province_modifier_desc: "Tharbad was once a great port and haven of [numenor|E]. Thousands of ships entered her ports from the Isle, and trade flowed from Tharbad to her parent ports in [numenor|E]. The port here is incredibly impressive, being a great trade center with the capacity to hold dozens of great ships. Now, however, with the destruction of [westernesse|E], the port seems strangely overbuilt, and very rarely reaches the heights of ages past."
@@ -78,6 +81,15 @@
 
  bozisha_dar_port_province_modifier: "Great Port of Bôzisha-Dâr"
  bozisha_dar_port_province_modifier_desc: "Bôzisha-Dâr has been a hub of Tulwang trade since even before the days of [numenorean|E] dominance, with goods arriving from every corner of southern and eastern [middleearth|E]. Ships from [gondor|E], [bellakar|E], and even as far away as the Bay of Ormal crowd its harbors, bearing a rich variety of cargo."
+
+ korlan_port_province_modifier: "Great Port of Kôrlan"
+ korlan_port_province_modifier_desc: "Kôrlan has been a hub of Kôronânde trade since even before the days of [numenorean|E] dominance, with goods arriving from every corner of southern and eastern [middleearth|E]. Ships from [thanihazad|E], Mûmakan, and even as far away as the Bay of Ormal crowd its harbors, bearing a rich variety of cargo."
+
+ ruak_aji_port_province_modifier: "Great Port of Ruak Ajî"
+ ruak_aji_port_province_modifier_desc: "Ruak Ajî has been a hub of Mûmakan trade since even before the days of [numenorean|E] dominance, with goods arriving from every corner of southern and eastern [middleearth|E]. Ships from Mûmakan, the Bay of Ormal , and even as far away as [thanihazad|E] crowd its harbors, bearing a rich variety of cargo."
+
+ thaamutasenga_port_province_modifier: "Great Port of Thaamutasenga"
+ thaamutasenga_port_province_modifier_desc: "Thaamutasenga has been a hub of Shayan trade since even before the days of [numenorean|E] dominance, with goods arriving from every corner of southern and eastern [middleearth|E]. Ships from Lyneria, Mûmakan, and even as far away as [thanihazad|E] crowd its harbors, bearing a rich variety of cargo."
 
  mithannunlond_port_province_modifier: "Elven Port of Mithannúnlond"
  mithannunlond_port_province_modifier_desc: "Mithannúnlond is a great [elven|E] port, steeped in their grace and wisdom. Elegant ships glide from its havens, bound either for the [uttermostwest|E] or voyaging across the seas on missions of exploration and trade. Though much diminished since the [elderdays|E], the presence of the Firstborn still lingers along its piers, a quiet echo of ancient glory."
@@ -660,6 +672,8 @@
  baruzimabul_road_income_character_modifier_4_desc: "This character controls about two thirds of the Baruzimabûl Road, able to levy a solid amount of tolls upon caravans and travelers."
  baruzimabul_road_income_character_modifier_5: "Baruzimabûl Road Tolls (V)"
  baruzimabul_road_income_character_modifier_5_desc: "This character controls the entirety of the Baruzimabûl Road, able to dictate whatever tolls upon caravans and travelers they wish."
+ baruzimabul_road_income_character_modifier_6: "Baruzimabûl Road Tolls (VI)"
+ baruzimabul_road_income_character_modifier_6_desc: "This character controls the entirety of the Baruzimabûl Road, able to dictate whatever tolls upon caravans and travelers they wish."
 
  lyneria_road_province_modifier: "Lynerian Road"
  lyneria_road_province_modifier_desc: "This province lies on the 'Lynerian Road', which runs through the Lynerian League, and up into Sîrayn."
@@ -742,6 +756,46 @@
  ormal_road_income_character_modifier_9: "Ormal Roads Tolls (IX)"
  ormal_road_income_character_modifier_9_desc: "This character controls the entirety of The Ormal Roads, able to dictate whatever tolls upon caravans and travelers they wish."
 
+ grey_mountain_road_province_modifier: "The Grey Road"
+ grey_mountain_road_province_modifier_desc: "This province lies on the 'Grey Road'. This road connects the heartlands of the Grey Mountains to wider [middleearth|E]."
+ grey_mountain_road_income_character_modifier_1: "Grey Road Tolls (I)"
+ grey_mountain_road_income_character_modifier_1_desc: "This character controls a small segment of the Grey Road, able to levy a pittance of tolls upon caravans and travelers."
+ grey_mountain_road_income_character_modifier_2: "Grey Road Tolls (II)"
+ grey_mountain_road_income_character_modifier_2_desc: "This character controls about a third of the Grey Road, able to levy a small amount of tolls upon caravans and travelers."
+ grey_mountain_road_income_character_modifier_3: "Grey Road Tolls (III)"
+ grey_mountain_road_income_character_modifier_3_desc: "This character controls roughly two thirds of the Grey Road, able to levy a decent amount of tolls upon caravans and travelers."
+ grey_mountain_road_income_character_modifier_4: "Grey Road Tolls (IV)"
+ grey_mountain_road_income_character_modifier_4_desc: "This character controls the entirety of the Grey Road, able to dictate whatever tolls upon caravans and travelers they wish."
+
+ yellow_mountain_road_province_modifier: "The Mablâd-dûm Road"
+ yellow_mountain_road_province_modifier_desc: "This province lies along the Mablâd-dûm Road, the great highway linking the many holds of the [yellowmountains|E] to one another and to the wider world of [middleearth|E]."
+ yellow_mountain_road_income_character_modifier_1: "Mablâd-dûm Road Tolls (I)"
+ yellow_mountain_road_income_character_modifier_1_desc: "This character controls a small segment of the Mablâd-dûm Road, able to levy a pittance of tolls upon caravans and travelers."
+ yellow_mountain_road_income_character_modifier_2: "Mablâd-dûm Road Tolls (II)"
+ yellow_mountain_road_income_character_modifier_2_desc: "This character controls a middling segment of the Mablâd-dûm Road, able to levy a small amount of tolls upon caravans and travelers."
+ yellow_mountain_road_income_character_modifier_3: "Mablâd-dûm Road Tolls (III)"
+ yellow_mountain_road_income_character_modifier_3_desc: "This character controls about a third of the Mablâd-dûm Road, able to levy a decent amount of tolls upon caravans and travelers."
+ yellow_mountain_road_income_character_modifier_4: "Mablâd-dûm Road Tolls (IV)"
+ yellow_mountain_road_income_character_modifier_4_desc: "This character controls somewhat under half of the Mablâd-dûm Road, able to levy a solid amount of tolls upon caravans and travelers."
+ yellow_mountain_road_income_character_modifier_5: "Mablâd-dûm Road Tolls (V)"
+ yellow_mountain_road_income_character_modifier_5_desc: "This character controls roughly half of the Mablâd-dûm Road, able to levy a substantial amount of tolls upon caravans and travelers."
+ yellow_mountain_road_income_character_modifier_6: "Mablâd-dûm Road Tolls (VI)"
+ yellow_mountain_road_income_character_modifier_6_desc: "This character controls a majority of the Mablâd-dûm Road, able to levy a substantial amount of tolls upon caravans and travelers."
+ yellow_mountain_road_income_character_modifier_7: "Mablâd-dûm Road Tolls (VII)"
+ yellow_mountain_road_income_character_modifier_7_desc: "This character controls a large majority of the Mablâd-dûm Road, able to levy hefty amounts of tolls upon caravans and travelers."
+ yellow_mountain_road_income_character_modifier_8: "Mablâd-dûm Road Tolls (VIII)"
+ yellow_mountain_road_income_character_modifier_8_desc: "This character controls just under two thirds of the Mablâd-dûm Road, able to levy a great amount of tolls upon caravans and travelers."
+ yellow_mountain_road_income_character_modifier_9: "Mablâd-dûm Road Tolls (IX)"
+ yellow_mountain_road_income_character_modifier_9_desc: "This character controls over two thirds of the Mablâd-dûm Road, able to levy lucrative tolls upon caravans and travelers."
+ yellow_mountain_road_income_character_modifier_10: "Mablâd-dûm Road Tolls (X)"
+ yellow_mountain_road_income_character_modifier_10_desc: "This character controls over three-fourths of the Mablâd-dûm Road, able to levy a great amount of tolls upon caravans and travelers."
+ yellow_mountain_road_income_character_modifier_11: "Mablâd-dûm Road Tolls (XI)"
+ yellow_mountain_road_income_character_modifier_11_desc: "This character controls a very large majority of the Mablâd-dûm Road, able to levy a very great amount of tolls upon caravans and travelers."
+ yellow_mountain_road_income_character_modifier_12: "Mablâd-dûm Road Tolls (XII)"
+ yellow_mountain_road_income_character_modifier_12_desc: "This character controls almost the entirety of the Mablâd-dûm Road, able to levy very lucrative tolls upon caravans and travelers."
+ yellow_mountain_road_income_character_modifier_13: "Mablâd-dûm Road Tolls (XIII)"
+ yellow_mountain_road_income_character_modifier_13_desc: "This character controls the entirety of the Mablâd-dûm Road, able to dictate whatever tolls upon caravans and travelers they wish."
+
  ###Decisions###
 
  decision_connect_capital_road.send_message: "The Capital of Arnor, Annúminas, will be be joined to the Greenway"
@@ -769,11 +823,11 @@
 
  decision_connect_firebeard_road: "Connect Burza-dum to the East-West Road"
  decision_connect_firebeard_road_desc: "The East-West road was once much grander than it is now. Long ago it was known as the 'Great Dwarven Road' and connected the realms of Belegost, Nogrod, and [khazaddum|E] to the rest of [beleriand|E]. With the sinking of [beleriand|E] after the War of Wrath and the sacking of the two Dwarven Kindoms, the road was left mainly unused by the Dwarves. After the fall of Nogrod, the [firebeards|E] abandoned their ancient home and moved to the southern [bluemountains|E], creating a new home for themselves. Burza-dum, the new home of the [firebeards|E] will be connected to the old road at last. However, for us to go ahead with our plans we must get permission from the Lord of [lindon|E], Círdan the Shipwright."
- decision_connect_firebeard_road_confirm: "Finally the Firebeards can be connected to the road they aided in building"
+ decision_connect_firebeard_road_confirm: "The Firebeards can be connected to the road they aided in building"
  decision_connect_firebeard_road_tooltip: "Connect Burza-dum to the East-West Road"
 
  decision_connect_broadbeam_road: "Reconnect Nogrod and Belegost to the East-West Road"
- decision_connect_broadbeam_road_desc: "The East-West road as it once was known was much more remarkable than it is now. Long ago it was known as the 'Great Dwarven Road' and connected the realms of Belegost, Nogrod, and [khazaddum|E] to the rest of [beleriand|E]. Gabilgathol (Belegost) was once one of the magnificent mansions of the Dwarves and home of one of the few elf-loving [dwarven|E] clans. Filled with beautiful and great works of art, the old city was once remarkable. Tumunzahar (Nogrod) was one of the greatest strongholds and forges of the [dwarves|E], with countless toys, trinkets, and jewelry created by the many artisans of the [firebeards|E]. These great homes of the [dwarves|E] have long been abandoned, with their many halls sitting dark. The sinking of [beleriand|E] and the sacking of the two western [dwarven|E] Kingdoms meant the roads here were left unused by the Dwarves. With our reclamation of these old cities, we can now tie them back to [middleearth|E]. Belegost and Nogrod will both be reconnected to the Old Dwarven Road. However, for us to go ahead with our plans we must get permission from the Lord of [lindon|E], Círdan the Shipwright."
+ decision_connect_broadbeam_road_desc: "The East-West road as it once was known was much more remarkable than it is now. Long ago it was known as the 'Great Dwarven Road' and connected the realms of Belegost, Nogrod, and [khazaddum|E] to the rest of [beleriand|E]. Gabilgathol (Belegost) was once one of the magnificent mansions of the Dwarves and home of one of the few elf-loving [dwarven|E] clans. \n\nFilled with beautiful and great works of art, the old city was once remarkable. Tumunzahar (Nogrod) was one of the greatest strongholds and forges of the [dwarves|E], with countless toys, trinkets, and jewelry created by the many artisans of the [firebeards|E]. These great homes of the [dwarves|E] have long been abandoned, with their many halls sitting dark. The sinking of [beleriand|E] and the sacking of the two western [dwarven|E] Kingdoms meant the roads here were left unused by the Dwarves. \n\nWith our reclamation of these old cities, we can now tie them back to [middleearth|E]. Belegost and Nogrod will both be reconnected to the Old Dwarven Road. However, for us to go ahead with our plans we must get permission from the Lord of [lindon|E], Círdan the Shipwright."
  decision_connect_broadbeam_road_confirm: "The Old Dwarven Road will connect the Dwarves"
  decision_connect_broadbeam_road_tooltip: "Reconnect Nogrod and Belegost to the East-West Road"
 
@@ -822,6 +876,48 @@
  doesnt_have_smaug_erebor: "[GetTitleByKey('b_throne_of_erebor').GetNameNoTier] does not have the [GetBuilding('smaug_desolation').GetName]"
  decision_erebor_road_gets_fucking_destroyed: "The Erebor Road north of [GetTitleByKey('c_esgaroth').GetNameNoTier] is consumed by fire"
 
+ decision_connect_rhovanian_capital: "Reconnect [GetTitleByKey('k_rhovanion').GetNameNoTier] to the East-Way Road"
+ decision_connect_rhovanian_capital_desc: "[rhovanion|E] was once a great and powerful realm, its capitals of [GetTitleByKey('b_alcisbaurg').GetNameNoTier] and [GetTitleByKey('b_vidusbaurg').GetNameNoTier] growing wealthy and influential through trade with the [longbeard|E] [dwarves|E]. Yet after the fall of [rhovanion|E], our people were scattered and our proud cities razed and depopulated. Now, with the reestablishment of our kingdom, we can once again reconnect our great cities with the wider lands of [middleearth|E]."
+ decision_connect_rhovanian_capital_confirm: "Get to work!"
+ decision_connect_rhovanian_capital_tooltip: "Reconnect [rhovanion|E] to the wider world!"
+
+ decision_connect_erebor_grey_mountains: "Reconnect [GetTitleByKey('k_grey_mountains').GetNameNoTier] to the World"
+ decision_connect_erebor_grey_mountains_desc: "The [greymountains|E] were once the proud domain of the [longbeard|E] [dwarves|E], where we raised mighty halls and unearthed vast riches within our northern mountain homes. For many long years these halls have lain abandoned, yet some believe this fate can still be undone. Should the [greymountains|E] be recolonized, we could reconnect them to the wider world through a great road linking [erebor|E] and [khazaddum|E]."
+ decision_connect_erebor_grey_mountains_confirm: "Get to work!"
+ decision_connect_erebor_grey_mountains_tooltip: "Reconnect the [greymountains|E] to the wider world!"
+
+ decision_east_barazimabul_road: "Expand the Baruzimabûl Road East"
+ decision_east_barazimabul_road_desc: "The [yellowmountains|E] have long been the homeland of the [blacklock|E] [dwarves|E]. Yet our great mansion of Mablâd-dûm was laid to ruin by a terrible eruption, and soon after fell to the [orcs|E]. In recent years, the dwarves of [GetTitleByKey('k_barazimab_ul').GetNameNoTier] have grown strong once more, possessing the wealth and might needed to reclaim our ancient home in the east. To aid this endeavor, we should expand the Baruzimabûl Road eastward and unite our many strongholds through a grand network of stone roads."
+ decision_east_barazimabul_road_confirm: "Get to work!"
+ decision_east_barazimabul_road_tooltip: "The Baruzimabûl Road will be expanded east!"
+
+ decision_upgrade_barazimabul_road: "Upgrade the Baruzimabûl Road"
+ decision_upgrade_barazimabul_road_desc: "The Baruzimabûl Road has long served as the primary thoroughfare and trade route of the [dwarven|E] kingdom, linking our halls to the wider world. Now, with the reestablishment of the [dwarves|E] in the [yellowmountains|E] and the construction of the Mablâd-dûm Road, we should expand and improve the Baruzimabûl Road, binding it more closely to the wider empire so that our western realms may stand connected to the Heartland once more."
+ decision_upgrade_barazimabul_road_confirm: "Get to work!"
+ decision_upgrade_barazimabul_road_tooltip: "The Baruzimabûl Road will be upgraded!"
+ decision_upgrade_barazimabul_road.send_message: "The Baruzimabûl Road will be upgraded"
+
+ decision_west_yellow_mountain_road: "Rebuild the Mablâd-dûm Road West"
+ decision_west_yellow_mountain_road_desc: "The great [dwarven|E] mansion of Mablâd-dûm has been restored! Now that this monumental achievement has been accomplished, we must turn our efforts toward rebuilding our mighty empire in the [yellowmountains|E] and binding these lands firmly to our realm. To achieve this, we should restore the great Mablâd-dûm Road, linking our many strongholds together once more. The western stretches of this great highway lie heavily damaged and will be costly to restore."
+ decision_west_yellow_mountain_road_confirm: "Get to work!"
+ decision_west_yellow_mountain_road_tooltip: "The Mablâd-dûm Road will be built west!"
+ decision_west_yellow_mountain_road.send_message: "The Mablâd-dûm Road will be expanded west"
+
+ decision_east_yellow_mountain_road: "Rebuild the Mablâd-dûm Road East"
+ decision_east_yellow_mountain_road_desc: "The great [dwarven|E] mansion of Mablâd-dûm has been restored! Now that this monumental achievement has been accomplished, we must turn our efforts toward rebuilding our mighty empire in the [yellowmountains|E] and binding these lands firmly to our realm. To achieve this, we should restore the great Mablâd-dûm Road, linking our many strongholds together once more. The eastern stretches of this great highway lie heavily damaged and will be costly to restore."
+ decision_east_yellow_mountain_road_confirm: "Get to work!"
+ decision_east_yellow_mountain_road_tooltip: "The Mablâd-dûm Road will be built east!"
+ decision_east_yellow_mountain_road.send_message: "The Mablâd-dûm Road will be expanded east"
+
+ decision_south_yellow_mountain_road: "Expand the Mablâd-dûm Road Outward"
+ decision_south_yellow_mountain_road_desc: "The great [dwarven|E] road of Mablâd-dûm has been restored! Now that we have firmly reestablished our mighty [dwarven|E] realm within the [yellowmountains|E], we must look beyond our borders. The many realms of [men|E] surrounding our empire offer vast opportunities for trade and prosperity. We should extend the great Mablâd-dûm Road outward, forging new connections with these promising trading partners and bringing fresh wealth to our halls."
+ decision_south_yellow_mountain_road_confirm: "Get to work!"
+ decision_south_yellow_mountain_road_tooltip: "The Baruzimabûl Road will be expanded outward!"
+ decision_south_yellow_mountain_road.send_message: "The Mablâd-dûm Road will be expanded outward towards [men|E]"
+
+ decision_east_barazimabul_road.send_message: "The Baruzimabûl Road will be expanded east towards Mablâd-dûm"
+ decision_connect_erebor_grey_mountains.send_message: "[GetTitleByKey('k_grey_mountains').GetNameNoTier] will be connected to the Old Forest Road and the Erebor Road"
+ decision_connect_rhovanian_capital.send_message: "[GetTitleByKey('c_east_bight').GetNameNoTier] and [GetTitleByKey('c_alcisbaurg').GetNameNoTier] will be connected to the East-Way Road"
  decision_west_kazad_road.send_message: "[khazaddum|E] will be connected to the Greenway"
  decision_east_kazad_road.send_message: "[khazaddum|E] will be connected to the Old Forest Road"
  decision_connect_firebeard_road.send_message: "Burza-dum will be connected to the East-West Road"
