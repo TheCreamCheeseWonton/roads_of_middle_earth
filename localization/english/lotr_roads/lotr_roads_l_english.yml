@@ -876,12 +876,12 @@
  doesnt_have_smaug_erebor: "[GetTitleByKey('b_throne_of_erebor').GetNameNoTier] does not have the [GetBuilding('smaug_desolation').GetName]"
  decision_erebor_road_gets_fucking_destroyed: "The Erebor Road north of [GetTitleByKey('c_esgaroth').GetNameNoTier] is consumed by fire"
 
- decision_connect_rhovanian_capital: "Reconnect [GetTitleByKey('k_rhovanion').GetNameNoTier] to the East-Way Road"
+ decision_connect_rhovanian_capital: "Reconnect Rhovanion to the East-Way Road"
  decision_connect_rhovanian_capital_desc: "[rhovanion|E] was once a great and powerful realm, its capitals of [GetTitleByKey('b_alcisbaurg').GetNameNoTier] and [GetTitleByKey('b_vidusbaurg').GetNameNoTier] growing wealthy and influential through trade with the [longbeard|E] [dwarves|E]. Yet after the fall of [rhovanion|E], our people were scattered and our proud cities razed and depopulated. Now, with the reestablishment of our kingdom, we can once again reconnect our great cities with the wider lands of [middleearth|E]."
  decision_connect_rhovanian_capital_confirm: "Get to work!"
  decision_connect_rhovanian_capital_tooltip: "Reconnect [rhovanion|E] to the wider world!"
 
- decision_connect_erebor_grey_mountains: "Reconnect [GetTitleByKey('k_grey_mountains').GetNameNoTier] to the World"
+ decision_connect_erebor_grey_mountains: "Reconnect the Grey Mountains to the World"
  decision_connect_erebor_grey_mountains_desc: "The [greymountains|E] were once the proud domain of the [longbeard|E] [dwarves|E], where we raised mighty halls and unearthed vast riches within our northern mountain homes. For many long years these halls have lain abandoned, yet some believe this fate can still be undone. Should the [greymountains|E] be recolonized, we could reconnect them to the wider world through a great road linking [erebor|E] and [khazaddum|E]."
  decision_connect_erebor_grey_mountains_confirm: "Get to work!"
  decision_connect_erebor_grey_mountains_tooltip: "Reconnect the [greymountains|E] to the wider world!"
