@@ -1618,10 +1618,13 @@ on_travel_plan_complete = {
 				type = event_generic_good
 				title = leisurely_option_effect
 
-				add_prestige_experience = {
-					value = {
-						value = current_travel_plan.var:travel_plan_provinces_traversed
-						multiply = 15
+				if = { #LotR
+					limit = { current_travel_plan = { has_variable = travel_plan_provinces_traversed } }
+					add_prestige_experience = {
+						value = {
+							value = current_travel_plan.var:travel_plan_provinces_traversed
+							multiply = 15
+						}
 					}
 				}
 			}
@@ -1640,14 +1643,17 @@ on_travel_plan_complete = {
 				type = event_generic_good
 				title = travel_logs_title
 
-				add_trait_xp = {
-					trait = lifestyle_traveler
-					track = danger
-					value = {
-						value = current_travel_plan.var:travel_plan_provinces_traversed
-						divide = 2
-						max = 30
-						min = 1
+				if = { #LotR
+					limit = { current_travel_plan = { has_variable = travel_plan_provinces_traversed } }
+					add_trait_xp = {
+						trait = lifestyle_traveler
+						track = danger
+						value = {
+							value = current_travel_plan.var:travel_plan_provinces_traversed
+							divide = 2
+							max = 30
+							min = 1
+						}
 					}
 				}
 			}

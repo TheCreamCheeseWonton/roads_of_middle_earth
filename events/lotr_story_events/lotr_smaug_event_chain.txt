@@ -21,7 +21,7 @@ smaug_event_chain.0001 = {	# Firing event for all effected rulers
 		title:k_durins_dummy = {
 			copy_title_history = title:k_durins_folk
 		}
-		
+
 		# Erebor
 		title:k_erebor = { add_to_list = smaug_desolated_titles }
 		title:d_erebor = {
@@ -41,14 +41,14 @@ smaug_event_chain.0001 = {	# Firing event for all effected rulers
 		title:c_vargurat = { add_to_list = smaug_desolated_counties }
 		title:c_steinholl = { add_to_list = smaug_desolated_counties }
 		title:c_orlmond = { add_to_list = smaug_desolated_counties }
-		
+
 		title:k_durins_folk.holder = { save_scope_as = durin_leader }
-		
+
 		every_in_list = {
 			list = smaug_desolated_counties
 			holder = { trigger_event = smaug_event_chain.0100 } #Smaug sacks rulers holding
 		}
-		
+
 		add_elven_hope_global_effect = { VALUE = medium_elven_hope_loss HOPE_EFFECT = effect_elven_hope_global_evil_increased }
 	}
 }
@@ -170,7 +170,7 @@ smaug_event_chain.0100 = {
 
 		remove_short_term_gold = scope:lost_gold #Remove 90% of held gold
 		custom_tooltip = smaug_event_chain.0100.a.tt
-
+		
 		##Quonton
 		custom_tooltip = decision_erebor_road_gets_fucking_destroyed
 		
@@ -184,12 +184,12 @@ smaug_event_chain.0100 = {
 						}
 					}
 				}
-				
+
 				every_tributary = { #Free all tributaries
 					limit = { suzerain = root }
 					end_tributary = yes
 				}
-				
+
 				every_vassal = {
 					create_title_and_vassal_change = {
 						type = independency
@@ -575,7 +575,7 @@ smaug_event_chain.0102 = {
 	}
 }
 
-# The Aftermath - base game like event leting player choose if they want to play landless or not
+# The Aftermath - base game like event letting player choose if they want to play landless or not
 smaug_event_chain.0103 = {
 	type = character_event
 	window = fullscreen_event
@@ -2808,12 +2808,6 @@ smaug_event_chain.0127 = { #War of the Dwarves and Orcs Start
 	title = smaug_event_chain.0127.t
 	desc = smaug_event_chain.0127.desc
 	theme = war
-	trigger = {
-		OR = {
-			title:c_durins_hall.holder.top_liege = { is_ai = no }
-			root = { is_ai = no }
-		}
-	}
 	left_portrait = {
 		character = root
 		animation = personality_bold
@@ -2858,13 +2852,13 @@ smaug_event_chain.0129 = { # Event if Erebor is nuked while Thror has holdings e
 				limit = { tier > tier_county }
 				holder = { destroy_title = prev }
 			}
-			
+
 			create_title_and_vassal_change = {
 				type = created
 				save_scope_as = title_change
 				add_claim_on_loss = no
 			}
-			
+
 			every_held_title = {
 				limit = { tier = tier_county }
 				change_title_holder = {
@@ -2872,9 +2866,9 @@ smaug_event_chain.0129 = { # Event if Erebor is nuked while Thror has holdings e
 					change = scope:title_change
 				}
 			}
-			
+
 			resolve_title_and_vassal_change = scope:title_change
-			
+
 			create_landless_adventurer_title_effect = {
 				REASON = flag:wanderer
 				FLAVOR_CHAR = root
@@ -3172,7 +3166,7 @@ smaug_event_chain.0399 = {
 	}
 }
 
-# Arriving at Erebor / Intrigue challange 1
+# Arriving at Erebor / Intrigue challenge 1
 smaug_event_chain.0301 = {
 	content_source = realms_dlc
 	type = character_event
@@ -3247,6 +3241,8 @@ smaug_event_chain.0301 = {
 		trigger = {
 			any_character_artifact = {
 				has_variable = key_of_erebor
+			}
+			any_character_artifact = {
 				has_variable = map_of_thror
 			}
 		}
@@ -3271,7 +3267,7 @@ smaug_event_chain.0301 = {
 	}
 }
 
-# Intrigue challange 2
+# Intrigue challenge 2
 smaug_event_chain.0302 = {
 	content_source = realms_dlc
 	type = character_event
@@ -3375,7 +3371,7 @@ smaug_event_chain.0302 = {
 	}
 }
 
-# Intrigue challange 3
+# Intrigue challenge 3
 smaug_event_chain.0303 = {
 	content_source = realms_dlc
 	type = character_event
@@ -3511,7 +3507,7 @@ smaug_event_chain.0304 = {
 	}
 }
 
-# Martial challange 1
+# Martial challenge 1
 smaug_event_chain.0305 = {
 	content_source = realms_dlc
 	type = character_event
@@ -3711,9 +3707,9 @@ smaug_event_chain.0305 = {
 						trait = burned
 						value = { 50 200 }
 					}
-					death = { 
-						death_reason = death_burned 
-					} 
+					death = {
+						death_reason = death_burned
+					}
 				}
 				if = {
 					limit = { NOT = { scope:smaug_challenge_1_victim_2 = scope:smaug_challenge_1_victim_1 }}
@@ -3723,8 +3719,8 @@ smaug_event_chain.0305 = {
 							trait = burned
 							value = { 50 200 }
 						}
-						death = { 
-							death_reason = death_burned 
+						death = {
+							death_reason = death_burned
 						}
 					}
 				}
@@ -3736,8 +3732,8 @@ smaug_event_chain.0305 = {
 							trait = burned
 							value = { 50 200 }
 						}
-						death = { 
-							death_reason = death_burned 
+						death = {
+							death_reason = death_burned
 						}
 					}
 				}
@@ -3749,9 +3745,9 @@ smaug_event_chain.0305 = {
 							trait = burned
 							value = { 50 200 }
 						}
-						death = { 
-							death_reason = death_burned 
-						} 
+						death = {
+							death_reason = death_burned
+						}
 					}
 				}
 				if = {
@@ -3761,10 +3757,10 @@ smaug_event_chain.0305 = {
 						add_trait_xp = {
 							trait = burned
 							value = { 50 200 }
-						} 
-						death = { 
-							death_reason = death_burned 
-						} 
+						}
+						death = {
+							death_reason = death_burned
+						}
 					}
 				}
 
@@ -3777,10 +3773,10 @@ smaug_event_chain.0305 = {
 								add_trait_xp = {
 									trait = burned
 									value = { 50 200 }
-								} 
-								death = { 
-									death_reason = death_burned 
-								} 
+								}
+								death = {
+									death_reason = death_burned
+								}
 							}
 						}
 						if = {
@@ -3791,9 +3787,9 @@ smaug_event_chain.0305 = {
 									trait = burned
 									value = { 50 200 }
 								}
-								death = { 
-									death_reason = death_burned 
-								} 
+								death = {
+									death_reason = death_burned
+								}
 							}
 						}
 					}
@@ -3808,7 +3804,7 @@ smaug_event_chain.0305 = {
 	}
 }
 
-# Martial challange 2
+# Martial challenge 2
 smaug_event_chain.0306 = {
 	content_source = realms_dlc
 	type = character_event
@@ -3989,10 +3985,10 @@ smaug_event_chain.0306 = {
 					add_trait_xp = {
 						trait = burned
 						value = { 50 200 }
-					} 
-					death = { 
-						death_reason = death_burned 
-					} 
+					}
+					death = {
+						death_reason = death_burned
+					}
 				}
 				if = {
 					limit = { NOT = { scope:smaug_challenge_2_victim_2 = scope:smaug_challenge_2_victim_1 }}
@@ -4001,36 +3997,36 @@ smaug_event_chain.0306 = {
 						add_trait_xp = {
 							trait = burned
 							value = { 50 200 }
-						} 
-						death = { 
-							death_reason = death_burned 
-						} 
+						}
+						death = {
+							death_reason = death_burned
+						}
 					}
 				}
 				if = {
 					limit = { NOT = { scope:smaug_challenge_2_victim_3 = scope:smaug_challenge_2_victim_2 }}
-					scope:smaug_challenge_2_victim_3 = { 
+					scope:smaug_challenge_2_victim_3 = {
 						add_trait = burned
 						add_trait_xp = {
 							trait = burned
 							value = { 50 200 }
-						} 
-						death = { 
-							death_reason = death_burned 
-						} 
+						}
+						death = {
+							death_reason = death_burned
+						}
 					}
 				}
 				if = {
 					limit = { NOT = { scope:smaug_challenge_2_victim_4 = scope:smaug_challenge_2_victim_3 }}
-					scope:smaug_challenge_2_victim_4 = { 
+					scope:smaug_challenge_2_victim_4 = {
 						add_trait = burned
 						add_trait_xp = {
 							trait = burned
 							value = { 50 200 }
-						} 
-						death = { 
-							death_reason = death_burned 
-						} 
+						}
+						death = {
+							death_reason = death_burned
+						}
 					}
 				}
 
@@ -4038,28 +4034,28 @@ smaug_event_chain.0306 = {
 					60 = {
 						if = {
 							limit = { NOT = { scope:smaug_challenge_2_victim_5 = scope:smaug_challenge_2_victim_4 }}
-							scope:smaug_challenge_2_victim_5 = { 
+							scope:smaug_challenge_2_victim_5 = {
 								add_trait = burned
 								add_trait_xp = {
 									trait = burned
 									value = { 50 200 }
-								} 
-								death = { 
-									death_reason = death_burned 
-								} 
+								}
+								death = {
+									death_reason = death_burned
+								}
 							}
 						}
 						if = {
 							limit = { NOT = { scope:smaug_challenge_2_victim_6 = scope:smaug_challenge_2_victim_5 }}
-							scope:smaug_challenge_2_victim_6 = { 
+							scope:smaug_challenge_2_victim_6 = {
 								add_trait = burned
 								add_trait_xp = {
 									trait = burned
 									value = { 50 200 }
-								} 
-								death = { 
-									death_reason = death_burned 
-								} 
+								}
+								death = {
+									death_reason = death_burned
+								}
 							}
 						}
 					}
@@ -4074,7 +4070,7 @@ smaug_event_chain.0306 = {
 	}
 }
 
-# Martial challange 3
+# Martial challenge 3
 smaug_event_chain.0307 = {
 	content_source = realms_dlc
 	type = character_event
@@ -4307,79 +4303,79 @@ smaug_event_chain.0307 = {
 					}
 				}
 
-				scope:smaug_challenge_3_victim_1 = { 
+				scope:smaug_challenge_3_victim_1 = {
 					add_trait = burned
 					add_trait_xp = {
 						trait = burned
 						value = { 50 200 }
-					} 
-					death = { 
-						death_reason = death_burned 
-					} 
+					}
+					death = {
+						death_reason = death_burned
+					}
 				}
 				if = {
 					limit = { NOT = { scope:smaug_challenge_3_victim_2 = scope:smaug_challenge_3_victim_1 }}
-					scope:smaug_challenge_3_victim_2 = { 
+					scope:smaug_challenge_3_victim_2 = {
 						add_trait = burned
 						add_trait_xp = {
 							trait = burned
 							value = { 50 200 }
-						} 
-						death = { 
-							death_reason = death_burned 
-						} 
+						}
+						death = {
+							death_reason = death_burned
+						}
 					}
 				}
 				if = {
 					limit = { NOT = { scope:smaug_challenge_3_victim_3 = scope:smaug_challenge_3_victim_2 }}
-					scope:smaug_challenge_3_victim_3 = { 
+					scope:smaug_challenge_3_victim_3 = {
 						add_trait = burned
 						add_trait_xp = {
 							trait = burned
 							value = { 50 200 }
-						} 
-						death = { 
-							death_reason = death_burned 
-						} 
+						}
+						death = {
+							death_reason = death_burned
+						}
 					}
 				}
 				if = {
 					limit = { NOT = { scope:smaug_challenge_3_victim_4 = scope:smaug_challenge_3_victim_3 }}
-					scope:smaug_challenge_3_victim_4 = { 
+					scope:smaug_challenge_3_victim_4 = {
 						add_trait = burned
 						add_trait_xp = {
 							trait = burned
 							value = { 50 200 }
-						} 
-						death = { 
-							death_reason = death_burned 
-						} 
+						}
+						death = {
+							death_reason = death_burned
+						}
 					}
 				}
 				if = {
 					limit = { NOT = { scope:smaug_challenge_3_victim_5 = scope:smaug_challenge_3_victim_4 }}
-					scope:smaug_challenge_3_victim_5 = { 
+					scope:smaug_challenge_3_victim_5 = {
 						add_trait = burned
 						add_trait_xp = {
 							trait = burned
 							value = { 50 200 }
-						} 
-						death = { 
-							death_reason = death_burned 
-						} 
+						}
+						death = {
+							death_reason = death_burned
+						}
 					}
 				}
 				if = {
 					limit = { NOT = { scope:smaug_challenge_3_victim_6 = scope:smaug_challenge_3_victim_5 }}
-					scope:smaug_challenge_3_victim_6 = { 
+					scope:smaug_challenge_3_victim_6 = {
 						add_trait = burned
 						add_trait_xp = {
 							trait = burned
 							value = { 50 200 }
-						} 
-						death = { 
-							death_reason = death_burned 
-						} 
+						}
+						death = {
+							death_reason = death_burned
+						}
 					}
 				}
 
@@ -4387,41 +4383,41 @@ smaug_event_chain.0307 = {
 					80 = {
 						if = {
 							limit = { NOT = { scope:smaug_challenge_3_victim_7 = scope:smaug_challenge_3_victim_6 }}
-							scope:smaug_challenge_3_victim_7 = { 
+							scope:smaug_challenge_3_victim_7 = {
 								add_trait = burned
 								add_trait_xp = {
 									trait = burned
 									value = { 50 200 }
-								} 
-								death = { 
-									death_reason = death_burned 
-								} 
+								}
+								death = {
+									death_reason = death_burned
+								}
 							}
 						}
 						if = {
 							limit = { NOT = { scope:smaug_challenge_3_victim_8 = scope:smaug_challenge_3_victim_7 }}
-							scope:smaug_challenge_3_victim_8 = { 
+							scope:smaug_challenge_3_victim_8 = {
 								add_trait = burned
 								add_trait_xp = {
 									trait = burned
 									value = { 50 200 }
-								} 
-								death = { 
-									death_reason = death_burned 
-								} 
+								}
+								death = {
+									death_reason = death_burned
+								}
 							}
 						}
 						if = {
 							limit = { NOT = { scope:smaug_challenge_3_victim_9 = scope:smaug_challenge_3_victim_8 }}
-							scope:smaug_challenge_3_victim_9 = { 
+							scope:smaug_challenge_3_victim_9 = {
 								add_trait = burned
 								add_trait_xp = {
 									trait = burned
 									value = { 50 200 }
-								} 
-								death = { 
-									death_reason = death_burned 
-								} 
+								}
+								death = {
+									death_reason = death_burned
+								}
 							}
 						}
 					}
@@ -4436,7 +4432,7 @@ smaug_event_chain.0307 = {
 	}
 }
 
-# Martial challange 4
+# Martial challenge 4
 smaug_event_chain.0308 = {
 	content_source = realms_dlc
 	type = character_event
@@ -4712,92 +4708,92 @@ smaug_event_chain.0308 = {
 					}
 				}
 
-				scope:smaug_challenge_4_victim_1 = { 
+				scope:smaug_challenge_4_victim_1 = {
 					add_trait = burned
 					add_trait_xp = {
 						trait = burned
 						value = { 50 200 }
-					} 
-					death = { 
-						death_reason = death_burned 
-					} 
+					}
+					death = {
+						death_reason = death_burned
+					}
 				}
 				if = {
 					limit = { NOT = { scope:smaug_challenge_4_victim_2 = scope:smaug_challenge_4_victim_1 }}
-					scope:smaug_challenge_4_victim_2 = { 
+					scope:smaug_challenge_4_victim_2 = {
 					add_trait = burned
 					add_trait_xp = {
 						trait = burned
 						value = { 50 200 }
-					} 
-					death = { 
-						death_reason = death_burned 
-					} 
+					}
+					death = {
+						death_reason = death_burned
+					}
 				}
 				}
 				if = {
 					limit = { NOT = { scope:smaug_challenge_4_victim_3 = scope:smaug_challenge_4_victim_2 }}
-					scope:smaug_challenge_4_victim_3 = { 
+					scope:smaug_challenge_4_victim_3 = {
 					add_trait = burned
 					add_trait_xp = {
 						trait = burned
 						value = { 50 200 }
-					} 
-					death = { 
-						death_reason = death_burned 
-					} 
+					}
+					death = {
+						death_reason = death_burned
+					}
 				}
 				}
 				if = {
 					limit = { NOT = { scope:smaug_challenge_4_victim_4 = scope:smaug_challenge_4_victim_3 }}
-					scope:smaug_challenge_4_victim_4 = { 
+					scope:smaug_challenge_4_victim_4 = {
 						add_trait = burned
 						add_trait_xp = {
 							trait = burned
 							value = { 50 200 }
-						} 
-						death = { 
-							death_reason = death_burned 
-						} 
+						}
+						death = {
+							death_reason = death_burned
+						}
 					}
 				}
 				if = {
 					limit = { NOT = { scope:smaug_challenge_4_victim_5 = scope:smaug_challenge_4_victim_4 }}
-					scope:smaug_challenge_4_victim_5 = { 
+					scope:smaug_challenge_4_victim_5 = {
 						add_trait = burned
 						add_trait_xp = {
 							trait = burned
 							value = { 50 200 }
-						} 
-						death = { 
-							death_reason = death_burned 
-						} 
+						}
+						death = {
+							death_reason = death_burned
+						}
 					}
 				}
 				if = {
 					limit = { NOT = { scope:smaug_challenge_4_victim_6 = scope:smaug_challenge_4_victim_5 }}
-					scope:smaug_challenge_4_victim_6 = { 
+					scope:smaug_challenge_4_victim_6 = {
 						add_trait = burned
 						add_trait_xp = {
 							trait = burned
 							value = { 50 200 }
-						} 
-						death = { 
-							death_reason = death_burned 
-						} 
+						}
+						death = {
+							death_reason = death_burned
+						}
 					}
 				}
 				if = {
 					limit = { NOT = { scope:smaug_challenge_4_victim_7 = scope:smaug_challenge_4_victim_6 }}
-					scope:smaug_challenge_4_victim_7 = { 
+					scope:smaug_challenge_4_victim_7 = {
 						add_trait = burned
 						add_trait_xp = {
 							trait = burned
 							value = { 50 200 }
-						} 
-						death = { 
-							death_reason = death_burned 
-						} 
+						}
+						death = {
+							death_reason = death_burned
+						}
 					}
 				}
 
@@ -4805,110 +4801,110 @@ smaug_event_chain.0308 = {
 					50 = {
 						if = {
 							limit = { NOT = { scope:smaug_challenge_4_victim_8 = scope:smaug_challenge_4_victim_7 }}
-							scope:smaug_challenge_4_victim_8 = { 
+							scope:smaug_challenge_4_victim_8 = {
 								add_trait = burned
 								add_trait_xp = {
 									trait = burned
 									value = { 50 200 }
-								} 
-								death = { 
-									death_reason = death_burned 
-								} 
+								}
+								death = {
+									death_reason = death_burned
+								}
 							}
 						}
 						if = {
 							limit = { NOT = { scope:smaug_challenge_4_victim_9 = scope:smaug_challenge_4_victim_8 }}
-							scope:smaug_challenge_4_victim_9 = { 
+							scope:smaug_challenge_4_victim_9 = {
 								add_trait = burned
 								add_trait_xp = {
 									trait = burned
 									value = { 50 200 }
-								} 
-								death = { 
-									death_reason = death_burned 
-								} 
+								}
+								death = {
+									death_reason = death_burned
+								}
 							}
 						}
 						if = {
 							limit = { NOT = { scope:smaug_challenge_4_victim_10 = scope:smaug_challenge_4_victim_9 }}
-							scope:smaug_challenge_4_victim_10 = { 
+							scope:smaug_challenge_4_victim_10 = {
 								add_trait = burned
 								add_trait_xp = {
 									trait = burned
 									value = { 50 200 }
-								} 
-								death = { 
-									death_reason = death_burned 
-								} 
+								}
+								death = {
+									death_reason = death_burned
+								}
 							}
 						}
 						if = {
 							limit = { NOT = { scope:smaug_challenge_4_victim_11 = scope:smaug_challenge_4_victim_10 }}
-							scope:smaug_challenge_4_victim_11 = { 
+							scope:smaug_challenge_4_victim_11 = {
 								add_trait = burned
 								add_trait_xp = {
 									trait = burned
 									value = { 50 200 }
-								} 
-								death = { 
-									death_reason = death_burned 
-								} 
+								}
+								death = {
+									death_reason = death_burned
+								}
 							}
 						}
 					}
 					30 = {
 						if = {
 							limit = { NOT = { scope:smaug_challenge_4_victim_8 = scope:smaug_challenge_4_victim_7 }}
-							scope:smaug_challenge_4_victim_8 = { 
+							scope:smaug_challenge_4_victim_8 = {
 								add_trait = burned
 								add_trait_xp = {
 									trait = burned
 									value = { 50 200 }
-								} 
-								death = { 
-									death_reason = death_burned 
-								} 
+								}
+								death = {
+									death_reason = death_burned
+								}
 							}
 						}
 						if = {
 							limit = { NOT = { scope:smaug_challenge_4_victim_9 = scope:smaug_challenge_4_victim_8 }}
-							scope:smaug_challenge_4_victim_9 = { 
+							scope:smaug_challenge_4_victim_9 = {
 								add_trait = burned
 								add_trait_xp = {
 									trait = burned
 									value = { 50 200 }
-								} 
-								death = { 
-									death_reason = death_burned 
-								} 
+								}
+								death = {
+									death_reason = death_burned
+								}
 							}
 						}
 						if = {
 							limit = { NOT = { scope:smaug_challenge_4_victim_11 = scope:smaug_challenge_4_victim_10 }}
-							scope:smaug_challenge_4_victim_11 = { 
+							scope:smaug_challenge_4_victim_11 = {
 								add_trait = burned
 								add_trait_xp = {
 									trait = burned
 									value = { 50 200 }
-								} 
-								death = { 
-									death_reason = death_burned 
-								} 
+								}
+								death = {
+									death_reason = death_burned
+								}
 							}
 						}
 					}
 					15 = {
 						if = {
 							limit = { NOT = { scope:smaug_challenge_4_victim_8 = scope:smaug_challenge_4_victim_7 }}
-							scope:smaug_challenge_4_victim_8 = { 
+							scope:smaug_challenge_4_victim_8 = {
 								add_trait = burned
 								add_trait_xp = {
 									trait = burned
 									value = { 50 200 }
-								} 
-								death = { 
-									death_reason = death_burned 
-								} 
+								}
+								death = {
+									death_reason = death_burned
+								}
 							}
 						}
 					}
@@ -5104,7 +5100,7 @@ smaug_event_chain.0310 = {
 				add_trait_xp = {
 					trait = burned
 					value = { 50 200 }
-				} 
+				}
 				death = { death_reason = death_burned }
 
 				scope:leader ?= {
@@ -5160,9 +5156,12 @@ smaug_event_chain.0311 = {
 
 		ai_colonisation_effect = { WASTELANDS = title:b_throne_of_erebor ROOT_SCOPE = root }
 
-		current_travel_plan = {
-			every_entourage_character = {
-				add_trait = adventurer_follower
+		add_trait = adventurer
+		hidden_effect = {
+			current_travel_plan = {
+				every_entourage_character = {
+					add_trait = adventurer_follower
+				}
 			}
 		}
 
