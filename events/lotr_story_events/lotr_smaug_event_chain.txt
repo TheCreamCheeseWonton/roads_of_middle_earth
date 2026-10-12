@@ -2003,7 +2003,7 @@ smaug_event_chain.0115 = {
 #
 #	theme = realm
 #
-#	override_background = { reference = halls }
+#	override_background = { reference = wilderness_underground }
 #
 #	left_portrait = {
 #		character = root

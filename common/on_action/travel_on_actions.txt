@@ -842,6 +842,21 @@ travel_danger_events_on_action = {
 		100 = travel_danger_events.9040 # Rainstorm, someone is lost & gone forever!
 		100 = travel_danger_events.9050 # Someone with Withering Mind walks off
 		100 = travel_danger_events.9060 # Faltering Heart/Fragile Bones entourage character suffers during travel
+
+		# LotR Travel Danger Events
+		300	= lotr_travel_danger_events.0001 # Danger! Giant Scorpion Attack - Dune Sea and surrounding desert Only
+		300	= lotr_travel_danger_events.0002 # Danger! Sandstorm! - Desert/ Dune Sea Only
+		300	= lotr_travel_danger_events.0003 # Danger! Mount Doom's Breath - Volcanic Plains Only
+		30	= lotr_travel_danger_events.0004 # Danger! Troll Attack!
+		200 = lotr_travel_danger_events.0005 # Danger! Flies and Spiders
+		300	= lotr_travel_danger_events.0006 # Danger! Earthquake in Mordor - Gorgoroth, Volcanic Plains only 
+		100	= lotr_travel_danger_events.0007 # Danger! Corsair Attack - Greater Corsair Coast only
+		100	= lotr_travel_danger_events.0008 # Danger! Anbaluk Slavers - Neighbors of An-Balkumagan Only
+		100	= lotr_travel_danger_events.0200 # Danger! Orc Encounter
+		20	= lotr_travel_danger_events.0201 # Followup: You paid the orc
+		20	= lotr_travel_danger_events.0202 # Followup: You killed the orc (Cheats Death)
+		20	= lotr_travel_danger_events.0203 # Followup: You dominated the orc 
+		20	= lotr_travel_danger_events.0204 # Followup: The Orc beat you
 	}
 }
 
@@ -1081,6 +1096,29 @@ travel_events_on_action = {
 		50 = tgp_japan_yearly_events.1040 # 1040 - You come across a red bridge
 		50 = tgp_japan_yearly_events.1120 # 1120 - You meet a warrior monk
 		50 = tgp_japan_yearly_events.1140 # 1140 - You are stopped in Soryo lands as a Ritsuryo ruler
+		
+		#LotR Travel Events
+		100 = lotr_travel_events.0001 # A Colossal Wreck - Ozymandias Poem Reference
+		1000 = lotr_travel_events.0005  # Travelling past Fangorn makes you feel uneasy
+		200 = lotr_travel_events.0006 # Endless Darkness
+		100 = lotr_travel_events.0007 # Local Storyteller
+		1000 = lotr_travel_events.0008 # Wonders of a Mallorn Forest
+		200 = lotr_travel_events.0009 # Call of the Sea
+		200 = lotr_travel_events.0010 # Ruins of the North
+		200 = lotr_travel_events.0011 # The Haunted Ruins
+		15 = lotr_travel_events.0012 # A Gruesome Cave
+		200 = lotr_travel_events.0014 # Trans-Haradric Merchants: The Tongue of Trade
+		100 = lotr_travel_events.0200 # Dwarven Toymaker Encounter
+		200 = lotr_travel_events.0015 # Nothing Ever Happens in Thani Hazad
+		100 = lotr_travel_events.0100 # Old Flames
+		# LotR Elven Travel Events
+		100 = lotr_travel_events.0500 # Elf comes across a burned village
+		100 = lotr_travel_events.0501 # Elf feels sea longing
+		100 = lotr_travel_events.0502 # Elf encounters impoverished village
+		100 = lotr_travel_events.0503 # Elf sees the mountains at dawn
+		100 = lotr_travel_events.0504 # Elf sees sunset over plains
+		100 = lotr_travel_events.0505 # Elf sees straggler, can help
+		50 = lotr_travel_events.0506 # Elf has epiphany
 	}
 }
 
